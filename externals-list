@@ -1,0 +1,31 @@
+;; -*- lisp-data -*-
+
+;; List of packages that are maintained externally.
+;; The list is made of elements of the form (NAME . PLIST)
+;;
+;; Where PLIST uses the following properties
+;;
+;; :external URL
+;;   This specifies the location of the upstream code, usually a Git URL.
+;;
+;; :version-map MAP
+;;   A list of element of the form (ORIG-VERSION REMAPPED-VERSION REVISION)
+;;   This allows replacing the ORIG-VERSION from the <pkg>.el file
+;;   with REMAPPED-VERSION (e.g. because the ORIG-VERSION is not a valid
+;;   version number, is missing, or because we want to create a new package
+;;   from the same code version).
+;;   It also makes it possible to specify that this ORIG-VERSION
+;;   (or REMAPPED-VERSION if non-nil) corresponds to REVISION to override
+;;   the default heuristic which looks at the commit that modified the
+;;   "Version:" header.
+;;
+;; :dont-release REGEXP
+;;   A regexp matching version numbers which should not be released.
+;;   This can be used for example to prevent releasing alpha/beta quality code
+;;   while still allowing this code to appear with proper version info
+;;   in the NonGNU-devel archive.
+
+(
+ ("sly"			:external "https://github.com/joaotavora/sly"
+  :version-map (("1.0.0-beta-3" "1.0.0beta3")))
+ )

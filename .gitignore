@@ -8,8 +8,4 @@ core
 /emacs
 /packages/
 /archive/
-
-# Testing file
-/archive
-*.log
-*.buildlog
+/archive-devel/
