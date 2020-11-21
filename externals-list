@@ -34,4 +34,5 @@
   :version-map ((nil "4.7.1" "a9134009bd037a39cbda21806867d0534d340bca")))
  ("sly"			:external "https://github.com/joaotavora/sly"
   :version-map (("1.0.0-beta-3" "1.0.0beta3")))
+ ("tuareg"		:external "https://github.com/ocaml/tuareg.git")
  )
