@@ -1,9 +1,11 @@
 ;; -*- lisp-data -*-
 
-;; List of packages that are maintained externally.
+;; List of packages.
 ;; The list is made of elements of the form (NAME . PLIST)
+;; Every package needs a corresponding Git branch in the repository
+;; with name `externals/NAME`.
 ;;
-;; Where PLIST uses the following properties
+;; PLIST uses the following properties
 ;;
 ;; :external URL
 ;;   This specifies the location of the upstream code, usually a Git URL.
@@ -26,6 +28,10 @@
 ;;   in the NonGNU-devel archive.
 
 (
+ ("caml"		:external "https://github.com/ocaml/caml-mode"
+  ;; The version 4.7.1 from Melpa-stable seems to correspond to
+  ;; revision a9134009.
+  :version-map ((nil "4.7.1" "a9134009bd037a39cbda21806867d0534d340bca")))
  ("sly"			:external "https://github.com/joaotavora/sly"
   :version-map (("1.0.0-beta-3" "1.0.0beta3")))
  )
