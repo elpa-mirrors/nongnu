@@ -8,7 +8,7 @@ SITE_DIR=site
 
 .PHONY: archive-tmp changelogs process-archive archive-full org-fetch clean all do-it
 
-all: all-in-place .gitignore
+all: all-in-place
 
 CR_EXCEPTIONS=copyright_exceptions
 .PHONY: check_copyrights
@@ -89,10 +89,6 @@ archive-full: archive-tmp org-fetch
 	#mkdir -p archive/admin
 	#cp admin/* archive/admin/
 
-.gitignore: externals-list
-	$(EMACS) -l $(CURDIR)/admin/archive-contents.el \
-		 --eval '(archive-gitignore-externals "$<" "$@")'
-
 # FIXME: Turn it into an `external', which will require adding the notion of
 # "snapshot" packages.
 org-fetch: archive-tmp
@@ -168,7 +164,7 @@ included_els := $(shell tar -cvhf /dev/null --exclude-ignore=.elpaignore \
 # 	                                packages/*/*/*/*/*.el))
 els := $(call FILTER-nonsrc, $(included_els))
 naive_elcs := $(patsubst %.el, %.elc, $(els))
-current_elcs := $(shell find . -name '*.elc' -print)
+current_elcs := $(shell find packages -name '*.elc' -print)
 
 extra_els := $(call SET-diff, $(els), $(patsubst %.elc, %.el, $(current_elcs)))
 nbc_els := $(foreach el, $(extra_els), \
@@ -199,11 +195,8 @@ pkg_descs:=$(foreach pkg, $(pkgs), $(pkg)/$(notdir $(pkg))-pkg.el)
 #$(foreach al, $(single_pkgs), $(eval $(call RULE-srcdeps, $(al))))
 %-pkg.el: %.el
 	@echo 'Generating description file $@'
-	@$(EMACS) \
-	    --eval '(require (quote package))' \
-	    --eval '(setq b (find-file-noselect "$<"))' \
-	    --eval '(setq d (with-current-buffer b (package-buffer-info)))' \
-	    --eval '(package-generate-description-file d "$@")'
+	@$(EMACS) -l admin/archive-contents.el \
+	          -f batch-generate-description-file "$@"
 
 .PHONY: all-in-place
 # Use order-only prerequisites, so that autoloads are done first.
