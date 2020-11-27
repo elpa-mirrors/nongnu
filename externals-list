@@ -10,6 +10,10 @@
 ;; :external URL
 ;;   This specifies the location of the upstream code, usually a Git URL.
 ;;
+;; :branch BRANCH
+;;   This specified the Git branch that we follow.
+;;   By default, we follow the `master' branch.
+;;
 ;; :version-map MAP
 ;;   A list of element of the form (ORIG-VERSION REMAPPED-VERSION REVISION)
 ;;   This allows replacing the ORIG-VERSION from the <pkg>.el file
