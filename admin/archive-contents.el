@@ -19,6 +19,21 @@
 
 ;;; Commentary:
 
+;; Missing from GNU ELPA script:
+;; - check_copyrights
+;; - Support for :core (seems to be partly working, actually, tho it likely
+;;   doesn't select the right release revision).
+;; - Support for Org's package
+;; - Send email announcements
+;; - Fix archive name and URL
+
+;; TODO:
+;; - Eliminate hardcoded `build/packages' directory structure
+;; - support for rebuilding index.html, archive-contents, and <pkg>.html
+;; - support for building the Info files
+;; - support for README.md for some packages
+;; - support for Tramp as core
+
 ;;; Code:
 
 (eval-when-compile (require 'cl-lib))
@@ -204,7 +219,8 @@ Assumes that the current worktree holds a snapshot version."
                   (cons (package-version-join vl) rev)))))))))))
 
 (defun archive--select-revision (dir pkgname rev)
-  "Checkout revision REV in DIR of PKGNAME."
+  "Checkout revision REV in DIR of PKGNAME.
+Do it without leaving the current branch."
   (let ((cur-rev (vc-working-revision
                   (expand-file-name (concat pkgname ".el") dir))))
     (if (equal rev cur-rev)
@@ -218,7 +234,7 @@ Assumes that the current worktree holds a snapshot version."
             (archive--message "Reverted to release revision %s\n%s"
                               rev (buffer-string))))))))
 
-(defun archive--make-one-tarball (tarball dir pkgname metadata
+(defun archive--make-one-tarball (tarball dir pkg-spec metadata
                                           &optional revision-function)
   "Create file TARBALL for PKGNAME if not done yet.
 Return non-nil if a new tarball was created."
@@ -230,11 +246,12 @@ Return non-nil if a new tarball was created."
         (archive--message "Tarball %s already built!" tarball)
         nil)
     (let* ((destdir (file-name-directory tarball))
+           (pkgname (car pkg-spec))
            (_ (unless (file-directory-p destdir) (make-directory destdir)))
            (vers (nth 1 metadata))
            (elpaignore (expand-file-name ".elpaignore" dir))
            (re (concat "\\`" (regexp-quote pkgname)
-                       "-\\(.*\\)\\.tar\\(\\.[a-z]*z\\)?"))
+                       "-\\([0-9].*\\)\\.\\(tar\\|el\\)\\(\\.[a-z]*z\\)?\\'"))
            (oldtarballs
             (mapcar
              (lambda (file)
@@ -253,7 +270,7 @@ Return non-nil if a new tarball was created."
                               elpaignore "/dev/null")
                      "--transform"
                      (format "s|^packages/%s|%s-%s|" pkgname pkgname vers)
-                     "-cf" tarball
+                     "-chf" tarball
                      (concat "packages/" pkgname))
       (let* ((pkgdesc
               ;; FIXME: `archive--write-pkg-file' wrote the metadata to
@@ -281,12 +298,14 @@ Return non-nil if a new tarball was created."
         (dolist (oldtarball oldtarballs)
           ;; lzip compress oldtarballs.
           (let ((file (cdr oldtarball)))
-            (when (string-match "\\.tar\\'" file)
-              (archive--call nil "lzip" (expand-file-name file destdir))
-              (setf (cdr oldtarball) (concat file ".lz")))))
+            (when (string-match "\\.\\(tar\\|el\\)\\'" file)
+              ;; Don't compress the file we just created.
+              (unless (equal file (file-name-nondirectory tarball))
+                (archive--call nil "lzip" (expand-file-name file destdir))
+                (setf (cdr oldtarball) (concat file ".lz"))))))
         (let* ((default-directory (expand-file-name destdir)))
           ;; Apparently this also creates the <pkg>-readme.txt file.
-          (archive--html-make-pkg pkgdesc
+          (archive--html-make-pkg pkgdesc pkg-spec
                                   `((,vers . ,(file-name-nondirectory tarball))
                                     . ,oldtarballs)
                                   dir))
@@ -329,81 +348,85 @@ Return non-nil if a new tarball was created."
   (let* ((specs (archive--form-from-file-contents "externals-list")))
     (dolist (spec specs)
       (with-demoted-errors "Build error: %S"
-        (archive--make-one-package (format "%s" (car spec)))))))
+        (archive--make-one-package spec)))))
 
 (defun batch-make-one-package (&rest _)
-  "Build the new tarballs (if needed) for one particular package,"
-  (archive--make-one-package (pop command-line-args-left)))
+  "Build the new tarballs (if needed) for one particular package."
+  (while command-line-args-left
+    (archive--make-one-package (archive--get-package-spec
+                                (pop command-line-args-left)))))
 
-(defun archive--make-one-package (pkgname)
-  "Build the new tarballs (if needed) for PKGNAME."
-  (let* ((dir (expand-file-name pkgname "packages")))
-    (archive--message "Checking package %s for updates..." pkgname)
-    (let* ((pkg-spec (archive--get-package-spec pkgname))
-           (_ (archive--external-package-sync pkg-spec))
-           (_ (archive--message "pkg-spec for %s: %S" pkgname pkg-spec))
-           (metadata (archive--metadata dir pkg-spec))
-           (vers (nth 1 metadata)))
-      (archive--message "metadata = %S" metadata)
-      (if (null metadata)
-          (error "No metadata found for package: %s" pkgname)
-        ;; Disregard the simple/multi distinction.  This might have been useful
-        ;; in a distant past, but nowadays it's just unneeded extra complexity.
-        (setf (car metadata) nil)
-        ;; First, try and build the devel tarball
-        ;; Do it before building the release tarball, because building
-        ;; the release tarball may revert to some older commit.
-        (let* ((date-version (archive--get-devel-version dir))
-               ;; Add a ".0." so that when the version number goes from
-               ;; NN.MM to NN.MM.1 we don't end up with the devel build
-               ;; of NN.MM comparing as more recent than NN.MM.1.
-               ;; But be careful to turn "2.3" into "2.3.0.DATE"
-               ;; and "2.3b" into "2.3b0.DATE".
-               (devel-vers
-                (concat vers (if (string-match "[0-9]\\'" vers) ".")
-                        "0." date-version))
-               (tarball (concat archive--devel-subdir
-                                (format "%s-%s.tar" pkgname devel-vers)))
-               (new
-                (let ((archive--name (concat archive--name "-devel")))
-                  ;; Build the archive-devel tarball.
-                  (archive--make-one-tarball tarball
-                                             dir pkgname
-                                             `(nil ,devel-vers
-                                                   . ,(nthcdr 2 metadata))))))
+(defun archive--make-one-package (pkg-spec)
+  "Build the new tarballs (if needed) for PKG-SPEC."
+  (archive--message "Checking package %s for updates..." (car pkg-spec))
+  (let* ((pkgname (car pkg-spec))
+         (dir (expand-file-name pkgname "packages"))
+         (_ (if (eq (nth 1 pkg-spec) :core)
+                (archive--core-package-sync pkg-spec)
+              (archive--external-package-sync pkg-spec)))
+         (_ (archive--message "pkg-spec for %s: %S" pkgname pkg-spec))
+         (metadata (archive--metadata dir pkg-spec))
+         (vers (nth 1 metadata)))
+    (archive--message "metadata = %S" metadata)
+    (if (null metadata)
+        (error "No metadata found for package: %s" pkgname)
+      ;; Disregard the simple/multi distinction.  This might have been useful
+      ;; in a distant past, but nowadays it's just unneeded extra complexity.
+      (setf (car metadata) nil)
+      ;; First, try and build the devel tarball
+      ;; Do it before building the release tarball, because building
+      ;; the release tarball may revert to some older commit.
+      (let* ((date-version (archive--get-devel-version dir))
+             ;; Add a ".0." so that when the version number goes from
+             ;; NN.MM to NN.MM.1 we don't end up with the devel build
+             ;; of NN.MM comparing as more recent than NN.MM.1.
+             ;; But be careful to turn "2.3" into "2.3.0.DATE"
+             ;; and "2.3b" into "2.3b0.DATE".
+             (devel-vers
+              (concat vers (if (string-match "[0-9]\\'" vers) ".")
+                      "0." date-version))
+             (tarball (concat archive--devel-subdir
+                              (format "%s-%s.tar" pkgname devel-vers)))
+             (new
+              (let ((archive--name (concat archive--name "-devel")))
+                ;; Build the archive-devel tarball.
+                (archive--make-one-tarball tarball
+                                           dir pkg-spec
+                                           `(nil ,devel-vers
+                                                 . ,(nthcdr 2 metadata))))))
 
-          ;; Try and build the latest release tarball.
+        ;; Try and build the latest release tarball.
+        (cond
+         ((or (equal vers "0")
+              ;; -4 is used for "NN.MMsnapshot" and "NN.MM-git"
+              (member '-4 (version-to-list vers)))
           (cond
-           ((or (equal vers "0")
-                ;; -4 is used for "NN.MMsnapshot" and "NN.MM-git"
-                (member '-4 (version-to-list vers)))
-            (cond
-             ((equal vers "0")
-              (archive--message "Package %s not released yet!" pkgname))
-             ((not new)
-              (archive--message "Nothing new for package %s!" pkgname))
-             (t
-              ;; If this revision is a snapshot, check to see if there's
-              ;; a previous non-snapshot revision and build it if needed.
-              (let* ((last-rel (archive--get-last-release pkg-spec))
-                     (tarball (concat archive--release-subdir
-                                      (format "%s-%s.tar"
-                                              pkgname (car last-rel)))))
-                (if (not last-rel)
-                    (archive--message "Package %s not released yet!" pkgname)
-                  (archive--make-one-tarball
-                   tarball dir pkgname
-                   `(nil ,(car last-rel) . ,(nthcdr 2 metadata))
-                   (lambda () (cdr last-rel))))))))
+           ((equal vers "0")
+            (archive--message "Package %s not released yet!" pkgname))
+           ((not new)
+            (archive--message "Nothing new for package %s!" pkgname))
            (t
-            (let ((tarball (concat archive--release-subdir
-                                   (format "%s-%s.tar" pkgname vers))))
-              (archive--make-one-tarball
-               tarball dir pkgname metadata
-               (lambda ()
-                 (archive--get-release-revision
-                  dir pkgname vers
-                  (plist-get (cdr pkg-spec) :version-map))))))))))))
+            ;; If this revision is a snapshot, check to see if there's
+            ;; a previous non-snapshot revision and build it if needed.
+            (let* ((last-rel (archive--get-last-release pkg-spec))
+                   (tarball (concat archive--release-subdir
+                                    (format "%s-%s.tar"
+                                            pkgname (car last-rel)))))
+              (if (not last-rel)
+                  (archive--message "Package %s not released yet!" pkgname)
+                (archive--make-one-tarball
+                 tarball dir pkg-spec
+                 `(nil ,(car last-rel) . ,(nthcdr 2 metadata))
+                 (lambda () (cdr last-rel))))))))
+         (t
+          (let ((tarball (concat archive--release-subdir
+                                 (format "%s-%s.tar" pkgname vers))))
+            (archive--make-one-tarball
+             tarball dir pkg-spec metadata
+             (lambda ()
+               (archive--get-release-revision
+                dir pkgname vers
+                (plist-get (cdr pkg-spec) :version-map)))))))))))
 
 (defun archive--call (destination program &rest args)
   "Like ‘call-process’ for PROGRAM, DESTINATION, ARGS.
@@ -819,23 +842,16 @@ Rename DIR/ to PKG-VERS/, and return the descriptor."
   (replace-regexp-in-string "<" "&lt;"
                             (replace-regexp-in-string "&" "&amp;" txt)))
 
-(defun archive--read-externals-list (&optional dir)
-  (archive--form-from-file-contents
-   (expand-file-name "externals-list" dir)))
-
-(defun archive--insert-repolinks (name srcdir _mainsrcfile url)
+(defun archive--insert-repolinks (pkg-spec url)
   (when url
     (insert (format "<dt>Home page</dt> <dd><a href=%S>%s</a></dd>\n"
                     url (archive--quote url)))
     (when (string-match archive-default-url-re url)
       (setq url nil)))
-  (let* ((externals (archive--read-externals-list
-                     (expand-file-name "../../../elpa" srcdir)))
-         (extern-desc (assoc name externals))
-         (git-sv "http://git.savannah.gnu.org/")
+  (let* ((git-sv "http://git.savannah.gnu.org/")
          (urls
-          (if (eq (nth 1 extern-desc) :core)
-              (let* ((files (nth 2 extern-desc))
+          (if (eq (nth 1 pkg-spec) :core)
+              (let* ((files (nth 2 pkg-spec))
                      (file (if (listp files)
                                (directory-file-name
                                 (file-name-directory
@@ -846,12 +862,9 @@ Rename DIR/ to PKG-VERS/, and return the descriptor."
                           ,(if (listp files)
                                "gitweb/?p=emacs.git;a=tree;f="
                              "gitweb/?p=emacs.git;a=blob;f="))))
-            (mapcar (lambda (s) (format s archive--gitrepo name))
-                    (if (eq (nth 1 extern-desc) :external)
-                        '("cgit/%s/?h=externals/%s"
-                          "gitweb/?p=%s;a=shortlog;h=refs/heads/externals/%s")
-                      '("cgit/%s/tree/packages/%s"
-                        "gitweb/?p=%s;a=tree;f=packages/%s"))))))
+            (mapcar (lambda (s) (format s archive--gitrepo (car pkg-spec)))
+                    '("cgit/%s/?h=externals/%s"
+                      "gitweb/?p=%s;a=shortlog;h=refs/heads/externals/%s")))))
     (insert (format
              (concat (format "<dt>Browse %srepository</dt> <dd>" (if url "ELPA's " ""))
                      "<a href=%S>%s</a> or <a href=%S>%s</a></dd>\n")
@@ -860,13 +873,14 @@ Rename DIR/ to PKG-VERS/, and return the descriptor."
              (concat git-sv (nth 1 urls))
              'Gitweb))))
 
-(defun archive--html-make-pkg (pkg files &optional srcdir)
+(defun archive--html-make-pkg (pkg pkg-spec files &optional srcdir)
   (let* ((name (symbol-name (car pkg)))
          (latest (package-version-join (aref (cdr pkg) 0)))
          (srcdir (or srcdir
                      (expand-file-name name "../../build/packages")))
          (mainsrcfile (expand-file-name (format "%s.el" name) srcdir))
          (desc (aref (cdr pkg) 2)))
+    (cl-assert (equal name (car pkg-spec)))
     (with-temp-buffer
       (insert (archive--html-header
                (format "%s ELPA - %s" archive--name name)
@@ -894,7 +908,7 @@ Rename DIR/ to PKG-VERS/, and return the descriptor."
                                 "<" (cdr maint) ">")))
           (insert (format "<dt>Maintainer</dt> <dd>%s</dd>\n" (archive--quote maint)))))
       (archive--insert-repolinks
-       name srcdir mainsrcfile
+       pkg-spec
        (or (cdr (assoc :url (aref (cdr pkg) 4)))
            (archive--get-prop "URL" name srcdir mainsrcfile)))
       (insert "</dl>")
@@ -913,6 +927,7 @@ Rename DIR/ to PKG-VERS/, and return the descriptor."
           (write-region rm nil (concat name "-readme.txt"))
           (insert "<h2>Full description</h2><pre>\n" (archive--quote rm)
                   "\n</pre>\n")))
+      ;; (message "latest=%S; files=%S" latest files)
       (unless (< (length files) (if (zerop (length latest)) 1 2))
         (insert (format "<h2>Old versions</h2><table>\n"))
         (dolist (file
@@ -964,6 +979,7 @@ Rename DIR/ to PKG-VERS/, and return the descriptor."
 
 (defun batch-html-make-index ()
   (let ((packages (make-hash-table :test #'equal))
+        (specs (archive--form-from-file-contents "externals-list"))
         (archive-contents
          ;; Skip the first element which is a version number.
          (cdr (archive--form-from-file-contents "archive-contents"))))
@@ -996,6 +1012,7 @@ Rename DIR/ to PKG-VERS/, and return the descriptor."
                               ;; Add entry at the end.
                               (nconc archive-contents (list entry)))
                         entry)))
+                (assoc pkg-name specs)
                 files))
              packages)
     (archive--html-make-index archive-contents)))
@@ -1003,6 +1020,11 @@ Rename DIR/ to PKG-VERS/, and return the descriptor."
 (defun archive--pull (dirname)
   (let ((default-directory (archive--dirname dirname)))
     (with-temp-buffer
+      ;; Undo any local changes to `<pkg>-pkg.el', in case it's under
+      ;; version control.
+      (archive--call t "git" "checkout" "--"
+                     (concat (file-name-nondirectory dirname) "-pkg.el"))
+      (erase-buffer)              ;Throw away the error message we usually get.
       (cond
        ((file-directory-p ".git")
         (message "Running git pull in %S" default-directory)
@@ -1230,19 +1252,13 @@ If WITH-CORE is non-nil, it means we manage :core packages as well."
 
 (defun archive-add/remove/update-externals ()
   "Remove non-package directories and fetch external packages."
-  (let ((specs (archive--read-externals-list)))
-    (let ((with-core (archive--sync-emacs-repo)))
-      (archive--cleanup-packages specs with-core)
-      (pcase-dolist ((and pkg-spec `(,name ,kind ,_url)) specs)
-        (pcase kind
-          (`:external (archive--external-package-sync pkg-spec))
-          (`:core (when with-core (archive--core-package-sync pkg-spec)))
-          (_ (message "Unknown external package kind `%S' for %s"
-                      kind name)))))))
+  (let ((command-line-args-left '("-")))
+    (batch-archive-update-worktrees)))
 
 (defun batch-archive-update-worktrees (&rest _)
   (let ((specs (archive--form-from-file-contents "externals-list"))
-        (pkgs command-line-args-left))
+        (pkgs command-line-args-left)
+        (with-core (archive--sync-emacs-repo)))
     (setq command-line-args-left nil)
     (if (equal pkgs '("-")) (setq pkgs (mapcar #'car specs)))
     (dolist (pkg pkgs)
@@ -1250,31 +1266,10 @@ If WITH-CORE is non-nil, it means we manage :core packages as well."
              (kind (nth 1 pkg-spec)))
         (pcase kind
           (`:external (archive--external-package-sync pkg-spec))
-          ;; (`:core (when with-core (archive--core-package-sync definition)))
+          (`:core (when with-core (archive--core-package-sync pkg-spec)))
           (_ (if pkg-spec
-                 (message "Unknown external package kind `%S' for %s"
-                          kind pkg)
-               (message "Unknown external package %s" pkg))))))))
-
-;;; Manage .gitignore
-
-(defun archive-gitignore-externals (elf gf)
-  (let ((pkgs (cl-loop
-               for (name kind . _) in (archive--read-externals-list
-                                       (file-name-directory elf))
-               when (memq kind '(:external :core))
-               collect name)))
-    (with-current-buffer (find-file-noselect gf)
-      (goto-char (point-min))
-      (when (re-search-forward
-             "#.*External.*git.*\n\\(packages/[^*/\n]+/?\n\\)+"
-             nil 'move)
-        (replace-match ""))
-      (insert "# External packages with their own .git tree [autogenerated].\n"
-              (mapconcat (lambda (p) (format "packages/%s/\n" p))
-                         (sort pkgs #'string<)
-                         ""))
-      (save-buffer))))
+                 (message "Unknown package kind `%S' for %s" kind pkg)
+               (message "Unknown package %s" pkg))))))))
 
 ;;; Fetch updates from upstream
 
