@@ -9,3 +9,5 @@ core
 /packages/
 /archive/
 /archive-devel/
+/admin/
+GNUmakefile
