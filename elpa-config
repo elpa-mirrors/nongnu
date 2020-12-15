@@ -1,0 +1,9 @@
+;; -*- lisp-data -*-
+
+((name			"NonGNU")
+ (gitrepo		"emacs/nongnu.git")
+ (url			"https://elpa.nongnu.org/nongnu/")
+ (branch-prefix		"externals/")
+ (release-branch-prefix	"externals-release/")
+ (specs-file		"externals-list")
+ (debug			nil))
