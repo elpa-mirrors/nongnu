@@ -1,0 +1,27 @@
+;; -*- lisp-data -*-
+
+;; List of packages.
+;; The list is made of elements of the form (NAME . PLIST)
+;; Every package needs a corresponding Git branch in the repository
+;; with name `externals/NAME`.
+;;
+;; See "Specifications" in the admin/README file for the properties
+;; that can be used in PLIST.
+
+(
+ ("caml"		:url "https://github.com/ocaml/caml-mode"
+  ;; The version 4.7.1 from Melpa-stable seems to correspond to
+  ;; revision a9134009.
+  :version-map ((nil "4.7.1" "a9134009bd037a39cbda21806867d0534d340bca")))
+ ("markdown-mode"	:url "https://github.com/jrblevin/markdown-mode"
+  :readme "README.md"
+  ;; Not needed any more:
+  ;; :dont-release "-dev\\'"
+  )
+ ("sly"			:url "https://github.com/joaotavora/sly"
+  :texinfo "doc/sly.texi"
+  ;; Not needed any more:
+  ;; :version-map (("1.0.0-beta-3" "1.0.0beta3"))
+  )
+ ("tuareg"		:url "https://github.com/ocaml/tuareg.git")
+ )
