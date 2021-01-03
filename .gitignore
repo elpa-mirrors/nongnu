@@ -6,6 +6,7 @@
 ChangeLog
 core
 /emacs
+/.pkg-descs.mk
 /packages/
 /archive/
 /archive-devel/
