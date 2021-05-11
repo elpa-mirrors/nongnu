@@ -26,6 +26,11 @@
  ("request"		:url "https://github.com/tkf/emacs-request"
   :ignored-files ("tests" "doc" "COPYING"))
 
+ ("org-contrib"		:url "https://git.sr.ht/~bzg/org-contrib"
+  :lisp-dir "lisp"
+  :readme "README.org"
+  :ignored-files ("README.md"))
+
  ("sly"			:url "https://github.com/joaotavora/sly"
   :texinfo "doc/sly.texi"
   ;; Not needed any more:
