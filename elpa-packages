@@ -22,6 +22,24 @@
    "README.md" "RelNotes.org"
    "lisp/git-rebase.el" "lisp/magit-*.el" "lisp/magit.el"))
 
+ ("geiser"		:url "https://gitlab.com/emacs-geiser/geiser.git"
+  :lisp-dir "elisp"
+  :readme "readme.org"
+  :doc "doc/geiser.texi")
+
+ ("geiser-chez"		:url "https://gitlab.com/emacs-geiser/chez.git")
+ ("geiser-chibi"	:url "https://gitlab.com/emacs-geiser/chibi.git")
+ ("geiser-chicken"	:url "https://gitlab.com/emacs-geiser/chicken.git")
+ ("geiser-gambit"	:url "https://gitlab.com/emacs-geiser/gambit.git")
+ ("geiser-gauche"	:url "https://gitlab.com/emacs-geiser/gauche.git")
+ ("geiser-guile"	:url "https://gitlab.com/emacs-geiser/guile.git")
+ ("geiser-kawa"		:url "https://gitlab.com/emacs-geiser/kawa.git"
+  :lisp-dir "elisp"
+  :ignored-files ("elisp/tests"))
+ ("geiser-mit"		:url "https://gitlab.com/emacs-geiser/mit.git")
+ ("geiser-racket"	:url "https://gitlab.com/emacs-geiser/racket.git")
+ ("geiser-stklos"	:url "https://gitlab.com/emacs-geiser/stklos.git")
+
  ("magit"		:url "https://github.com/magit/magit"
   :lisp-dir "lisp"
   :doc "Documentation/magit.texi"
