@@ -108,4 +108,7 @@
  ("with-editor"		:url "https://github.com/magit/with-editor"
   :ignored-files ("htmlxref.cnf" ".travis.yml" ".mailmap" "Makefile")
   :doc "with-editor.texi")
+
+ ("wgrep"		:url "https://github.com/mhayashi1120/Emacs-wgrep")
+
  )
