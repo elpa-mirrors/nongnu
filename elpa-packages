@@ -14,8 +14,47 @@
   ;; revision a9134009.
   :version-map ((nil "4.7.1" "a9134009bd037a39cbda21806867d0534d340bca")))
 
- ;; ("magit" :url "https://github.com/magit/magit"
- ;;  :lisp-dir "lisp")
+ ("git-commit"		:url "https://github.com/magit/magit"
+  :lisp-dir "lisp"
+  :ignored-files
+  (".dir-locals.el" ".github" ".mailmap"
+   "Documentation" "Makefile" "default.mk" "lisp/Makefile" "lisp/*-pkg.el" "t"
+   "README.md" "RelNotes.org"
+   "lisp/git-rebase.el" "lisp/magit-*.el" "lisp/magit.el"))
+
+ ("magit"		:url "https://github.com/magit/magit"
+  :lisp-dir "lisp"
+  :doc "Documentation/magit.texi"
+  :renames (("Documenation/" ""))
+  :ignored-files
+  (".dir-locals.el" ".github" ".mailmap"
+   "Documentation" "Makefile" "default.mk" "lisp/Makefile" "lisp/*-pkg.el" "t"
+   "lisp/git-commit.el" "lisp/magit-libgit.el" "lisp/magit-section.el"))
+
+ ("magit-section"	:url "https://github.com/magit/magit"
+  :lisp-dir "lisp"
+  :doc "Documentation/magit-section.texi"
+  :renames (("Documenation/" ""))
+  :ignored-files
+  (".dir-locals.el" ".github" ".mailmap"
+   "Documentation" "Makefile" "default.mk" "lisp/Makefile" "lisp/*-pkg.el" "t"
+   "README.md" "RelNotes.org"
+   "lisp/git-commit.el" "lisp/git-rebase.el" "lisp/magit-apply.el"
+   "lisp/magit-autoloads.el" "lisp/magit-autorevert.el" "lisp/magit-bisect.el"
+   "lisp/magit-blame.el" "lisp/magit-bookmark.el" "lisp/magit-branch.el"
+   "lisp/magit-clone.el" "lisp/magit-commit.el" "lisp/magit-core.el"
+   "lisp/magit-diff.el" "lisp/magit-ediff.el" "lisp/magit.el"
+   "lisp/magit-extras.el" "lisp/magit-fetch.el" "lisp/magit-files.el"
+   "lisp/magit-git.el" "lisp/magit-gitignore.el" "lisp/magit-imenu.el"
+   "lisp/magit-libgit.el" "lisp/magit-log.el" "lisp/magit-margin.el"
+   "lisp/magit-merge.el" "lisp/magit-mode.el" "lisp/magit-notes.el"
+   "lisp/magit-obsolete.el" "lisp/magit-patch.el" "lisp/magit-process.el"
+   "lisp/magit-pull.el" "lisp/magit-push.el" "lisp/magit-reflog.el"
+   "lisp/magit-refs.el" "lisp/magit-remote.el" "lisp/magit-repos.el"
+   "lisp/magit-reset.el" "lisp/magit-sequence.el" "lisp/magit-stash.el"
+   "lisp/magit-status.el" "lisp/magit-submodule.el" "lisp/magit-subtree.el"
+   "lisp/magit-tag.el" "lisp/magit-transient.el" "lisp/magit-utils.el"
+   "lisp/magit-wip.el" "lisp/magit-worktree.el"))
 
  ("markdown-mode"	:url "https://github.com/jrblevin/markdown-mode"
   :readme "README.md"
@@ -39,6 +78,7 @@
 
  ("tuareg"		:url "https://github.com/ocaml/tuareg.git")
 
- ;; ("with-editor" :url "https://github.com/magit/with-editor"
- ;;  )
+ ("with-editor"		:url "https://github.com/magit/with-editor"
+  :ignored-files ("htmlxref.cnf" ".travis.yml" ".mailmap" "Makefile")
+  :doc "with-editor.texi")
  )
