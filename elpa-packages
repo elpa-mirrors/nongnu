@@ -118,6 +118,9 @@
  ("request"		:url "https://github.com/tkf/emacs-request"
   :ignored-files ("tests" "doc" "COPYING"))
 
+ ("rust-mode"		:url "https://github.com/rust-lang/rust-mode"
+  :ignored-files ("test-*" "triagebot.toml" "*.sh"))
+
  ("org-contrib"		:url "https://git.sr.ht/~bzg/org-contrib"
   :lisp-dir "lisp"
   :readme "README.org"
