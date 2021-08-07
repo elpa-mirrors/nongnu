@@ -146,4 +146,7 @@
 
  ("wgrep"		:url "https://github.com/mhayashi1120/Emacs-wgrep")
 
+ ("yasnippet-snippets"	:url "https://github.com/AndreaCrotti/yasnippet-snippets"
+  :ignored-files ("report" "snippets.html"))
+
  )
