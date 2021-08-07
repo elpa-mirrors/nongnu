@@ -49,6 +49,9 @@
  ("geiser-racket"	:url "https://gitlab.com/emacs-geiser/racket.git")
  ("geiser-stklos"	:url "https://gitlab.com/emacs-geiser/stklos.git")
 
+ ("go-mode"		:url "https://github.com/dominikh/go-mode.el"
+  :ignored-files ("generate_authors.sh"))
+
  ("goto-chg"		:url "https://github.com/emacs-evil/goto-chg")
 
  ("lua-mode"		:url "https://github.com/immerrr/lua-mode/"
