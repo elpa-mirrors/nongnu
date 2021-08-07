@@ -126,6 +126,9 @@
   :readme "README.org"
   :ignored-files ("README.md"))
 
+ ("slime"		:url "https://github.com/slime/slime"
+  :doc "doc/slime.texi")
+
  ("sly"			:url "https://github.com/joaotavora/sly"
   :texinfo "doc/sly.texi"
   ;; Not needed any more:
