@@ -14,6 +14,10 @@
   ;; revision a9134009.
   :version-map ((nil "4.7.1" "a9134009bd037a39cbda21806867d0534d340bca")))
 
+ ("evil"		:url "https://github.com/emacs-evil/evil"
+  :ignored-files ("lib" "scripts")
+  :doc "doc/build/texinfo/evil.texi")
+
  ("git-commit"		:url "https://github.com/magit/magit"
   :lisp-dir "lisp"
   :ignored-files
@@ -39,6 +43,8 @@
  ("geiser-mit"		:url "https://gitlab.com/emacs-geiser/mit.git")
  ("geiser-racket"	:url "https://gitlab.com/emacs-geiser/racket.git")
  ("geiser-stklos"	:url "https://gitlab.com/emacs-geiser/stklos.git")
+
+ ("goto-chg"		:url "https://github.com/emacs-evil/goto-chg")
 
  ("magit"		:url "https://github.com/magit/magit"
   :lisp-dir "lisp"
