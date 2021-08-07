@@ -137,6 +137,9 @@
 
  ("tuareg"		:url "https://github.com/ocaml/tuareg.git")
 
+ ("web-mode"		:url "https://github.com/fxbois/web-mode"
+  :ignored-files ("issues" "tests" "run.sh"))
+
  ("with-editor"		:url "https://github.com/magit/with-editor"
   :ignored-files ("htmlxref.cnf" ".travis.yml" ".mailmap" "Makefile")
   :doc "with-editor.texi")
