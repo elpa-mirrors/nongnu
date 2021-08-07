@@ -109,6 +109,9 @@
   ;; :dont-release "-dev\\'"
   )
 
+ ("multiple-cursors"	:url "https://github.com/magnars/multiple-cursors.el"
+  :ignored-files ("features"))
+
  ("request"		:url "https://github.com/tkf/emacs-request"
   :ignored-files ("tests" "doc" "COPYING"))
 
