@@ -112,6 +112,9 @@
  ("multiple-cursors"	:url "https://github.com/magnars/multiple-cursors.el"
   :ignored-files ("features"))
 
+ ("paredit"		:url "https://mumble.net/~campbell/git/paredit.git"
+  :ignored-files ("check.sh" "genhtml.sh" "test.el"))
+
  ("request"		:url "https://github.com/tkf/emacs-request"
   :ignored-files ("tests" "doc" "COPYING"))
 
