@@ -100,6 +100,9 @@
    "lisp/magit-tag.el" "lisp/magit-transient.el" "lisp/magit-utils.el"
    "lisp/magit-wip.el" "lisp/magit-worktree.el"))
 
+ ("macrostep"		:url "https://github.com/joddie/macrostep"
+  :ignored-files ("lib" "macrostep-test.el"))
+
  ("markdown-mode"	:url "https://github.com/jrblevin/markdown-mode"
   :readme "README.md"
   ;; Not needed any more:
