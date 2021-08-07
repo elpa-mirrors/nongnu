@@ -135,6 +135,11 @@
   ;; :version-map (("1.0.0-beta-3" "1.0.0beta3"))
   )
 
+ ("smartparens"		:url "https://github.com/Fuco1/smartparens"
+  :ignored-files ("dev" "doc" "images" "test")
+  ;; See https://github.com/Fuco1/smartparens/releases/tag/1.11.0
+  :version-map ((nil "1.11.0" "4873352b5d0a1c5142658122de1b6950b8fe7e4d")))
+
  ("tuareg"		:url "https://github.com/ocaml/tuareg.git")
 
  ("web-mode"		:url "https://github.com/fxbois/web-mode"
