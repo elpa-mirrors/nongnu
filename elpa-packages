@@ -14,6 +14,11 @@
   ;; revision a9134009.
   :version-map ((nil "4.7.1" "a9134009bd037a39cbda21806867d0534d340bca")))
 
+ ("editorconfig"	:url "https://github.com/editorconfig/editorconfig-emacs"
+  :doc "doc/editorconfig.texi"
+  :news "CHANGELOG.md"
+  :ignored-files ("bin" "ert-tests"))
+
  ("evil"		:url "https://github.com/emacs-evil/evil"
   :ignored-files ("lib" "scripts")
   :doc "doc/build/texinfo/evil.texi")
