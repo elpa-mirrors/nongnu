@@ -57,7 +57,11 @@
  ("haskell-mode"	:url "https://github.com/haskell/haskell-mode"
   :doc "doc/haskell-mode.texi"
   :ignored-files ("images" "test" "logo.svg")
-  ;; See https://github.com/haskell/haskell-mode/releases/tag/17.2
+  ;; See https://github.com/haskell/haskell-mode/issues/1755
+  ;;
+  ;; Until a version tag is added, the commit of the latest tag is
+  ;; used to determine the last stable release:
+  ;; https://github.com/haskell/haskell-mode/releases/tag/17.2
   :version-map ((nil "17.2" "e72677668f5fc7cc148008e885a0f256e245dd43")))
 
  ("htmlize"		:url "https://github.com/hniksic/emacs-htmlize"
@@ -137,7 +141,11 @@
 
  ("smartparens"		:url "https://github.com/Fuco1/smartparens"
   :ignored-files ("dev" "doc" "images" "test")
-  ;; See https://github.com/Fuco1/smartparens/releases/tag/1.11.0
+  ;; See https://github.com/Fuco1/smartparens/issues/1095
+  ;;
+  ;; Until a version tag is added, the commit of the latest tag is
+  ;; used to mark the last stable release:
+  ;; https://github.com/Fuco1/smartparens/releases/tag/1.11.0
   :version-map ((nil "1.11.0" "4873352b5d0a1c5142658122de1b6950b8fe7e4d")))
 
  ("tuareg"		:url "https://github.com/ocaml/tuareg.git")
