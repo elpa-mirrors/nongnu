@@ -14,6 +14,10 @@
   ;; revision a9134009.
   :version-map ((nil "4.7.1" "a9134009bd037a39cbda21806867d0534d340bca")))
 
+ ("clojure-mode"	:url "https://github.com/clojure-emacs/clojure-mode"
+  :ignored-files ("clojure-mode-extra-font-locking.el" "test" "test.clj")
+  :news "CHANGELOG.md")
+
  ("editorconfig"	:url "https://github.com/editorconfig/editorconfig-emacs"
   :doc "doc/editorconfig.texi"
   :news "CHANGELOG.md"
