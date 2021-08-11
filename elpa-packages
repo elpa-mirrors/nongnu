@@ -18,6 +18,8 @@
   :ignored-files ("clojure-mode-extra-font-locking.el" "doc" "test" "test.clj")
   :news "CHANGELOG.md")
 
+ ("crux"		:url "https://github.com/bbatsov/crux")
+
  ("editorconfig"	:url "https://github.com/editorconfig/editorconfig-emacs"
   :doc "doc/editorconfig.texi"
   :news "CHANGELOG.md"
@@ -58,6 +60,8 @@
 
  ("goto-chg"		:url "https://github.com/emacs-evil/goto-chg")
 
+ ("guru-mode"		:url "https://github.com/bbatsov/guru-mode")
+
  ("haskell-mode"	:url "https://github.com/haskell/haskell-mode"
   :doc "doc/haskell-mode.texi"
   :ignored-files ("images" "test" "logo.svg")
@@ -70,6 +74,10 @@
 
  ("htmlize"		:url "https://github.com/hniksic/emacs-htmlize"
   :ignored-files ("htmlize.el.html"))
+
+ ("inf-clojure"		:url "https://github.com/clojure-emacs/inf-clojure"
+  :ignored-files ("test")
+  :news "CHANGELOG.md")
 
  ("lua-mode"		:url "https://github.com/immerrr/lua-mode/"
   :ignored-files ("test" "travis" "init-tryout.el"))
@@ -123,8 +131,14 @@
  ("paredit"		:url "https://mumble.net/~campbell/git/paredit.git"
   :ignored-files ("check.sh" "genhtml.sh" "test.el"))
 
+ ("projectile"  	:url "https://github.com/bbatsov/projectile"
+  :ignored-files ("doc" "test")
+  :news "CHANGELOG.md")
+
  ("request"		:url "https://github.com/tkf/emacs-request"
   :ignored-files ("tests" "doc" "COPYING"))
+
+ ("rubocop"		:url "https://github.com/rubocop/rubocop-emacs")
 
  ("rust-mode"		:url "https://github.com/rust-lang/rust-mode"
   :ignored-files ("test-*" "triagebot.toml" "*.sh"))
