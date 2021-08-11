@@ -135,6 +135,10 @@
   :ignored-files ("doc" "test")
   :news "CHANGELOG.md")
 
+ ("proof-general"	:url "https://github.com/ProofGeneral/PG"
+  :ignored-files ("ci")
+  :news "CHANGES")
+
  ("request"		:url "https://github.com/tkf/emacs-request"
   :ignored-files ("tests" "doc" "COPYING"))
 
