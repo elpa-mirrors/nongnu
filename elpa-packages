@@ -137,7 +137,8 @@
 
  ("proof-general"	:url "https://github.com/ProofGeneral/PG"
   :ignored-files ("ci")
-  :news "CHANGES")
+  :news "CHANGES"
+  :doc "doc/ProofGeneral.texi")
 
  ("request"		:url "https://github.com/tkf/emacs-request"
   :ignored-files ("tests" "doc" "COPYING"))
