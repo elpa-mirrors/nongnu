@@ -72,6 +72,11 @@
   ;; https://github.com/haskell/haskell-mode/releases/tag/17.2
   :version-map ((nil "17.2" "e72677668f5fc7cc148008e885a0f256e245dd43")))
 
+ ("highlight-parentheses"
+  :url "https://git.sr.ht/~tsdh/highlight-parentheses.el"
+  :branch "main"
+  :readme "README.md")
+
  ("htmlize"		:url "https://github.com/hniksic/emacs-htmlize"
   :ignored-files ("htmlize.el.html"))
 
