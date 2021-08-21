@@ -62,15 +62,17 @@
 
  ("guru-mode"		:url "https://github.com/bbatsov/guru-mode")
 
- ("haskell-mode"	:url "https://github.com/haskell/haskell-mode"
-  :doc "doc/haskell-mode.texi"
-  :ignored-files ("images" "test" "logo.svg")
-  ;; See https://github.com/haskell/haskell-mode/issues/1755
-  ;;
-  ;; Until a version tag is added, the commit of the latest tag is
-  ;; used to determine the last stable release:
-  ;; https://github.com/haskell/haskell-mode/releases/tag/17.2
-  :version-map ((nil "17.2" "e72677668f5fc7cc148008e885a0f256e245dd43")))
+ ;; haskell-mode has been removed until further notice from the
+ ;; upstream maintainers:
+ ;; https://github.com/haskell/haskell-mode/issues/1755#issuecomment-896127958
+ ;; 
+ ;; ("haskell-mode"	:url "https://github.com/haskell/haskell-mode"
+ ;;  :doc "doc/haskell-mode.texi"
+ ;;  :ignored-files ("images" "test" "logo.svg")
+ ;;  ;; Until a version tag is added, the commit of the latest tag is
+ ;;  ;; used to determine the last stable release:
+ ;;  ;; https://github.com/haskell/haskell-mode/releases/tag/17.2
+ ;;  :version-map ((nil "17.2" "e72677668f5fc7cc148008e885a0f256e245dd43")))
 
  ("highlight-parentheses"
   :url "https://git.sr.ht/~tsdh/highlight-parentheses.el"
