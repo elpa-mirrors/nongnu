@@ -80,7 +80,8 @@
   :readme "README.md")
 
  ("htmlize"		:url "https://github.com/hniksic/emacs-htmlize"
-  :ignored-files ("htmlize.el.html"))
+  :ignored-files ("htmlize.el.html")
+  :release-branch "stable"))
 
  ("inf-clojure"		:url "https://github.com/clojure-emacs/inf-clojure"
   :ignored-files ("test")
