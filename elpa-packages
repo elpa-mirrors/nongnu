@@ -246,4 +246,7 @@
  ("yasnippet-snippets"	:url "https://github.com/AndreaCrotti/yasnippet-snippets"
   :ignored-files ("report" "snippets.html"))
 
+ ("zig-mode"		:url "https://github.com/ziglang/zig-mode"
+  :ignored-files ("appveyor.yml" "run_tests.sh" "tests.el"))
+
  )
