@@ -202,6 +202,9 @@
 
  ("sass-mode"		:url "https://github.com/nex3/sass-mode")
 
+ ("scala-mode"		:url "https://github.com/hvesalai/emacs-scala-mode"
+  :ignored-files ("test" "Cask" "Makefile"))
+
  ("slime"		:url "https://github.com/slime/slime"
   :doc "doc/slime.texi")
 
