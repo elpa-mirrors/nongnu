@@ -226,6 +226,9 @@
  ("swift-mode"		:url "https://github.com/swift-emacs/swift-mode"
   :ignored-files ("scripts" "test" "Eldev" "Makefile"))
 
+ ("systemd"		:url "https://github.com/holomorph/systemd-mode"
+  :ignored-files ("test" "Makefile"))
+
  ("tuareg"		:url "https://github.com/ocaml/tuareg.git")
 
  ("web-mode"		:url "https://github.com/fxbois/web-mode"
