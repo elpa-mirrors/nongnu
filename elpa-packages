@@ -78,6 +78,8 @@
 
  ("guru-mode"		:url "https://github.com/bbatsov/guru-mode")
 
+ ("haml-mode"		:url "https://github.com/nex3/haml-mode")
+
  ;; haskell-mode has been removed until further notice from the
  ;; upstream maintainers:
  ;; https://github.com/haskell/haskell-mode/issues/1755#issuecomment-896127958
