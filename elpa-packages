@@ -223,6 +223,9 @@
   ;; https://github.com/Fuco1/smartparens/releases/tag/1.11.0
   :version-map ((nil "1.11.0" "4873352b5d0a1c5142658122de1b6950b8fe7e4d")))
 
+ ("swift-mode"		:url "https://github.com/swift-emacs/swift-mode"
+  :ignored-files ("scripts" "test" "Eldev" "Makefile"))
+
  ("tuareg"		:url "https://github.com/ocaml/tuareg.git")
 
  ("web-mode"		:url "https://github.com/fxbois/web-mode"
