@@ -109,6 +109,8 @@
   :ignored-files ("test")
   :news "CHANGELOG.md")
 
+ ("j-mode"		:url "https://github.com/zellio/j-mode")
+
  ("lua-mode"		:url "https://github.com/immerrr/lua-mode/"
   :ignored-files ("test" "travis" "init-tryout.el"))
 
