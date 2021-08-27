@@ -27,6 +27,9 @@
 
  ("crux"		:url "https://github.com/bbatsov/crux")
 
+ ("d-mode"		:url "https://github.com/Emacs-D-Mode-Maintainers/Emacs-D-Mode"
+  :ignored-files ("coverage" "tests-todo" "tests" "Cask" "Makefile" "d-mode-tests.el"))
+
  ("editorconfig"	:url "https://github.com/editorconfig/editorconfig-emacs"
   :doc "doc/editorconfig.texi"
   :news "CHANGELOG.md"
