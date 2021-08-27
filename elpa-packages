@@ -167,6 +167,8 @@
  ("nasm-mode"		:url "https://github.com/skeeto/nasm-mode"
   :ignored-files ("Makefile"))
 
+ ("nginx-mode"		:url "https://github.com/ajc/nginx-mode")
+
  ("paredit"		:url "https://mumble.net/~campbell/git/paredit.git"
   :ignored-files ("check.sh" "genhtml.sh" "test.el"))
 
