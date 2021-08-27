@@ -11,6 +11,9 @@
 (
  ("apache-mode"		:url "https://github.com/emacs-php/apache-mode")
 
+ ("arduino-mode"	:url "https://github.com/stardiviner/arduino-mode"
+  :ignored-files ("Cask"))
+
  ("caml"		:url "https://github.com/ocaml/caml-mode"
   ;; The version 4.7.1 from Melpa-stable seems to correspond to
   ;; revision a9134009.
