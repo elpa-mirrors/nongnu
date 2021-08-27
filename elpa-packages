@@ -68,6 +68,9 @@
  ("geiser-racket"	:url "https://gitlab.com/emacs-geiser/racket.git")
  ("geiser-stklos"	:url "https://gitlab.com/emacs-geiser/stklos.git")
 
+ ("gnuplot"		:url "https://github.com/emacsorphanage/gnuplot"
+  :ignored-files ("Makefile" "gpelcard.tex"))
+
  ("go-mode"		:url "https://github.com/dominikh/go-mode.el"
   :ignored-files ("generate_authors.sh"))
 
