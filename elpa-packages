@@ -111,6 +111,9 @@
 
  ("j-mode"		:url "https://github.com/zellio/j-mode")
 
+ ("julia-mode"		:url "https://github.com/JuliaEditorSupport/julia-emacs"
+  :ignored-files ("julia-mode-tests.el" "logo.png"))
+
  ("lua-mode"		:url "https://github.com/immerrr/lua-mode/"
   :ignored-files ("test" "travis" "init-tryout.el"))
 
