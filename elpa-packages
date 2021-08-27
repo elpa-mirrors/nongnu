@@ -164,6 +164,9 @@
  ("multiple-cursors"	:url "https://github.com/magnars/multiple-cursors.el"
   :ignored-files ("features"))
 
+ ("nasm-mode"		:url "https://github.com/skeeto/nasm-mode"
+  :ignored-files ("Makefile"))
+
  ("paredit"		:url "https://mumble.net/~campbell/git/paredit.git"
   :ignored-files ("check.sh" "genhtml.sh" "test.el"))
 
