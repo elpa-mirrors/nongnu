@@ -9,6 +9,8 @@
 ;; that can be used in PLIST.
 
 (
+ ("apache-mode"		:url "https://github.com/emacs-php/apache-mode")
+
  ("caml"		:url "https://github.com/ocaml/caml-mode"
   ;; The version 4.7.1 from Melpa-stable seems to correspond to
   ;; revision a9134009.
