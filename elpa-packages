@@ -172,6 +172,9 @@
  ("paredit"		:url "https://mumble.net/~campbell/git/paredit.git"
   :ignored-files ("check.sh" "genhtml.sh" "test.el"))
 
+ ("php-mode"		:url "https://github.com/emacs-php/php-mode"
+  :lisp-dir "lisp")
+
  ("projectile"  	:url "https://github.com/bbatsov/projectile"
   :ignored-files ("doc" "test")
   :news "CHANGELOG.md")
