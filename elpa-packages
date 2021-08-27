@@ -14,6 +14,8 @@
  ("arduino-mode"	:url "https://github.com/stardiviner/arduino-mode"
   :ignored-files ("Cask"))
 
+ ("bison-mode"		:url "https://github.com/Wilfred/bison-mode")
+
  ("caml"		:url "https://github.com/ocaml/caml-mode"
   ;; The version 4.7.1 from Melpa-stable seems to correspond to
   ;; revision a9134009.
