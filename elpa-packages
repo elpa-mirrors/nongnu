@@ -101,6 +101,10 @@
   :ignored-files ("htmlize.el.html")
   :release-branch "stable")
 
+ ("idris-mode"		:url "https://github.com/idris-hackers/idris-mode"
+  :ignored-files ("test-data" "Makefile" "documentation.tex" "logo-small.png"
+		  "idris-tests*.el"))
+
  ("inf-clojure"		:url "https://github.com/clojure-emacs/inf-clojure"
   :ignored-files ("test")
   :news "CHANGELOG.md")
@@ -166,6 +170,9 @@
   :ignored-files ("ci")
   :news "CHANGES"
   :doc "doc/ProofGeneral.texi")
+
+ ("prop-menu"		:url "https://github.com/david-christiansen/prop-menu-el"
+  :ignored-files ("Makefile" "prop-menu-tests.el"))
 
  ("request"		:url "https://github.com/tkf/emacs-request"
   :ignored-files ("tests" "doc" "COPYING"))
