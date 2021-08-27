@@ -200,6 +200,8 @@
   :readme "README.org"
   :ignored-files ("README.md"))
 
+ ("sass-mode"		:url "https://github.com/nex3/sass-mode")
+
  ("slime"		:url "https://github.com/slime/slime"
   :doc "doc/slime.texi")
 
