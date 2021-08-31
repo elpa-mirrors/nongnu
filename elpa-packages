@@ -31,7 +31,8 @@
   :ignored-files ("coverage" "tests-todo" "tests" "Cask" "Makefile" "d-mode-tests.el"))
 
  ("dart-mode"		:url "https://github.com/bradyt/dart-mode"
-  :ignored-files ("test" "Cask" "Makefile"))
+  :ignored-files ("test" "Cask" "Makefile")
+  :news "CHANGELOG.md")
 
  ("editorconfig"	:url "https://github.com/editorconfig/editorconfig-emacs"
   :doc "doc/editorconfig.texi"
@@ -69,7 +70,8 @@
  ("geiser-stklos"	:url "https://gitlab.com/emacs-geiser/stklos.git")
 
  ("gnuplot"		:url "https://github.com/emacsorphanage/gnuplot"
-  :ignored-files ("Makefile" "gpelcard.tex"))
+  :ignored-files ("Makefile" "gpelcard.tex")
+  :news "CHANGELOG.org")
 
  ("go-mode"		:url "https://github.com/dominikh/go-mode.el"
   :ignored-files ("generate_authors.sh"))
@@ -103,7 +105,8 @@
 
  ("idris-mode"		:url "https://github.com/idris-hackers/idris-mode"
   :ignored-files ("test-data" "Makefile" "documentation.tex" "logo-small.png"
-		  "idris-tests*.el"))
+		  "idris-tests*.el")
+  :news "CHANGES.markdown")
 
  ("inf-clojure"		:url "https://github.com/clojure-emacs/inf-clojure"
   :ignored-files ("test")
@@ -112,7 +115,8 @@
  ("j-mode"		:url "https://github.com/zellio/j-mode")
 
  ("julia-mode"		:url "https://github.com/JuliaEditorSupport/julia-emacs"
-  :ignored-files ("julia-mode-tests.el" "logo.png"))
+  :ignored-files ("julia-mode-tests.el" "logo.png")
+  :news "CHANGELOG.md")
 
  ("lua-mode"		:url "https://github.com/immerrr/lua-mode/"
   :ignored-files ("test" "travis" "init-tryout.el"))
@@ -241,7 +245,8 @@
  ("wgrep"		:url "https://github.com/mhayashi1120/Emacs-wgrep")
 
  ("yaml-mode"		:url "https://github.com/yoshiki/yaml-mode"
-  :ignored-files ("test-files" "Makefile"))
+  :ignored-files ("test-files" "Makefile")
+  :news "Changes")
 
  ("yasnippet-snippets"	:url "https://github.com/AndreaCrotti/yasnippet-snippets"
   :ignored-files ("report" "snippets.html"))
