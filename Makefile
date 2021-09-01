@@ -6,5 +6,5 @@ GNUmakefile: admin
 
 admin:
 	git remote add --no-tags -ft elpa-admin \
-	    gnu-elpa https://git.sv.gnu.org/r/emacs/elpa.git
+	    gnu-elpa git://git.sv.gnu.org/emacs/elpa.git
 	git worktree add -b elpa-admin admin gnu-elpa/elpa-admin
