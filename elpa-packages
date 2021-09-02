@@ -177,7 +177,8 @@
   :ignored-files ("check.sh" "genhtml.sh" "test.el"))
 
  ("php-mode"		:url "https://github.com/emacs-php/php-mode"
-  :lisp-dir "lisp")
+  :lisp-dir "lisp"
+  :news "CHANGELOG.md")
 
  ("projectile"  	:url "https://github.com/bbatsov/projectile"
   :ignored-files ("doc" "test")
