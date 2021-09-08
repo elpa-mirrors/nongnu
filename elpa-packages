@@ -252,6 +252,9 @@
  ("lua-mode"		:url "https://github.com/immerrr/lua-mode/"
   :ignored-files ("COPYING" "test" "travis" "init-tryout.el"))
 
+ ("kotlin-mode"		:url "https://github.com/Emacs-Kotlin-Mode-Maintainers/kotlin-mode"
+  :ignored-files ("doc" "test" "Cask" "Makefile"))
+
  ("magit"		:url "https://github.com/magit/magit"
   :lisp-dir "lisp"
   :doc "docs/magit.texi"
