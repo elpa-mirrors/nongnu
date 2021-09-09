@@ -240,6 +240,10 @@
  ("j-mode"		:url "https://github.com/zellio/j-mode"
   :ignored-files ("LICENSE"))
 
+ ("jade-mode"		:url "https://github.com/brianc/jade-mode"
+  :ignored-files ("test" "Cask" "Makefile" "example.jade" "example.json"
+		  "stylus-mode.el"))
+
  ("jinja2-mode"         :url "https://github.com/paradoxxxzero/jinja2-mode.git")
 
  ("julia-mode"		:url "https://github.com/JuliaEditorSupport/julia-emacs"
@@ -448,6 +452,10 @@
   :main-file "spacemacs-common.el"
   :readme "README.md"
   :ignored-files ("LICENSE" "img"))
+
+ ("stylus-mode"		:url "https://github.com/brianc/jade-mode"
+  :ignored-files ("test" "Cask" "Makefile" "example.jade" "example.json"
+		  "jade-mode.el"))
 
  ("subatomic-theme"	:url "https://github.com/cryon/subatomic-theme"
   :ignored-files ("readme-files"))
