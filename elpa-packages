@@ -467,6 +467,8 @@
  ("swift-mode"		:url "https://github.com/swift-emacs/swift-mode"
   :ignored-files ("COPYING" "scripts" "test" "Eldev" "Makefile"))
 
+ ("textile-mode"	:url "https://github.com/juba/textile-mode")
+
  ("systemd"		:url "https://github.com/holomorph/systemd-mode"
   :ignored-files ("LICENSE" "test" "Makefile"))
 
