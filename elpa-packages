@@ -401,6 +401,10 @@
  ("prop-menu"		:url "https://github.com/david-christiansen/prop-menu-el"
   :ignored-files ("Makefile" "prop-menu-tests.el"))
 
+ ("raku-mode"		:url "https://github.com/Raku/raku-mode"
+  :ignored-files ("test" "Cask" "Makefile" "npq-mode.el")
+  :news "CHANGELOG.md")
+
  ("request"		:url "https://github.com/tkf/emacs-request"
   :ignored-files ("tests" "doc" "COPYING"))
 
