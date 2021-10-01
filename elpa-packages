@@ -43,6 +43,8 @@
   :ignored-files ("lib" "scripts")
   :doc "doc/build/texinfo/evil.texi")
 
+ ("flymake-kondor"	:url "https://github.com/turbo-cafe/flymake-kondor")
+
  ("git-commit"		:url "https://github.com/magit/magit"
   :lisp-dir "lisp"
   :ignored-files
