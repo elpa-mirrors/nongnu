@@ -82,6 +82,8 @@
 
  ("haml-mode"		:url "https://github.com/nex3/haml-mode")
 
+ ("haskell-tng-mode"	:url "https://gitlab.com/tseenshe/haskell-tng.el")
+
  ;; haskell-mode has been removed until further notice from the
  ;; upstream maintainers:
  ;; https://github.com/haskell/haskell-mode/issues/1755#issuecomment-896127958
@@ -179,6 +181,8 @@
  ("php-mode"		:url "https://github.com/emacs-php/php-mode"
   :lisp-dir "lisp"
   :news "CHANGELOG.md")
+
+ ("popup"		:url "https://github.com/auto-complete/popup-el")
 
  ("projectile"  	:url "https://github.com/bbatsov/projectile"
   :ignored-files ("doc" "test")
