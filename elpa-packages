@@ -98,6 +98,10 @@
   :news "CHANGELOG.md"
   :ignored-files ("LICENSE" "bin" "ert-tests"))
 
+ ("elpher"	:url "git://thelambdalab.xyz/elpher.git"
+  :doc "elpher.texi"
+  :ignored-files ("Makefile" "ISSUES.org" "RELEASE" "config.mk"))
+
  ("evil"		:url "https://github.com/emacs-evil/evil"
   :ignored-files ("COPYING" "lib" "scripts")
   :doc "doc/build/texinfo/evil.texi")
