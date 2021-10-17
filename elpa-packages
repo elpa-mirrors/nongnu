@@ -82,7 +82,12 @@
 
  ("guru-mode"		:url "https://github.com/bbatsov/guru-mode")
 
- ("haml-mode"		:url "https://github.com/nex3/haml-mode")
+ ("haml-mode"		:url "https://github.com/nex3/haml-mode"
+  ;; The version attribute is set to "0", yet the the maintainer(s?)
+  ;; seem unresponsive (https://github.com/nex3/haml-mode/issues/40)
+  ;; and thus the package isn't published on the main archive.  We
+  ;; manually set the latest commit to a proper version number:
+  :version-map ((nil "3.1.10" "bf5b6c11b1206759d2b28af48765e04882dd1fc4")))
 
  ("haskell-tng-mode"	:url "https://gitlab.com/tseenshe/haskell-tng.el")
 
