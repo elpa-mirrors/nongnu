@@ -223,7 +223,24 @@
  ;;  ;; https://github.com/haskell/haskell-mode/releases/tag/17.2
  ;;  :version-map ((nil "17.2" "e72677668f5fc7cc148008e885a0f256e245dd43")))
 
- ("highlight-parentheses" :url "https://git.sr.ht/~tsdh/highlight-parentheses.el"
+ ("helm"		:url "https://github.com/emacs-helm/helm"
+  :ignored-files ("images" "Cask" "Makefile" "emacs-helm.sh" "helm-core-pkg.el" "helm.el"
+		  "helm-lib.el" "helm-source.el" "helm-multi-match.el"))
+
+ ("helm-core"		:url "https://github.com/emacs-helm/helm"
+  :ignored-files ("images" "Cask" "Makefile" "emacs-helm.sh" "helm-adaptive.el"
+		  "helm-bookmark.el" "helm-buffers.el" "helm-color.el" "helm-comint.el"
+		  "helm-command.el" "helm-config.el" "helm-dabbrev.el" "helm-easymenu.el"
+		  "helm-elisp.el" "helm-elisp-package.el" "helm-epa.el" "helm-eshell.el"
+		  "helm-eval.el" "helm-external.el" "helm-fd.el" "helm-files.el" "helm-find.el"
+		  "helm-font.el" "helm-for-files.el" "helm-global-bindings.el" "helm-grep.el"
+		  "helm-help.el" "helm-id-utils.el" "helm-imenu.el" "helm-info.el" "helm-locate.el"
+		  "helm-man.el" "helm-misc.el" "helm-mode.el" "helm-net.el" "helm-occur.el"
+		  "helm-pkg.el" "helm-regexp.el" "helm-ring.el" "helm-semantic.el" "helm-shell.el"
+		  "helm-sys.el" "helm-tags.el" "helm-types.el" "helm-utils.el" "helm-x-files.el")
+  :main-file "helm.el")
+
+ ("highlight-parentheses"	:url "https://git.sr.ht/~tsdh/highlight-parentheses.el"
   :branch "main"
   :readme "README.md"
   :ignored-files ("LICENSE"))
