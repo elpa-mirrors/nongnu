@@ -9,7 +9,22 @@
 ;; that can be used in PLIST.
 
 (
+ ("afternoon-theme"	:url "https://github.com/osener/emacs-afternoon-theme"
+  :ignored-files ("*.png"))
+
+ ("alect-themes"	:url "https://github.com/alezost/alect-themes"
+  :ignored-files ("tests" "Makefile" "colors"))
+
+ ("ample-theme"	:url "https://github.com/jordonbiondo/ample-theme")
+
+ ("anti-zenburn-theme"	:url "https://github.com/m00natic/anti-zenburn-theme"
+  :ignored-files ("anti-zenburn-snapshot.jpeg"))
+
  ("apache-mode"		:url "https://github.com/emacs-php/apache-mode")
+
+ ("apropospriate-theme"	:url "https://github.com/waymondo/apropospriate-theme"
+  :ignored-files ("*.png")
+  :main-file "apropospriate.el")
 
  ("arduino-mode"	:url "https://github.com/stardiviner/arduino-mode"
   :ignored-files ("Cask"))
@@ -25,7 +40,13 @@
   :ignored-files ("clojure-mode-extra-font-locking.el" "doc" "test" "test.clj")
   :news "CHANGELOG.md")
 
+ ("color-theme-tangotango"	:url "https://github.com/juba/color-theme-tangotango"
+  :ignored-files ("screenshots" "color-theme-tangotango.el"))
+
  ("crux"		:url "https://github.com/bbatsov/crux")
+
+ ("cyberpunk-theme"	:url "https://github.com/n3mo/cyberpunk-theme.el"
+  :ignored-files ("cyberpunk-theme.png" "example-org-file.org"))
 
  ("d-mode"		:url "https://github.com/Emacs-D-Mode-Maintainers/Emacs-D-Mode"
   :ignored-files ("coverage" "tests-todo" "tests" "Cask" "Makefile" "d-mode-tests.el"))
@@ -33,6 +54,9 @@
  ("dart-mode"		:url "https://github.com/bradyt/dart-mode"
   :ignored-files ("test" "Cask" "Makefile")
   :news "CHANGELOG.md")
+
+ ("dracula-theme"	:url "https://github.com/dracula/emacs"
+  :ignored-files ("INSTALL.md" "screenshot.png" "start_emacs_test.sh" "test-profile.el"))
 
  ("editorconfig"	:url "https://github.com/editorconfig/editorconfig-emacs"
   :doc "doc/editorconfig.texi"
@@ -177,6 +201,13 @@
   ;; :dont-release "-dev\\'"
   )
 
+ ("material-theme"	:url "https://github.com/cpaulik/emacs-material-theme"
+  :ignored-files ("*.png")
+  :news "changes.org")
+
+ ("monokai-theme"	:url "https://github.com/oneKelvinSmith/monokai-emacs"
+  :ignored-files ("assets"))
+
  ("multiple-cursors"	:url "https://github.com/magnars/multiple-cursors.el"
   :ignored-files ("features"))
 
@@ -245,6 +276,13 @@
  ;; ("subed"		:url "https://github.com/rndusr/subed"
  ;;  :lisp-dir "subed")
 
+ ("solarized-theme"	:url "https://github.com/bbatsov/solarized-emacs"
+  :ignored-files ("child-theme-example" "colorlab" "dev-emacs.d"
+		  "Cask" "Makefile"))
+
+ ("subatomic-theme"	:url "https://github.com/cryon/subatomic-theme"
+  :ignored-files ("readme-files"))
+
  ("swift-mode"		:url "https://github.com/swift-emacs/swift-mode"
   :ignored-files ("scripts" "test" "Eldev" "Makefile"))
 
@@ -252,6 +290,8 @@
   :ignored-files ("test" "Makefile"))
 
  ("tuareg"		:url "https://github.com/ocaml/tuareg.git")
+
+ ("ujelly-theme"	:url "https://github.com/marktran/color-theme-ujelly")
 
  ("vc-fossil"		:url "https://github.com/venks1/emacs-fossil")
 
@@ -271,7 +311,12 @@
  ("yasnippet-snippets"	:url "https://github.com/AndreaCrotti/yasnippet-snippets"
   :ignored-files ("report" "snippets.html"))
 
+ ("zenburn-theme"	:url "https://github.com/bbatsov/zenburn-emacs"
+  :news "CHANGELOG.md"
+  :ignored-files ("screenshots"))
+
  ("zig-mode"		:url "https://github.com/ziglang/zig-mode"
   :ignored-files ("appveyor.yml" "run_tests.sh" "tests.el"))
 
- )
+)
+
