@@ -53,6 +53,9 @@
    "README.md" "RelNotes.org"
    "lisp/git-rebase.el" "lisp/magit-*.el" "lisp/magit.el"))
 
+ ("git-modes"		:url "https://github.com/magit/git-modes"
+  :ignored-files (".mailmap"))
+
  ("geiser"		:url "https://gitlab.com/emacs-geiser/geiser.git"
   :lisp-dir "elisp"
   :readme "readme.org"
