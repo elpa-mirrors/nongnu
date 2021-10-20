@@ -1,8 +1,15 @@
 #+TITLE: NonGNU ELPA README
-#+DATE: 2020-12-21
+#+DATE: 2021-10-19
 
 Copyright (C) 2020-2021 Free Software Foundation, Inc. \\
 See the end of the file for license conditions.
+
+#+BEGIN_COMMENT
+This file exists in two repositories, in the ~elpa-admin~ branch of
+the ~emacs/elpa.git~ repository and in the ~main~ branch of the
+~emacs/nongnu.git~ repository.  Please make sure you always update
+it in both locations.  This duplication will be removed eventually.
+#+END_COMMENT
 
 This repository contains the sources, deployment scripts, and auxiliary files
 for [[https://nongnu.elpa.org][NonGNU ELPA]] (=elpa.nongnu.org=).  NonGNU ELPA is a [[https://www.gnu.org/philosophy/free-sw.html][free software]] Emacs Lisp
@@ -68,7 +75,6 @@ to do:
     rm archive/[PKG]-[VERSION].tar; make build/[PKG]
 #+end_src
 
-
 * Using packages in-place
 
 The packages can be installed and used in-place.  First you need to make
@@ -87,7 +93,6 @@ packages with:
 #+begin_src sh
     make
 #+end_src
-
 
 * Guidance for accepting packages
 
@@ -202,10 +207,10 @@ packages with:
    the package, and you can mention fan items that you sell directly to
    the users.
 
-
 * Adding a package
 
-Once it is decided we want to add a package =[PKG]=, here's what it takes:
+Once the NonGNU ELPA maintainers decides that we want to add a package =[PKG]=,
+here's what it takes:
 
 - Add a corresponding entry to the file =elpa-packages=, then
 
@@ -223,7 +228,7 @@ Once it is decided we want to add a package =[PKG]=, here's what it takes:
     make packages/<pkgname>
   #+end_src
 
-- Push the package's code to =nongnu.git=:
+- Push the package's code to the repository =nongnu.git=:
 
   #+begin_src sh
     make sync/<pkgname>
@@ -251,7 +256,7 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
-along with NonGNU ELPA.  If not, see <http://www.gnu.org/licenses/>.
+along with NonGNU ELPA.  If not, see <https://www.gnu.org/licenses/>.
 
 
 #+STARTUP: showall
