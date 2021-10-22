@@ -40,9 +40,6 @@
   :ignored-files ("clojure-mode-extra-font-locking.el" "doc" "test" "test.clj")
   :news "CHANGELOG.md")
 
- ("color-theme-tangotango"	:url "https://github.com/juba/color-theme-tangotango"
-  :ignored-files ("screenshots" "color-theme-tangotango.el"))
-
  ("crux"		:url "https://github.com/bbatsov/crux")
 
  ("cyberpunk-theme"	:url "https://github.com/n3mo/cyberpunk-theme.el"
