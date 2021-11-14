@@ -98,6 +98,10 @@
   :news "CHANGELOG.md"
   :ignored-files ("LICENSE" "bin" "ert-tests"))
 
+ ("elixir-mode"		:url "https://github.com/elixir-editors/emacs-elixir"
+  :ignored-files ("tests" "Eldev")
+  :news "CHANGELOG.md")
+
  ("elpher"	:url "git://thelambdalab.xyz/elpher.git"
   :doc "elpher.texi"
   :ignored-files ("Makefile" "ISSUES.org" "RELEASE" "config.mk"))
