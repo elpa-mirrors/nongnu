@@ -216,6 +216,9 @@
  ("paredit"		:url "https://mumble.net/~campbell/git/paredit.git"
   :ignored-files ("check.sh" "genhtml.sh" "test.el"))
 
+ ("pdf-tools"		:url "https://github.com/vedang/pdf-tools"
+  :lisp-dir "lisp")
+
  ("php-mode"		:url "https://github.com/emacs-php/php-mode"
   :lisp-dir "lisp"
   :news "CHANGELOG.md")
@@ -270,8 +273,8 @@
   ;; https://github.com/Fuco1/smartparens/releases/tag/1.11.0
   :version-map ((nil "1.11.0" "4873352b5d0a1c5142658122de1b6950b8fe7e4d")))
 
- ;; ("subed"		:url "https://github.com/rndusr/subed"
- ;;  :lisp-dir "subed")
+ ("subed"		:url "https://github.com/rndusr/subed"
+  :lisp-dir "subed")
 
  ("solarized-theme"	:url "https://github.com/bbatsov/solarized-emacs"
   :ignored-files ("child-theme-example" "colorlab" "dev-emacs.d"
@@ -285,6 +288,8 @@
 
  ("systemd"		:url "https://github.com/holomorph/systemd-mode"
   :ignored-files ("test" "Makefile"))
+
+ ("tablist"		:url "https://github.com/politza/tablist")
 
  ("tuareg"		:url "https://github.com/ocaml/tuareg.git")
 
