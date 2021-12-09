@@ -300,6 +300,8 @@
  ("web-mode"		:url "https://github.com/fxbois/web-mode"
   :ignored-files ("issues" "tests" "run.sh"))
 
+ ("webpaste"		:url "https://github.com/etu/webpaste.el")
+
  ("with-editor"		:url "https://github.com/magit/with-editor"
   :ignored-files ("htmlxref.cnf" ".travis.yml" ".mailmap" "Makefile")
   :doc "with-editor.texi")
@@ -320,5 +322,5 @@
  ("zig-mode"		:url "https://github.com/ziglang/zig-mode"
   :ignored-files ("appveyor.yml" "run_tests.sh" "tests.el"))
 
-)
+ )
 
