@@ -29,6 +29,7 @@
  ("arduino-mode"	:url "https://github.com/stardiviner/arduino-mode"
   :ignored-files ("Cask"))
 
+ ("buttercup"		:url "https://github.com/jorgenschaefer/emacs-buttercup")
  ("bison-mode"		:url "https://github.com/Wilfred/bison-mode")
 
  ("caml"		:url "https://github.com/ocaml/caml-mode"
