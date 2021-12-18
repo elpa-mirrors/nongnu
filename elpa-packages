@@ -71,7 +71,7 @@
   :lisp-dir "lisp"
   :ignored-files
   (".dir-locals.el" ".github" ".mailmap"
-   "Documentation" "Makefile" "default.mk" "lisp/Makefile" "lisp/*-pkg.el" "t"
+   "docs" "Makefile" "default.mk" "lisp/Makefile" "lisp/*-pkg.el" "test"
    "README.md" "RelNotes.org"
    "lisp/git-rebase.el" "lisp/magit-*.el" "lisp/magit.el"))
 
@@ -157,20 +157,20 @@
 
  ("magit"		:url "https://github.com/magit/magit"
   :lisp-dir "lisp"
-  :doc "Documentation/magit.texi"
-  :renames (("Documenation/" ""))
+  :doc "docs/magit.texi"
+  :renames (("docs/" ""))
   :ignored-files
   (".dir-locals.el" ".github" ".mailmap"
-   "Documentation" "Makefile" "default.mk" "lisp/Makefile" "lisp/*-pkg.el" "t"
+   "docs" "Makefile" "default.mk" "lisp/Makefile" "lisp/*-pkg.el" "test"
    "lisp/git-commit.el" "lisp/magit-libgit.el" "lisp/magit-section.el"))
 
  ("magit-section"	:url "https://github.com/magit/magit"
   :lisp-dir "lisp"
-  :doc "Documentation/magit-section.texi"
-  :renames (("Documenation/" ""))
+  :doc "docs/magit-section.texi"
+  :renames (("docs/" ""))
   :ignored-files
   (".dir-locals.el" ".github" ".mailmap"
-   "Documentation" "Makefile" "default.mk" "lisp/Makefile" "lisp/*-pkg.el" "t"
+   "docs" "Makefile" "default.mk" "lisp/Makefile" "lisp/*-pkg.el" "test"
    "README.md" "RelNotes.org"
    "lisp/git-commit.el" "lisp/git-rebase.el" "lisp/magit-apply.el"
    "lisp/magit-autoloads.el" "lisp/magit-autorevert.el" "lisp/magit-bisect.el"
@@ -305,7 +305,7 @@
 
  ("with-editor"		:url "https://github.com/magit/with-editor"
   :ignored-files ("htmlxref.cnf" ".travis.yml" ".mailmap" "Makefile")
-  :doc "with-editor.texi")
+  :doc "docs/with-editor.texi")
 
  ("wgrep"		:url "https://github.com/mhayashi1120/Emacs-wgrep")
 
