@@ -9,6 +9,7 @@ core
 /emacs
 /.pkg-descs.mk
 /packages/
+/other-packages
 /archive/
 /archive-devel/
 /admin
