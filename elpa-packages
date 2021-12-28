@@ -206,6 +206,8 @@
  ("monokai-theme"	:url "https://github.com/oneKelvinSmith/monokai-emacs"
   :ignored-files ("assets"))
 
+ ("mpv"			:url "https://github.com/kljohann/mpv.el")
+
  ("multiple-cursors"	:url "https://github.com/magnars/multiple-cursors.el"
   :ignored-files ("features"))
 
