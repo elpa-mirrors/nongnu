@@ -205,6 +205,7 @@
 
  ("material-theme"	:url "https://github.com/cpaulik/emacs-material-theme"
   :ignored-files ("*.png")
+  :readme "Readme.org"
   :news "changes.org")
 
  ("monokai-theme"	:url "https://github.com/oneKelvinSmith/monokai-emacs"
@@ -224,6 +225,7 @@
   :ignored-files ("check.sh" "genhtml.sh" "test.el"))
 
  ("parseedn"		:url "https://github.com/clojure-emacs/parseedn"
+  :readme "README.md"
   :ignored-files ("test")
   :news "CHANGELOG.md")
 
