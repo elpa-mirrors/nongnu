@@ -37,6 +37,10 @@
   ;; revision a9134009.
   :version-map ((nil "4.7.1" "a9134009bd037a39cbda21806867d0534d340bca")))
 
+ ("cider"	:url "https://github.com/clojure-emacs/cider"
+  :ignored-files ("doc" "logo" "refcard" "test")
+  :news "CHANGELOG.md")
+
  ("clojure-mode"	:url "https://github.com/clojure-emacs/clojure-mode"
   :ignored-files ("clojure-mode-extra-font-locking.el" "doc" "test" "test.clj")
   :news "CHANGELOG.md")
@@ -119,7 +123,7 @@
  ;; haskell-mode has been removed until further notice from the
  ;; upstream maintainers:
  ;; https://github.com/haskell/haskell-mode/issues/1755#issuecomment-896127958
- ;; 
+ ;;
  ;; ("haskell-mode"	:url "https://github.com/haskell/haskell-mode"
  ;;  :doc "doc/haskell-mode.texi"
  ;;  :ignored-files ("images" "test" "logo.svg")
@@ -219,6 +223,14 @@
  ("paredit"		:url "https://mumble.net/~campbell/git/paredit.git"
   :ignored-files ("check.sh" "genhtml.sh" "test.el"))
 
+ ("parseedn"		:url "https://github.com/clojure-emacs/parseedn"
+  :ignored-files ("test")
+  :news "CHANGELOG.md")
+
+ ("parseclj"		:url "https://github.com/clojure-emacs/parseclj"
+  :ignored-files ("test")
+  :news "CHANGELOG.md")
+
  ("pdf-tools"		:url "https://github.com/vedang/pdf-tools"
   :lisp-dir "lisp")
 
@@ -257,6 +269,9 @@
 
  ("scala-mode"		:url "https://github.com/hvesalai/emacs-scala-mode"
   :ignored-files ("test" "Cask" "Makefile"))
+
+ ("sesman"		:url "https://github.com/vspinu/sesman"
+  :ignored-files ("targets"))
 
  ("slime"		:url "https://github.com/slime/slime"
   :doc "doc/slime.texi")
@@ -327,4 +342,3 @@
   :ignored-files ("appveyor.yml" "run_tests.sh" "tests.el"))
 
  )
-
