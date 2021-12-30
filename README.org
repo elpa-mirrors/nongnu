@@ -1,5 +1,5 @@
 #+TITLE: NonGNU ELPA README
-#+DATE: 2021-10-19
+#+DATE: 2021-12-30
 
 Copyright (C) 2020-2021 Free Software Foundation, Inc. \\
 See the end of the file for license conditions.
@@ -15,30 +15,43 @@ This repository contains the sources, deployment scripts, and auxiliary files
 for [[https://nongnu.elpa.org][NonGNU ELPA]] (=elpa.nongnu.org=).  NonGNU ELPA is a [[https://www.gnu.org/philosophy/free-sw.html][free software]] Emacs Lisp
 Package Archive (ELPA) with extensions to [[https://www.gnu.org/software/emacs/][GNU Emacs]].
 
-This file explains the repository layout, how to add and edit packages, and how
-to deploy the archive (either on =elpa.nongnu.org=, or a local copy for testing
-purposes).
+This file explains the repository layout, how to add and edit
+packages, and how to deploy the archive (either on =elpa.nongnu.org=,
+or a local copy for testing purposes).
+
+* Repository layout of nongnu.git
+
+The layout of the =nongnu.git= repository is as follows:
+
+- The =main= branch holds the list of specifications of the packages
+  included.  It does not hold the scripts to build them.
+
+- The copy of the code for a package =<pkg-name>= is not kept in
+  =main= but in a branch named =externals/<pkg-name>=.
+  Package branches are normally placed as git worktrees in the
+  subdirectory =packages/<pkg-name>= (see below).
+
+- The package archive deployment scripts are in the =elpa-admin=
+  branch in the external =elpa.git= repository.  This branch is
+  normally put as a git worktree in the =admin= subdirectory.
 
 * Initial setup
 
-To do anything with, you first have to have a local clone, which you can get
-with:
+Start with source that is cloned directly from Savannah.  See [[https://savannah.gnu.org/git/?group=emacs][the
+Savannah page]] and look for "NonGNU ELPA".  Using a clone of a clone
+does not work.
 
-#+begin_src sh
-    git clone .../nongnu.git $FOO
-#+end_src
-
-and which you may have done already if you're reading this file.
-The main branch on =nongnu.git= only holds the list of specifications
-of the packages included, but not the scripts to build them.
-So after doing this, you need to do:
+The =Makefile= in =main= will automatically pull the =elpa-admin=
+branch to populate the =admin= subdirectory.  This is done by:
 
 #+begin_src sh
     make
 #+end_src
 
-This will fetch a branch from =elpa.git= containing all the build scripts
-and makefiles and place them where needed.
+This will fetch a branch from =elpa.git= containing all the build
+scripts and makefiles and place them where needed.
+
+To checkout packages, see the instructions in the GNU ELPA README.
 
 * Building the archive
 
@@ -265,6 +278,7 @@ along with NonGNU ELPA.  If not, see <https://www.gnu.org/licenses/>.
 #+EMAIL: emacs-devel@gnu.org
 #+BEGIN_COMMENT
 Local variables:
+fill-column: 70
 paragraph-separate: "[ 	]*$"
 time-stamp-pattern: "4/#\\+DATE: %Y-%02m-%02d$"
 end:
