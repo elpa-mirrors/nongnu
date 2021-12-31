@@ -331,6 +331,10 @@
 
  ("wgrep"		:url "https://github.com/mhayashi1120/Emacs-wgrep")
 
+ ("ws-butler"           :url "https://github.com/lewang/ws-butler"
+  :readme "README.md"
+  :ignored-files ("tests" "Makefile" ".travis.yml"))
+
  ("yaml-mode"		:url "https://github.com/yoshiki/yaml-mode"
   :ignored-files ("test-files" "Makefile")
   :news "Changes")
