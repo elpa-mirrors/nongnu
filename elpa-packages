@@ -234,6 +234,8 @@
   :news "CHANGELOG.md")
 
  ("pdf-tools"		:url "https://github.com/vedang/pdf-tools"
+  :news "NEWS"
+  :readme "README.org"
   :lisp-dir "lisp")
 
  ("php-mode"		:url "https://github.com/emacs-php/php-mode"
