@@ -112,6 +112,9 @@
 
  ("goto-chg"		:url "https://github.com/emacs-evil/goto-chg")
 
+ ("gruvbox-theme"       :url "https://github.com/greduan/emacs-theme-gruvbox.git"
+  :ignored-files ("images" "palette"))
+
  ("guru-mode"		:url "https://github.com/bbatsov/guru-mode")
 
  ("haml-mode"		:url "https://github.com/nex3/haml-mode"
