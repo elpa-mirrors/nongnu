@@ -221,6 +221,10 @@
 
  ("nginx-mode"		:url "https://github.com/ajc/nginx-mode")
 
+ ("org-superstar"       :url "https://github.com/integral-dw/org-superstar-mode.git"
+  :readme "README.org"
+  :ignored-files (".github" "demos" "tests" "DEMO.org" "sample_image.png"))
+
  ("paredit"		:url "https://mumble.net/~campbell/git/paredit.git"
   :ignored-files ("check.sh" "genhtml.sh" "test.el"))
 
