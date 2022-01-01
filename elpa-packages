@@ -273,6 +273,10 @@
   :readme "README.org"
   :ignored-files ("README.md"))
 
+ ("rainbow-delimiters"  :url "https://github.com/Fanael/rainbow-delimiters.git"
+  :readme "README.md"
+  :ignored-files (".github" "rainbow-delimiters-test.el" "run-tests.sh"))
+
  ("sass-mode"		:url "https://github.com/nex3/sass-mode")
 
  ("scala-mode"		:url "https://github.com/hvesalai/emacs-scala-mode"
