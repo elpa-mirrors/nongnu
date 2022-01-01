@@ -32,6 +32,9 @@
  ("buttercup"		:url "https://github.com/jorgenschaefer/emacs-buttercup")
  ("bison-mode"		:url "https://github.com/Wilfred/bison-mode")
 
+ ("boxquote"            :url "https://github.com/davep/boxquote.el.git"
+  :readme "README.md")
+
  ("caml"		:url "https://github.com/ocaml/caml-mode"
   ;; The version 4.7.1 from Melpa-stable seems to correspond to
   ;; revision a9134009.
