@@ -327,6 +327,9 @@
 
  ("tablist"		:url "https://github.com/politza/tablist")
 
+ ("toc-org"             :url "https://github.com/snosov1/toc-org.git"
+  :ignored-files ("COPYING" ".travis.yml" "toc-org-test.el"))
+
  ("tuareg"		:url "https://github.com/ocaml/tuareg.git")
 
  ("ujelly-theme"	:url "https://github.com/marktran/color-theme-ujelly")
