@@ -336,6 +336,11 @@
 
  ("vc-fossil"		:url "https://github.com/venks1/emacs-fossil")
 
+ ("visual-fill-column"  :url "https://codeberg.org/joostkremers/visual-fill-column.git"
+  :readme "README.md"
+  :ignored-files ("Cask" "LICENSE" "adaptive-wrap.png" "after.png" "before.png"
+                  "centered.png" "no-adaptive-wrap.png" "test" ))
+
  ("web-mode"		:url "https://github.com/fxbois/web-mode"
   :ignored-files ("issues" "tests" "run.sh"))
 
