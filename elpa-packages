@@ -48,7 +48,9 @@
   :ignored-files ("clojure-mode-extra-font-locking.el" "doc" "test" "test.clj")
   :news "CHANGELOG.md")
 
- ("crux"		:url "https://github.com/bbatsov/crux")
+ ("crux"		:url "https://github.com/bbatsov/crux"
+  :readme "README.md"
+  :news "CHANGELOG.md")
 
  ("cyberpunk-theme"	:url "https://github.com/n3mo/cyberpunk-theme.el"
   :ignored-files ("cyberpunk-theme.png" "example-org-file.org"))
