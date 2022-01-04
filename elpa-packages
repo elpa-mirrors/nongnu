@@ -181,7 +181,7 @@
   :doc "docs/magit.texi"
   :renames (("docs/" ""))
   :ignored-files
-  ("LICENSE" ".dir-locals.el" ".github" ".mailmap"
+  ("LICENSE" ".github" ".mailmap"
    "docs" "Makefile" "default.mk" "lisp/Makefile" "lisp/*-pkg.el" "test"
    "lisp/git-commit.el" "lisp/magit-libgit.el" "lisp/magit-section.el"))
 
@@ -190,7 +190,7 @@
   :doc "docs/magit-section.texi"
   :renames (("docs/" ""))
   :ignored-files
-  ("LICENSE" ".dir-locals.el" ".github" ".mailmap"
+  ("LICENSE" ".github" ".mailmap"
    "docs" "Makefile" "default.mk" "lisp/Makefile" "lisp/*-pkg.el" "test"
    "README.md" "RelNotes.org"
    "lisp/git-commit.el" "lisp/git-rebase.el" "lisp/magit-apply.el"
