@@ -227,6 +227,10 @@
 
  ("nginx-mode"		:url "https://github.com/ajc/nginx-mode")
 
+ ("org-journal"         :url "https://github.com/bastibe/org-journal.git"
+  :news "CHANGELOG"
+  :ignored-files (".github" ".travis.yml" "LICENSE" "Makefile" "org-journal.svg" "tests"))
+
  ("org-superstar"       :url "https://github.com/integral-dw/org-superstar-mode.git"
   :readme "README.org"
   :ignored-files (".github" "demos" "tests" "DEMO.org" "sample_image.png"))
