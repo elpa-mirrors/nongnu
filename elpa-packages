@@ -13,14 +13,15 @@
   :ignored-files ("*.png"))
 
  ("alect-themes"	:url "https://github.com/alezost/alect-themes"
-  :ignored-files ("tests" "Makefile" "colors"))
+  :ignored-files ("LICENSE" "tests" "Makefile" "colors"))
 
- ("ample-theme"	:url "https://github.com/jordonbiondo/ample-theme")
+ ("ample-theme"	        :url "https://github.com/jordonbiondo/ample-theme")
 
  ("anti-zenburn-theme"	:url "https://github.com/m00natic/anti-zenburn-theme"
   :ignored-files ("anti-zenburn-snapshot.jpeg"))
 
- ("apache-mode"		:url "https://github.com/emacs-php/apache-mode")
+ ("apache-mode"		:url "https://github.com/emacs-php/apache-mode"
+  :ignored-files ("LICENSE"))
 
  ("apropospriate-theme"	:url "https://github.com/waymondo/apropospriate-theme"
   :ignored-files ("*.png")
@@ -29,19 +30,23 @@
  ("arduino-mode"	:url "https://github.com/stardiviner/arduino-mode"
   :ignored-files ("Cask"))
 
- ("buttercup"		:url "https://github.com/jorgenschaefer/emacs-buttercup")
+ ("buttercup"		:url "https://github.com/jorgenschaefer/emacs-buttercup"
+  :ignored-files ("LICENSE"))
+
  ("bison-mode"		:url "https://github.com/Wilfred/bison-mode")
 
  ("boxquote"            :url "https://github.com/davep/boxquote.el.git"
-  :readme "README.md")
+  :readme "README.md"
+  :ignored-files ("COPYING"))
 
  ("caml"		:url "https://github.com/ocaml/caml-mode"
   ;; The version 4.7.1 from Melpa-stable seems to correspond to
   ;; revision a9134009.
+  :ignored-files ("COPYING")
   :version-map ((nil "4.7.1" "a9134009bd037a39cbda21806867d0534d340bca")))
 
  ("cider"	:url "https://github.com/clojure-emacs/cider"
-  :ignored-files ("doc" "logo" "refcard" "test")
+  :ignored-files ("LICENSE" "doc" "logo" "refcard" "test")
   :news "CHANGELOG.md")
 
  ("clojure-mode"	:url "https://github.com/clojure-emacs/clojure-mode"
@@ -56,10 +61,10 @@
   :ignored-files ("cyberpunk-theme.png" "example-org-file.org"))
 
  ("d-mode"		:url "https://github.com/Emacs-D-Mode-Maintainers/Emacs-D-Mode"
-  :ignored-files ("coverage" "tests-todo" "tests" "Cask" "Makefile" "d-mode-tests.el"))
+  :ignored-files ("COPYING" "coverage" "tests-todo" "tests" "Cask" "Makefile" "d-mode-tests.el"))
 
  ("dart-mode"		:url "https://github.com/bradyt/dart-mode"
-  :ignored-files ("test" "Cask" "Makefile")
+  :ignored-files ("LICENSE" "test" "Cask" "Makefile")
   :news "CHANGELOG.md")
 
  ("dracula-theme"	:url "https://github.com/dracula/emacs"
@@ -68,24 +73,25 @@
  ("editorconfig"	:url "https://github.com/editorconfig/editorconfig-emacs"
   :doc "doc/editorconfig.texi"
   :news "CHANGELOG.md"
-  :ignored-files ("bin" "ert-tests"))
+  :ignored-files ("LICENSE" "bin" "ert-tests"))
 
  ("evil"		:url "https://github.com/emacs-evil/evil"
-  :ignored-files ("lib" "scripts")
+  :ignored-files ("COPYING" "lib" "scripts")
   :doc "doc/build/texinfo/evil.texi")
 
- ("flymake-kondor"	:url "https://github.com/turbo-cafe/flymake-kondor")
+ ("flymake-kondor"	:url "https://github.com/turbo-cafe/flymake-kondor"
+  :ignored-files ("COPYING.txt"))
 
  ("git-commit"		:url "https://github.com/magit/magit"
   :lisp-dir "lisp"
   :ignored-files
-  (".dir-locals.el" ".github" ".mailmap"
+  ("LICENSE" ".github" ".mailmap"
    "docs" "Makefile" "default.mk" "lisp/Makefile" "lisp/*-pkg.el" "test"
    "README.md" "RelNotes.org"
    "lisp/git-rebase.el" "lisp/magit-*.el" "lisp/magit.el"))
 
  ("git-modes"		:url "https://github.com/magit/git-modes"
-  :ignored-files (".mailmap"))
+  :ignored-files ("LICENSE" ".mailmap"))
 
  ("geiser"		:url "https://gitlab.com/emacs-geiser/geiser.git"
   :lisp-dir "elisp"
@@ -106,13 +112,14 @@
  ("geiser-stklos"	:url "https://gitlab.com/emacs-geiser/stklos.git")
 
  ("gnuplot"		:url "https://github.com/emacsorphanage/gnuplot"
-  :ignored-files ("Makefile" "gpelcard.tex")
+  :ignored-files ("LICENSE" "Makefile" "gpelcard.tex")
   :news "CHANGELOG.org")
 
  ("go-mode"		:url "https://github.com/dominikh/go-mode.el"
   :ignored-files ("generate_authors.sh"))
 
- ("goto-chg"		:url "https://github.com/emacs-evil/goto-chg")
+ ("goto-chg"		:url "https://github.com/emacs-evil/goto-chg"
+  :ignored-files ("LICENSE"))
 
  ("gruvbox-theme"       :url "https://github.com/greduan/emacs-theme-gruvbox.git"
   :ignored-files ("images" "palette"))
@@ -126,7 +133,8 @@
   ;; manually set the latest commit to a proper version number:
   :version-map (("0" "3.1.10" "bf5b6c11b1206759d2b28af48765e04882dd1fc4")))
 
- ("haskell-tng-mode"	:url "https://gitlab.com/tseenshe/haskell-tng.el")
+ ("haskell-tng-mode"	:url "https://gitlab.com/tseenshe/haskell-tng.el"
+  :ignored-files "COPYING")
 
  ;; haskell-mode has been removed until further notice from the
  ;; upstream maintainers:
@@ -140,39 +148,40 @@
  ;;  ;; https://github.com/haskell/haskell-mode/releases/tag/17.2
  ;;  :version-map ((nil "17.2" "e72677668f5fc7cc148008e885a0f256e245dd43")))
 
- ("highlight-parentheses"
-  :url "https://git.sr.ht/~tsdh/highlight-parentheses.el"
+ ("highlight-parentheses" :url "https://git.sr.ht/~tsdh/highlight-parentheses.el"
   :branch "main"
-  :readme "README.md")
+  :readme "README.md"
+  :ignored-files ("LICENSE"))
 
  ("htmlize"		:url "https://github.com/hniksic/emacs-htmlize"
   :ignored-files ("htmlize.el.html")
   :release-branch "stable")
 
  ("idris-mode"		:url "https://github.com/idris-hackers/idris-mode"
-  :ignored-files ("test-data" "Makefile" "documentation.tex" "logo-small.png"
-		  "idris-tests*.el")
+  :ignored-files ("COPYING" "test-data" "Makefile" "documentation.tex"
+                  "logo-small.png" "idris-tests*.el")
   :news "CHANGES.markdown")
 
  ("inf-clojure"		:url "https://github.com/clojure-emacs/inf-clojure"
   :ignored-files ("test")
   :news "CHANGELOG.md")
 
- ("j-mode"		:url "https://github.com/zellio/j-mode")
+ ("j-mode"		:url "https://github.com/zellio/j-mode"
+  :ignored-files ("LICENSE"))
 
  ("julia-mode"		:url "https://github.com/JuliaEditorSupport/julia-emacs"
   :ignored-files ("julia-mode-tests.el" "logo.png")
   :news "CHANGELOG.md")
 
  ("lua-mode"		:url "https://github.com/immerrr/lua-mode/"
-  :ignored-files ("test" "travis" "init-tryout.el"))
+  :ignored-files ("COPYING" "test" "travis" "init-tryout.el"))
 
  ("magit"		:url "https://github.com/magit/magit"
   :lisp-dir "lisp"
   :doc "docs/magit.texi"
   :renames (("docs/" ""))
   :ignored-files
-  (".dir-locals.el" ".github" ".mailmap"
+  ("LICENSE" ".dir-locals.el" ".github" ".mailmap"
    "docs" "Makefile" "default.mk" "lisp/Makefile" "lisp/*-pkg.el" "test"
    "lisp/git-commit.el" "lisp/magit-libgit.el" "lisp/magit-section.el"))
 
@@ -181,7 +190,7 @@
   :doc "docs/magit-section.texi"
   :renames (("docs/" ""))
   :ignored-files
-  (".dir-locals.el" ".github" ".mailmap"
+  ("LICENSE" ".dir-locals.el" ".github" ".mailmap"
    "docs" "Makefile" "default.mk" "lisp/Makefile" "lisp/*-pkg.el" "test"
    "README.md" "RelNotes.org"
    "lisp/git-commit.el" "lisp/git-rebase.el" "lisp/magit-apply.el"
@@ -217,9 +226,10 @@
   :news "changes.org")
 
  ("monokai-theme"	:url "https://github.com/oneKelvinSmith/monokai-emacs"
-  :ignored-files ("assets"))
+  :ignored-files ("LICENSE.md" "assets"))
 
- ("mpv"			:url "https://github.com/kljohann/mpv.el")
+ ("mpv"			:url "https://github.com/kljohann/mpv.el"
+  :ignored-files ("COPYING"))
 
  ("multiple-cursors"	:url "https://github.com/magnars/multiple-cursors.el"
   :ignored-files ("features"))
@@ -231,14 +241,14 @@
 
  ("org-journal"         :url "https://github.com/bastibe/org-journal.git"
   :news "CHANGELOG"
-  :ignored-files (".github" ".travis.yml" "LICENSE" "Makefile" "org-journal.svg" "tests"))
+  :ignored-files (".github" ".travis.yml" "Makefile" "org-journal.svg" "tests"))
 
  ("org-superstar"       :url "https://github.com/integral-dw/org-superstar-mode.git"
   :readme "README.org"
-  :ignored-files (".github" "demos" "tests" "DEMO.org" "sample_image.png"))
+  :ignored-files ("LICENSE" ".github" "demos" "tests" "DEMO.org" "sample_image.png"))
 
  ("paredit"		:url "https://mumble.net/~campbell/git/paredit.git"
-  :ignored-files ("check.sh" "genhtml.sh" "test.el"))
+  :ignored-files ("COPYING" "check.sh" "genhtml.sh" "test.el"))
 
  ("parseedn"		:url "https://github.com/clojure-emacs/parseedn"
   :readme "README.md"
@@ -246,26 +256,29 @@
   :news "CHANGELOG.md")
 
  ("parseclj"		:url "https://github.com/clojure-emacs/parseclj"
-  :ignored-files ("test")
+  :ignored-files ("LICENSE" "test")
   :news "CHANGELOG.md")
 
  ("pdf-tools"		:url "https://github.com/vedang/pdf-tools"
   :news "NEWS"
   :readme "README.org"
-  :lisp-dir "lisp")
+  :lisp-dir "lisp"
+  :ignored-files ("COPYING"))
 
  ("php-mode"		:url "https://github.com/emacs-php/php-mode"
   :lisp-dir "lisp"
-  :news "CHANGELOG.md")
+  :news "CHANGELOG.md"
+  :ignored-files ("LICENSE"))
 
- ("popup"		:url "https://github.com/auto-complete/popup-el")
+ ("popup"		:url "https://github.com/auto-complete/popup-el"
+  :ignored-files ("LICENSE"))
 
  ("projectile"  	:url "https://github.com/bbatsov/projectile"
-  :ignored-files ("doc" "test")
+  :ignored-files ("LICENSE" "doc" "test")
   :news "CHANGELOG.md")
 
  ("proof-general"	:url "https://github.com/ProofGeneral/PG"
-  :ignored-files ("ci")
+  :ignored-files ("COPYING" "ci")
   :news "CHANGES"
   :doc "doc/ProofGeneral.texi")
 
@@ -283,16 +296,16 @@
  ("org-contrib"		:url "https://git.sr.ht/~bzg/org-contrib"
   :lisp-dir "lisp"
   :readme "README.org"
-  :ignored-files ("README.md"))
+  :ignored-files ("COPYING" "README.md"))
 
  ("rainbow-delimiters"  :url "https://github.com/Fanael/rainbow-delimiters.git"
   :readme "README.md"
-  :ignored-files (".github" "rainbow-delimiters-test.el" "run-tests.sh"))
+  :ignored-files ("COPYING" ".github" "rainbow-delimiters-test.el" "run-tests.sh"))
 
  ("sass-mode"		:url "https://github.com/nex3/sass-mode")
 
  ("scala-mode"		:url "https://github.com/hvesalai/emacs-scala-mode"
-  :ignored-files ("test" "Cask" "Makefile"))
+  :ignored-files ("LICENSE" "test" "Cask" "Makefile"))
 
  ("sesman"		:url "https://github.com/vspinu/sesman"
   :ignored-files ("targets"))
@@ -307,7 +320,7 @@
   )
 
  ("smartparens"		:url "https://github.com/Fuco1/smartparens"
-  :ignored-files ("dev" "doc" "images" "test")
+  :ignored-files ("LICENSE" "dev" "doc" "images" "test")
   ;; See https://github.com/Fuco1/smartparens/issues/1095
   ;;
   ;; Until a version tag is added, the commit of the latest tag is
@@ -316,7 +329,8 @@
   :version-map ((nil "1.11.0" "4873352b5d0a1c5142658122de1b6950b8fe7e4d")))
 
  ("subed"		:url "https://github.com/sachac/subed"
-  :lisp-dir "subed")
+  :lisp-dir "subed"
+  :ignored-files "LICENSES/GPL-3.0-or-later.txt")
 
  ("solarized-theme"	:url "https://github.com/bbatsov/solarized-emacs"
   :ignored-files ("child-theme-example" "colorlab" "dev-emacs.d"
@@ -326,17 +340,19 @@
   :ignored-files ("readme-files"))
 
  ("swift-mode"		:url "https://github.com/swift-emacs/swift-mode"
-  :ignored-files ("scripts" "test" "Eldev" "Makefile"))
+  :ignored-files ("COPYING" "scripts" "test" "Eldev" "Makefile"))
 
  ("systemd"		:url "https://github.com/holomorph/systemd-mode"
-  :ignored-files ("test" "Makefile"))
+  :ignored-files ("LICENSE" "test" "Makefile"))
 
- ("tablist"		:url "https://github.com/politza/tablist")
+ ("tablist"		:url "https://github.com/politza/tablist"
+  :ignored-files ("COPYING"))
 
  ("toc-org"             :url "https://github.com/snosov1/toc-org.git"
   :ignored-files ("COPYING" ".travis.yml" "toc-org-test.el"))
 
- ("tuareg"		:url "https://github.com/ocaml/tuareg.git")
+ ("tuareg"		:url "https://github.com/ocaml/tuareg.git"
+  :ignored-files ("COPYING"))
 
  ("ujelly-theme"	:url "https://github.com/marktran/color-theme-ujelly")
 
@@ -348,37 +364,39 @@
                   "centered.png" "no-adaptive-wrap.png" "test" ))
 
  ("web-mode"		:url "https://github.com/fxbois/web-mode"
-  :ignored-files ("issues" "tests" "run.sh"))
+  :ignored-files ("LICENSE" "issues" "tests" "run.sh"))
 
- ("webpaste"		:url "https://github.com/etu/webpaste.el")
+ ("webpaste"		:url "https://github.com/etu/webpaste.el"
+  :ignored-files ("LICENSE"))
 
  ("with-editor"		:url "https://github.com/magit/with-editor"
-  :ignored-files ("htmlxref.cnf" ".travis.yml" ".mailmap" "Makefile")
+  :ignored-files ("LICENSE" "htmlxref.cnf" ".travis.yml" ".mailmap" "Makefile")
   :lisp-dir "lisp"
   :doc "docs/with-editor.texi")
 
- ("wgrep"		:url "https://github.com/mhayashi1120/Emacs-wgrep")
+ ("wgrep"		:url "https://github.com/mhayashi1120/Emacs-wgrep"
+  :ignored-files "COPYING")
 
  ("ws-butler"           :url "https://github.com/lewang/ws-butler"
   :readme "README.md"
-  :ignored-files ("tests" "Makefile" ".travis.yml"))
+  :ignored-files ("COPYING" "tests" "Makefile" ".travis.yml"))
 
  ("xml-rpc"             :url "https://github.com/xml-rpc-el/xml-rpc-el.git"
   :readme "README.org"
-  :ignored-files (".github" "Makefile" "xml-rpc-test.el"))
+  :ignored-files ("LICENSE" ".github" "Makefile" "xml-rpc-test.el"))
 
  ("yaml-mode"		:url "https://github.com/yoshiki/yaml-mode"
-  :ignored-files ("test-files" "Makefile")
+  :ignored-files ("LICENSE.txt" "test-files" "Makefile")
   :news "Changes")
 
  ("yasnippet-snippets"	:url "https://github.com/AndreaCrotti/yasnippet-snippets"
-  :ignored-files ("report" "snippets.html"))
+  :ignored-files ("LICENSE" "report" "snippets.html"))
 
  ("zenburn-theme"	:url "https://github.com/bbatsov/zenburn-emacs"
   :news "CHANGELOG.md"
-  :ignored-files ("screenshots"))
+  :ignored-files ("LICENSE" "screenshots"))
 
  ("zig-mode"		:url "https://github.com/ziglang/zig-mode"
-  :ignored-files ("appveyor.yml" "run_tests.sh" "tests.el"))
+  :ignored-files ("LICENSE" "appveyor.yml" "run_tests.sh" "tests.el"))
 
  )
