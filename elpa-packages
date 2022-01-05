@@ -243,6 +243,9 @@
   :news "CHANGELOG"
   :ignored-files (".github" ".travis.yml" "Makefile" "org-journal.svg" "tests"))
 
+ ("org-mime"            :url "https://github.com/org-mime/org-mime.git"
+  :ignored-files (".travis.yml" "Makefile" "screenshot.png" "test"))
+
  ("org-superstar"       :url "https://github.com/integral-dw/org-superstar-mode.git"
   :readme "README.org"
   :ignored-files ("LICENSE" ".github" "demos" "tests" "DEMO.org" "sample_image.png"))
