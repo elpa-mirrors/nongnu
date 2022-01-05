@@ -313,6 +313,9 @@
  ("sesman"		:url "https://github.com/vspinu/sesman"
   :ignored-files ("targets"))
 
+ ("shellcop"            :url "https://github.com/redguardtoo/shellcop.git"
+  :ignored-files ("LICENSE" "demo.png"))
+
  ("slime"		:url "https://github.com/slime/slime"
   :doc "doc/slime.texi")
 
