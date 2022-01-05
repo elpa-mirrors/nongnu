@@ -380,6 +380,7 @@
                   "centered.png" "no-adaptive-wrap.png" "test" ))
 
  ("web-mode"		:url "https://github.com/fxbois/web-mode"
+  :readme "README.md"
   :ignored-files ("LICENSE" "issues" "tests" "run.sh"))
 
  ("webpaste"		:url "https://github.com/etu/webpaste.el"
