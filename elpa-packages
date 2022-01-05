@@ -348,6 +348,10 @@
  ("tablist"		:url "https://github.com/politza/tablist"
   :ignored-files ("COPYING"))
 
+ ("telephone-line"      :url "https://github.com/dbordak/telephone-line.git"
+  :readme "readme.org"
+  :ignored-files ("COPYING" "screenshots"))
+
  ("toc-org"             :url "https://github.com/snosov1/toc-org.git"
   :ignored-files ("COPYING" ".travis.yml" "toc-org-test.el"))
 
