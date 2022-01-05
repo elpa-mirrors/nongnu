@@ -225,6 +225,10 @@
   :readme "Readme.org"
   :news "changes.org")
 
+ ("mentor"              :url "https://github.com/skangas/mentor.git"
+  :ignored-files ("COPYING" "Makefile" "test-rtorrent.py" "test"
+                  "doc/scgi-protocol.txt" "doc/screenshot.png"))
+
  ("monokai-theme"	:url "https://github.com/oneKelvinSmith/monokai-emacs"
   :ignored-files ("LICENSE.md" "assets"))
 
