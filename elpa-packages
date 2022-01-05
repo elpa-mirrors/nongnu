@@ -410,3 +410,7 @@
   :ignored-files ("LICENSE" "appveyor.yml" "run_tests.sh" "tests.el"))
 
  )
+
+;; Local Variables:
+;; indent-tabs-mode: nil
+;; End:
