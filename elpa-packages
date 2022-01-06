@@ -84,6 +84,10 @@
   :ignored-files ("COPYING" "lib" "scripts")
   :doc "doc/build/texinfo/evil.texi")
 
+ ("evil-escape"         :url "https://github.com/syl20bnr/evil-escape.git"
+  :readme "README.md"
+  :ignored-files ("LICENSE"))
+
  ("evil-matchit"        :url "https://github.com/redguardtoo/evil-matchit.git"
   :ignored-files ("tests" "Makefile" "screencast.gif"))
 
