@@ -102,6 +102,9 @@
   :readme "README.md"
   :ignored-files (".travis.yml" "Cask" "test" "Makefile"))
 
+ ("evil-indent-plus"    :url "https://github.com/TheBB/evil-indent-plus.git"
+  :readme "README.md")
+
  ("evil-lisp-state"     :url "https://github.com/syl20bnr/evil-lisp-state.git"
   :readme "README.md"
   :ignored-files "LICENSE")
