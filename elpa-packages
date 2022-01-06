@@ -89,6 +89,11 @@
   :ignored-files ("COPYING" "lib" "scripts")
   :doc "doc/build/texinfo/evil.texi")
 
+ ("evil-anzu"           :url "https://github.com/emacsorphanage/evil-anzu.git"
+  :readme "README.md"
+  :news "Changes"
+  :ignored-files ("image" "Cask"))
+
  ;; ("evil-escape"         :url "https://github.com/syl20bnr/evil-escape.git"
  ;;  :readme "README.md"
  ;;  :ignored-files ("LICENSE"))
