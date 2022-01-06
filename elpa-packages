@@ -84,6 +84,9 @@
   :ignored-files ("COPYING" "lib" "scripts")
   :doc "doc/build/texinfo/evil.texi")
 
+ ("evil-matchit"        :url "https://github.com/redguardtoo/evil-matchit.git"
+  :ignored-files ("tests" "Makefile" "screencast.gif"))
+
  ("evil-nerd-commenter" :url "https://github.com/redguardtoo/evil-nerd-commenter"
   :ignored-files ("tests" "Makefile" "evil-nerd-commenter-demo.gif" "pkg.sh"))
 
