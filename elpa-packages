@@ -405,6 +405,9 @@
   :readme "readme.org"
   :ignored-files ("COPYING" "screenshots"))
 
+ ("tangotango-theme"    :url "https://github.com/juba/color-theme-tangotango.git"
+  :ignored-files ("color-theme-tangotango.el" "screenshots"))
+
  ("toc-org"             :url "https://github.com/snosov1/toc-org.git"
   :ignored-files ("COPYING" ".travis.yml" "toc-org-test.el"))
 
