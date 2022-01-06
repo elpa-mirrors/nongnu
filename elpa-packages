@@ -22,6 +22,11 @@
  ("anti-zenburn-theme"	:url "https://github.com/m00natic/anti-zenburn-theme"
   :ignored-files ("anti-zenburn-snapshot.jpeg"))
 
+ ("anzu"                :url "https://github.com/emacsorphanage/anzu.git"
+  :readme "README.md"
+  :news "Changes"
+  :ignored-files (".github" "image" "Cask" "Makefile"))
+
  ("apache-mode"		:url "https://github.com/emacs-php/apache-mode"
   :ignored-files ("LICENSE"))
 
