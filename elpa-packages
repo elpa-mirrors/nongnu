@@ -94,6 +94,10 @@
  ("evil-nerd-commenter" :url "https://github.com/redguardtoo/evil-nerd-commenter"
   :ignored-files ("tests" "Makefile" "evil-nerd-commenter-demo.gif" "pkg.sh"))
 
+ ("evil-numbers"        :url "https://github.com/juliapath/evil-numbers.git"
+  :news "CHANGELOG.org"
+  :ignored-files ("COPYING"))
+
  ("flymake-kondor"	:url "https://github.com/turbo-cafe/flymake-kondor"
   :ignored-files ("COPYING.txt"))
 
