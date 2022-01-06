@@ -88,6 +88,10 @@
  ;;  :readme "README.md"
  ;;  :ignored-files ("LICENSE"))
 
+ ("evil-exchange"       :url "https://github.com/Dewdrops/evil-exchange.git"
+  :readme "README.md"
+  :ignored-files (".travis.yml" "Cask" "test" "Makefile"))
+
  ("evil-matchit"        :url "https://github.com/redguardtoo/evil-matchit.git"
   :ignored-files ("tests" "Makefile" "screencast.gif"))
 
