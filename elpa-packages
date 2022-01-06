@@ -102,6 +102,9 @@
   :news "CHANGELOG.org"
   :ignored-files ("COPYING"))
 
+ ("evil-visualstar"     :url "https://github.com/bling/evil-visualstar.git"
+  :readme ("README.md"))
+
  ("flymake-kondor"	:url "https://github.com/turbo-cafe/flymake-kondor"
   :ignored-files ("COPYING.txt"))
 
