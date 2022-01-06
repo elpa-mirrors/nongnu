@@ -32,6 +32,9 @@
  ("arduino-mode"	:url "https://github.com/stardiviner/arduino-mode"
   :ignored-files ("Cask"))
 
+ ("autothemer"          :url "https://github.com/jasonm23/autothemer.git"
+  :readme "readme.md")
+
  ("buttercup"		:url "https://github.com/jorgenschaefer/emacs-buttercup"
   :ignored-files ("LICENSE"))
 
