@@ -102,6 +102,10 @@
   :readme "README.md"
   :ignored-files (".travis.yml" "Cask" "test" "Makefile"))
 
+ ("evil-lisp-state"     :url "https://github.com/syl20bnr/evil-lisp-state.git"
+  :readme "README.md"
+  :ignored-files "LICENSE")
+
  ("evil-matchit"        :url "https://github.com/redguardtoo/evil-matchit.git"
   :ignored-files ("tests" "Makefile" "screencast.gif"))
 
