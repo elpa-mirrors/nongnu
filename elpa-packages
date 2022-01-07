@@ -161,6 +161,10 @@
  ("go-mode"		:url "https://github.com/dominikh/go-mode.el"
   :ignored-files ("generate_authors.sh"))
 
+ ("gotham-theme"        :url "https://depp.brause.cc/gotham-theme.git"
+  :readme "README.md"
+  :ignored-files ("img" "LICENSE"))
+
  ("goto-chg"		:url "https://github.com/emacs-evil/goto-chg"
   :ignored-files ("LICENSE"))
 
