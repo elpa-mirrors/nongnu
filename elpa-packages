@@ -273,7 +273,7 @@
                   "doc/scgi-protocol.txt" "doc/screenshot.png"))
 
  ("moe-theme"           :url "https://github.com/kuanyui/moe-theme.el.git"
-  :ignored-files ("pics" "LICENSE" "moe-theme-pkg.el"))
+  :ignored-files ("pics" "LICENSE"))
 
  ("monokai-theme"	:url "https://github.com/oneKelvinSmith/monokai-emacs"
   :ignored-files ("LICENSE.md" "assets"))
