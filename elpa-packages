@@ -297,6 +297,10 @@
   :readme "README.org"
   :ignored-files ("LICENSE" ".github" "demos" "tests" "DEMO.org" "sample_image.png"))
 
+ ("pacmacs"             :url "https://github.com/codingteam/pacmacs.el.git"
+  :ignored-files ("it-cases" "sprites/src" "test-data" "test" "tools"
+                  ".travis.yml" "Cask"))
+
  ("paredit"		:url "https://mumble.net/~campbell/git/paredit.git"
   :ignored-files ("COPYING" "check.sh" "genhtml.sh" "test.el"))
 
