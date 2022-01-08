@@ -300,6 +300,9 @@
  ("org-mime"            :url "https://github.com/org-mime/org-mime.git"
   :ignored-files (".travis.yml" "Makefile" "screenshot.png" "test"))
 
+ ("org-present"         :url "https://github.com/rlister/org-present.git"
+  :readme "README.md")
+
  ("org-superstar"       :url "https://github.com/integral-dw/org-superstar-mode.git"
   :readme "README.org"
   :ignored-files ("LICENSE" ".github" "demos" "tests" "DEMO.org" "sample_image.png"))
