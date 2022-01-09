@@ -220,6 +220,9 @@
   :ignored-files ("julia-mode-tests.el" "logo.png")
   :news "CHANGELOG.md")
 
+ ("keycast"		:url "https://github.com/tarsius/keycast"
+  :ignored-files ("Makefile"))
+
  ("lua-mode"		:url "https://github.com/immerrr/lua-mode/"
   :ignored-files ("COPYING" "test" "travis" "init-tryout.el"))
 
