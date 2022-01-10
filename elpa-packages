@@ -40,6 +40,10 @@
  ("autothemer"          :url "https://github.com/jasonm23/autothemer.git"
   :readme "readme.md")
 
+ ("better-jumper"       :url "https://github.com/gilbertw1/better-jumper.git"
+  :readme "Readme.md"
+  :ignored-files ("LICENSE"))
+
  ("buttercup"		:url "https://github.com/jorgenschaefer/emacs-buttercup"
   :ignored-files ("LICENSE"))
 
