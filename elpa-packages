@@ -213,6 +213,9 @@
                   "logo-small.png" "idris-tests*.el")
   :news "CHANGES.markdown")
 
+ ("iedit"               :url "https://github.com/victorhge/iedit.git"
+  :ignored-files ("COPYING" "iedit-demo.gif" "release.sh"))
+
  ("inf-clojure"		:url "https://github.com/clojure-emacs/inf-clojure"
   :ignored-files ("test")
   :news "CHANGELOG.md")
