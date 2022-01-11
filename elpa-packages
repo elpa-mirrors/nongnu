@@ -456,6 +456,8 @@
   :lisp-dir "lisp"
   :doc "docs/with-editor.texi")
 
+ ("with-simulated-input" :url "https://github.com/DarwinAwardWinner/with-simulated-input")
+
  ("wgrep"		:url "https://github.com/mhayashi1120/Emacs-wgrep"
   :ignored-files "COPYING")
 
