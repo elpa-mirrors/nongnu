@@ -106,6 +106,9 @@
   :readme "README.md"
   :ignored-files (".travis.yml" "Cask" "test" "Makefile"))
 
+ ("evil-goggles"        :url "https://github.com/edkolev/evil-goggles.git"
+  :ignored-files (".travis.yml" "test" "Makefile"))
+
  ("evil-indent-plus"    :url "https://github.com/TheBB/evil-indent-plus.git"
   :readme "README.md")
 
