@@ -320,6 +320,8 @@
   :readme "README.org"
   :ignored-files ("LICENSE" ".github" "demos" "tests" "DEMO.org" "sample_image.png"))
 
+ ("orgit"               :url "https://github.com/magit/orgit.git")
+
  ("pacmacs"             :url "https://github.com/codingteam/pacmacs.el.git"
   :ignored-files ("it-cases" "sprites/src" "test-data" "test" "tools"
                   ".travis.yml" "Cask"))
