@@ -414,6 +414,11 @@
   :ignored-files ("child-theme-example" "colorlab" "dev-emacs.d"
                   "Cask" "Makefile"))
 
+ ("spacemacs-theme"     :url "https://github.com/nashamri/spacemacs-theme.git"
+  :main-file "spacemacs-common.el"
+  :readme "README.md"
+  :ignored-files ("LICENSE" "img"))
+
  ("subatomic-theme"	:url "https://github.com/cryon/subatomic-theme"
   :ignored-files ("readme-files"))
 
