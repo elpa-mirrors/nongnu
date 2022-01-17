@@ -226,6 +226,8 @@
  ("j-mode"		:url "https://github.com/zellio/j-mode"
   :ignored-files ("LICENSE"))
 
+ ("jinja2-mode"         :url "https://github.com/paradoxxxzero/jinja2-mode.git")
+
  ("julia-mode"		:url "https://github.com/JuliaEditorSupport/julia-emacs"
   :ignored-files ("julia-mode-tests.el" "logo.png")
   :news "CHANGELOG.md")
