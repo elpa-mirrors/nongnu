@@ -308,6 +308,9 @@
 
  ("nginx-mode"		:url "https://github.com/ajc/nginx-mode")
 
+ ("org-drill"           :url "https://gitlab.com/phillord/org-drill.git"
+  :ignored-files (".gitlab-ci.yml" "Cask"))
+
  ("org-journal"         :url "https://github.com/bastibe/org-journal.git"
   :news "CHANGELOG"
   :ignored-files (".github" ".travis.yml" "Makefile" "org-journal.svg" "tests"))
