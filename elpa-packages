@@ -47,6 +47,9 @@
  ("buttercup"		:url "https://github.com/jorgenschaefer/emacs-buttercup"
   :ignored-files ("LICENSE"))
 
+ ("bind-map"            :url "https://github.com/justbur/emacs-bind-map.git"
+  :ignored-files (".travis.yml" "Cask" "LICENSE"))
+
  ("bison-mode"		:url "https://github.com/Wilfred/bison-mode")
 
  ("boxquote"            :url "https://github.com/davep/boxquote.el.git"
