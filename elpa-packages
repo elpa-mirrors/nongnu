@@ -88,6 +88,9 @@
  ("dracula-theme"	:url "https://github.com/dracula/emacs"
   :ignored-files ("INSTALL.md" "screenshot.png" "start_emacs_test.sh" "test-profile.el"))
 
+ ("drupal-mode"         :url "https://github.com/arnested/drupal-mode.git"
+  :ignored-files (".travis.yml" "COPYING" "Cask"))
+
  ("editorconfig"	:url "https://github.com/editorconfig/editorconfig-emacs"
   :doc "doc/editorconfig.texi"
   :news "CHANGELOG.md"
