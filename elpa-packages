@@ -85,6 +85,8 @@
   :ignored-files ("LICENSE" "test" "Cask" "Makefile")
   :news "CHANGELOG.md")
 
+ ("dockerfile-mode"     :url "https://github.com/spotify/dockerfile-mode")
+ 
  ("dracula-theme"	:url "https://github.com/dracula/emacs"
   :ignored-files ("INSTALL.md" "screenshot.png" "start_emacs_test.sh" "test-profile.el"))
 
