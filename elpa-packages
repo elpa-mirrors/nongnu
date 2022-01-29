@@ -322,6 +322,10 @@
 
  ("nginx-mode"		:url "https://github.com/ajc/nginx-mode")
 
+ ("nix-mode"            :url "https://github.com/NixOS/nix-mode"
+  :ignored-files (".github" "tests" "Cask" "*.nix" "*.lock")
+  :news "CHANGELOG.md")
+
  ("org-drill"           :url "https://gitlab.com/phillord/org-drill.git"
   :ignored-files (".gitlab-ci.yml" "Cask"))
 
