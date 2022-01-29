@@ -142,10 +142,12 @@
  ("forth-mode"          :url "https://github.com/larsbrinkhoff/forth-mode"
   :ignored-files ("test" "Makefile" "compile.el"))
 
+ ("free-keys"           :url "https://github.com/Fuco1/free-keys")
+
  ("git-commit"		:url "https://github.com/magit/magit"
   :lisp-dir "lisp"
   :ignored-files
-  ("LICENSE" ".github" ".mailmap"
+  ("LICENSE" ".github" ".mailsdopcmap"
    "docs" "Makefile" "default.mk" "lisp/Makefile" "lisp/*-pkg.el" "test"
    "README.md" "RelNotes.org"
    "lisp/git-rebase.el" "lisp/magit-*.el" "lisp/magit.el"))
