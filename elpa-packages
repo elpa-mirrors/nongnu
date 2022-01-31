@@ -400,6 +400,9 @@
   :ignored-files ("LICENSE" "test")
   :news "CHANGELOG.md")
 
+ ("pcmpl-args"		:url "https://github.com/JonWaltman/pcmpl-args.el"
+  :readme "README.org")
+
  ("pdf-tools"		:url "https://github.com/vedang/pdf-tools"
   :news "NEWS"
   :readme "README.org"
