@@ -35,7 +35,7 @@
   :main-file "apropospriate.el")
 
  ;; Arduino-mode is not on Github any more, but hasn't found a new home yet.
- ("arduino-mode"	:url "https://github.com/stardiviner/arduino-mode"
+ ("arduino-mode" :url nil ;Was "https://github.com/stardiviner/arduino-mode"
   :ignored-files ("Cask"))
 
  ("autothemer"          :url "https://github.com/jasonm23/autothemer.git"
