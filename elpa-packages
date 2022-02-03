@@ -115,6 +115,9 @@
   :news "Changes"
   :ignored-files ("image" "Cask"))
 
+ ("evil-args"           :url "https://github.com/wcsmith/evil-args.git"
+  :readme "README.md")
+
  ;; ("evil-escape"         :url "https://github.com/syl20bnr/evil-escape.git"
  ;;  :readme "README.md"
  ;;  :ignored-files ("LICENSE"))
