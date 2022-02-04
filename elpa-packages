@@ -19,6 +19,10 @@
 
  ("ample-theme"	        :url "https://github.com/jordonbiondo/ample-theme")
 
+ ("annotate"		:url "https://github.com/bastibe/annotate.el"
+  :news "NEWS.org"
+  :readme "README.org")
+
  ("anti-zenburn-theme"	:url "https://github.com/m00natic/anti-zenburn-theme"
   :ignored-files ("anti-zenburn-snapshot.jpeg"))
 
@@ -57,6 +61,8 @@
   :readme "README.md"
   :ignored-files ("COPYING"))
 
+ ;; FIXME: The upstream has accidentally diverged, see
+ ;; https://github.com/ocaml/caml-mode/pull/9
  ("caml"		:url "https://github.com/ocaml/caml-mode"
   ;; The version 4.7.1 from Melpa-stable seems to correspond to
   ;; revision a9134009.
@@ -261,6 +267,8 @@
                   "logo-small.png" "idris-tests*.el")
   :news "CHANGES.markdown")
 
+ ;; FIXME: Upstream has force-pushed, causing divergence, see
+ ;; https://github.com/victorhge/iedit/issues/147
  ("iedit"               :url "https://github.com/victorhge/iedit.git"
   :ignored-files ("COPYING" "iedit-demo.gif" "release.sh"))
 
@@ -371,6 +379,8 @@
   :news "CHANGELOG"
   :ignored-files (".github" ".travis.yml" "Makefile" "org-journal.svg" "tests"))
 
+ ;; FIXME: Upstream has force-pushed, causing divergence, see
+ ;; https://github.com/org-mime/org-mime/issues/74
  ("org-mime"            :url "https://github.com/org-mime/org-mime.git"
   :ignored-files (".travis.yml" "Makefile" "screenshot.png" "test"))
 
@@ -464,6 +474,8 @@
  ("shellcop"            :url "https://github.com/redguardtoo/shellcop.git"
   :ignored-files ("LICENSE" "demo.png"))
 
+ ;; FIXME: Upstream has accidentally diverged, see
+ ;; https://github.com/slime/slime/pull/648
  ("slime"		:url "https://github.com/slime/slime"
   :doc "doc/slime.texi")
 
