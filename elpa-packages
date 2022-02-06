@@ -538,6 +538,9 @@
  ("tuareg"		:url "https://github.com/ocaml/tuareg.git"
   :ignored-files ("COPYING"))
 
+ ("typescript-mode"     :url "https://github.com/emacs-typescript/typescript.el"
+  :ignored-files (".github" "Cask" "Dockerfile" "Makefile" "*test*"))
+
  ("ujelly-theme"	:url "https://github.com/marktran/color-theme-ujelly")
 
  ("vc-fossil"		:url "https://github.com/venks1/emacs-fossil")
