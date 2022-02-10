@@ -250,8 +250,7 @@
 		  "helm-help.el" "helm-id-utils.el" "helm-imenu.el" "helm-info.el" "helm-locate.el"
 		  "helm-man.el" "helm-misc.el" "helm-mode.el" "helm-net.el" "helm-occur.el"
 		  "helm-pkg.el" "helm-regexp.el" "helm-ring.el" "helm-semantic.el" "helm-shell.el"
-		  "helm-sys.el" "helm-tags.el" "helm-types.el" "helm-utils.el" "helm-x-files.el")
-  :main-file "helm.el")
+		  "helm-sys.el" "helm-tags.el" "helm-types.el" "helm-utils.el" "helm-x-files.el"))
 
  ("highlight-parentheses"	:url "https://git.sr.ht/~tsdh/highlight-parentheses.el"
   :branch "main"
