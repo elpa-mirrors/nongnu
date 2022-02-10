@@ -237,7 +237,7 @@
  ;;  :version-map ((nil "17.2" "e72677668f5fc7cc148008e885a0f256e245dd43")))
 
  ("helm"		:url "https://github.com/emacs-helm/helm"
-  :ignored-files ("images" "Cask" "Makefile" "emacs-helm.sh" "helm-core-pkg.el" "helm.el"
+  :ignored-files ("images" "Cask" "Makefile" "emacs-helm.sh" "helm-core.el" "helm.el"
 		  "helm-lib.el" "helm-source.el" "helm-multi-match.el"))
 
  ("helm-core"		:url "https://github.com/emacs-helm/helm"
