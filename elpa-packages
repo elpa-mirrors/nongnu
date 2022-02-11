@@ -339,7 +339,7 @@
   :readme "README.md"
   ;; Not needed any more:
   ;; :dont-release "-dev\\'"
-  )
+  :news "CHANGES.md")
 
  ("material-theme"	:url "https://github.com/cpaulik/emacs-material-theme"
   :ignored-files ("*.png")
@@ -378,8 +378,6 @@
   :news "CHANGELOG"
   :ignored-files (".github" ".travis.yml" "Makefile" "org-journal.svg" "tests"))
 
- ;; FIXME: Upstream has force-pushed, causing divergence, see
- ;; https://github.com/org-mime/org-mime/issues/74
  ("org-mime"            :url "https://github.com/org-mime/org-mime.git"
   :ignored-files (".travis.yml" "Makefile" "screenshot.png" "test"))
 
