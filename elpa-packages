@@ -192,7 +192,7 @@
  ("geiser-racket"	:url "https://gitlab.com/emacs-geiser/racket.git")
  ("geiser-stklos"	:url "https://gitlab.com/emacs-geiser/stklos.git")
 
- ("gnuplot"		:url "https://github.com/emacsorphanage/gnuplot"
+ ("gnuplot"		:url "https://github.com/emacs-gnuplot/gnuplot"
   :ignored-files ("LICENSE" "Makefile" "gpelcard.tex")
   :news "CHANGELOG.org")
 
