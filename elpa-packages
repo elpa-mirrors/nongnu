@@ -77,6 +77,8 @@
   :ignored-files ("clojure-mode-extra-font-locking.el" "doc" "test" "test.clj")
   :news "CHANGELOG.md")
 
+ ("coffee-mode"		:url "https://github.com/defunkt/coffee-mode")
+
  ("crux"		:url "https://github.com/bbatsov/crux"
   :readme "README.md"
   :news "CHANGELOG.md")
