@@ -194,6 +194,10 @@
  ("geiser-racket"	:url "https://gitlab.com/emacs-geiser/racket.git")
  ("geiser-stklos"	:url "https://gitlab.com/emacs-geiser/stklos.git")
 
+ ("gnu-apl-mode"        :url "https://github.com/lokedhs/gnu-apl-mode"
+  ;; :doc "texi/gnu-apl-mode.texi" ; the manual is currently empty
+  :ignored-files ("Makefile"))
+
  ("gnuplot"		:url "https://github.com/emacs-gnuplot/gnuplot"
   :ignored-files ("LICENSE" "Makefile" "gpelcard.tex")
   :news "CHANGELOG.org")
