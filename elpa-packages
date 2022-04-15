@@ -343,6 +343,8 @@
 
  ("markdown-mode"	:url "https://github.com/jrblevin/markdown-mode"
   :readme "README.md"
+  :ignored-files ("scripts" "tests" "Makefile" "webpage.sh")
+  :news "CHANGES.md"
   ;; Not needed any more:
   ;; :dont-release "-dev\\'"
   :news "CHANGES.md")
