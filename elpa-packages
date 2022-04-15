@@ -574,6 +574,9 @@
   :readme "README.md"
   :ignored-files ("COPYING" "tests" "Makefile" ".travis.yml"))
 
+ ("xah-fly-keys"        :url "https://github.com/xahlee/xah-fly-keys"
+  :ignored-files ("*.png"))
+
  ("xml-rpc"             :url "https://github.com/xml-rpc-el/xml-rpc-el.git"
   :readme "README.org"
   :ignored-files ("LICENSE" ".github" "Makefile" "xml-rpc-test.el"))
