@@ -79,6 +79,8 @@
 
  ("coffee-mode"		:url "https://github.com/defunkt/coffee-mode")
 
+ ("corfu-popup"         :url "https://codeberg.org/akib/emacs-corfu-popup")
+
  ("crux"		:url "https://github.com/bbatsov/crux"
   :readme "README.md"
   :news "CHANGELOG.md")
@@ -159,6 +161,8 @@
 
  ("flymake-kondor"	:url "https://github.com/turbo-cafe/flymake-kondor"
   :ignored-files ("COPYING.txt"))
+
+ ("flymake-popon"       :url "https://codeberg.org/akib/emacs-flymake-popon")
 
  ("forth-mode"          :url "https://github.com/larsbrinkhoff/forth-mode"
   :ignored-files ("test" "Makefile" "compile.el"))
@@ -431,6 +435,8 @@
   :lisp-dir "lisp"
   :news "CHANGELOG.md"
   :ignored-files ("LICENSE"))
+
+ ("popon"               :url "https://codeberg.org/akib/emacs-popon")
 
  ("popup"		:url "https://github.com/auto-complete/popup-el"
   :ignored-files ("LICENSE"))
