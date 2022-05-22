@@ -528,6 +528,10 @@
  ("swift-mode"		:url "https://github.com/swift-emacs/swift-mode"
   :ignored-files ("COPYING" "scripts" "test" "Eldev" "Makefile"))
 
+ ("swsw"		:url "https://git.sr.ht/~dsemy/swsw"
+  :doc "swsw.texi"
+  :news "NEWS")
+
  ("textile-mode"	:url "https://github.com/juba/textile-mode")
 
  ("systemd"		:url "https://github.com/holomorph/systemd-mode"
