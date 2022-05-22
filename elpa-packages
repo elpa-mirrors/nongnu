@@ -556,6 +556,10 @@
 
  ("vc-fossil"		:url "https://github.com/venks1/emacs-fossil")
 
+ ("vcomplete"		:url "https://git.sr.ht/~dsemy/vcomplete"
+  :doc "vcomplete.texi"
+  :news "NEWS")
+
  ("visual-fill-column"  :url "https://codeberg.org/joostkremers/visual-fill-column.git"
   :readme "README.md"
   :ignored-files ("Cask" "LICENSE" "adaptive-wrap.png" "after.png" "before.png"
