@@ -79,7 +79,7 @@
 
  ("coffee-mode"		:url "https://github.com/defunkt/coffee-mode")
 
- ("corfu-popup"         :url "https://codeberg.org/akib/emacs-corfu-popup")
+ ("corfu-terminal"      :url "https://codeberg.org/akib/emacs-corfu-terminal")
 
  ("crux"		:url "https://github.com/bbatsov/crux"
   :readme "README.md"
