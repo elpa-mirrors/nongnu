@@ -61,8 +61,6 @@
   :readme "README.md"
   :ignored-files ("COPYING"))
 
- ;; FIXME: The upstream has accidentally diverged, see
- ;; https://github.com/ocaml/caml-mode/pull/9
  ("caml"		:url "https://github.com/ocaml/caml-mode"
   ;; The version 4.7.1 from Melpa-stable seems to correspond to
   ;; revision a9134009.
