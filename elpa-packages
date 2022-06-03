@@ -381,6 +381,10 @@
   :ignored-files (".github" "tests" "Cask" "*.nix" "*.lock")
   :news "CHANGELOG.md")
 
+ ("org-auto-tangle" :url "https://github.com/yilkalargaw/org-auto-tangle"
+  :readme "README.org"
+  :ignored-files ("License.org"))
+
  ("org-drill"           :url "https://gitlab.com/phillord/org-drill.git"
   :ignored-files (".gitlab-ci.yml" "Cask"))
 
