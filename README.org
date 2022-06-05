@@ -1,5 +1,5 @@
 #+TITLE: NonGNU ELPA README
-#+DATE: 2021-12-30
+#+DATE: 2022-06-05
 
 Copyright (C) 2020-2022 Free Software Foundation, Inc. \\
 See the end of the file for license conditions.
@@ -86,6 +86,14 @@ to do:
 
 #+begin_src sh
     rm archive/[PKG]-[VERSION].tar; make build/[PKG]
+#+end_src
+
+If you have the [[https://guix.gnu.org/][GNU Guix]] package manager installed, it can take care
+of all the dependencies necessary for the ELPA build system to run.
+You can initialise a shell session by running
+
+#+begin_src sh
+  guix shell -m manifest.scm
 #+end_src
 
 * Using packages in-place

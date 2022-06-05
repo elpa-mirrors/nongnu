@@ -1,8 +1,11 @@
 
-setup: GNUmakefile admin
+setup: GNUmakefile manifest.scm admin
 
 GNUmakefile: admin
 	ln -s admin/GNUmakefile ./
+
+manifest.scm: admin
+	ln -s admin/elpa-manifest.scm $@
 
 admin:
 	git remote add --no-tags -ft elpa-admin \
