@@ -531,6 +531,7 @@
   :ignored-files ("COPYING" "scripts" "test" "Eldev" "Makefile"))
 
  ("swsw"		:url "https://git.sr.ht/~dsemy/swsw"
+  :readme ignore
   :doc "swsw.texi"
   :news "NEWS")
 
@@ -563,6 +564,7 @@
  ("vc-fossil"		:url "https://github.com/venks1/emacs-fossil")
 
  ("vcomplete"		:url "https://git.sr.ht/~dsemy/vcomplete"
+  :readme ignore
   :doc "vcomplete.texi"
   :news "NEWS")
 
