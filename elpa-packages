@@ -592,6 +592,10 @@
 
  ("ujelly-theme"	:url "https://github.com/marktran/color-theme-ujelly")
 
+ ("undo-fu"             :url "https://codeberg.org/ideasman42/emacs-undo-fu"
+  :ignored-files (".elisp-autofmt" "LICENSE")
+  :news "changelog.rst")
+
  ("vc-fossil"		:url "https://github.com/venks1/emacs-fossil")
 
  ("vcomplete"		:url "https://git.sr.ht/~dsemy/vcomplete"
