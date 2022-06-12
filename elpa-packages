@@ -297,6 +297,8 @@
   :ignored-files ("test")
   :news "CHANGELOG.md")
 
+ ("inkpot-theme"        :url "https://codeberg.org/ideasman42/emacs-theme-inkpot")
+
  ("j-mode"		:url "https://github.com/zellio/j-mode"
   :ignored-files ("LICENSE"))
 
