@@ -86,6 +86,9 @@
  ("cyberpunk-theme"	:url "https://github.com/n3mo/cyberpunk-theme.el"
   :ignored-files ("cyberpunk-theme.png" "example-org-file.org"))
 
+ ("cycle-at-point"      :url "https://codeberg.org/ideasman42/emacs-cycle-at-point"
+  :ignored-files (".elisp-autofmt" "LICENSE" "tests"))
+
  ("d-mode"		:url "https://github.com/Emacs-D-Mode-Maintainers/Emacs-D-Mode"
   :ignored-files ("COPYING" "coverage" "tests-todo" "tests" "Cask" "Makefile" "d-mode-tests.el"))
 
