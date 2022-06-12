@@ -280,6 +280,9 @@
   :ignored-files ("htmlize.el.html")
   :release-branch "stable")
 
+ ("idle-highlight-mode" :url "https://codeberg.org/ideasman42/emacs-idle-highlight-mode"
+  :ignored-files (".elisp-autofmt"))
+
  ("idris-mode"		:url "https://github.com/idris-hackers/idris-mode"
   :ignored-files ("COPYING" "test-data" "Makefile" "documentation.tex"
                   "logo-small.png" "idris-tests*.el")
