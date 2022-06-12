@@ -99,6 +99,9 @@
  ("diff-ansi"   :url "https://codeberg.org/ideasman42/emacs-diff-ansi"
   :ignored-files ("LICENSE"))
 
+ ("doc-show-inline"     :url "https://codeberg.org/ideasman42/emacs-doc-show-inline"
+  :news "changelog.rst")
+
  ("dockerfile-mode"     :url "https://github.com/spotify/dockerfile-mode")
  
  ("dracula-theme"	:url "https://github.com/dracula/emacs"
