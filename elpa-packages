@@ -505,6 +505,9 @@
  ("scroll-on-drag"      :url "https://codeberg.org/ideasman42/emacs-scroll-on-drag"
   :ignored-files ("LICENSE" ".elisp-autofmt"))
 
+ ("scroll-on-jump"      :url "https://codeberg.org/ideasman42/emacs-scroll-on-jump"
+  :ignored-files ("LICENSE" ".elisp-autofmt"))
+
  ("sesman"		:url "https://github.com/vspinu/sesman"
   :ignored-files ("targets"))
 
