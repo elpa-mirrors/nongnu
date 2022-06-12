@@ -596,6 +596,10 @@
   :ignored-files (".elisp-autofmt" "LICENSE")
   :news "changelog.rst")
 
+ ("undo-fu-session"     :url "https://codeberg.org/ideasman42/emacs-undo-fu-session"
+  :ignored-files (".elisp-autofmt" "LICENSE")
+  :news "changelog.rst")
+
  ("vc-fossil"		:url "https://github.com/venks1/emacs-fossil")
 
  ("vcomplete"		:url "https://git.sr.ht/~dsemy/vcomplete"
