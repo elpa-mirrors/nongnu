@@ -397,6 +397,8 @@
   :ignored-files (".github" "tests" "Cask" "*.nix" "*.lock")
   :news "CHANGELOG.md")
 
+ ("oblivion-theme"      :url "https://codeberg.org/ideasman42/emacs-theme-oblivion")
+
  ("org-auto-tangle" :url "https://github.com/yilkalargaw/org-auto-tangle"
   :readme "README.org"
   :ignored-files ("License.org"))
