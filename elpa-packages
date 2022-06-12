@@ -543,6 +543,10 @@
   :readme "README.md"
   :ignored-files ("LICENSE" "img"))
 
+ ("spell-fu"    :url "https://codeberg.org/ideasman42/emacs-spell-fu"
+  :ignored-files ("LICENSE" ".elisp-autofmt")
+  :news "changelog.rst")
+
  ("stylus-mode"		:url "https://github.com/brianc/jade-mode"
   :ignored-files ("test" "Cask" "Makefile" "example.jade" "example.json"
 		  "jade-mode.el"))
