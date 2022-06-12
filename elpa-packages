@@ -477,6 +477,9 @@
   :ignored-files ("test" "Cask" "Makefile" "npq-mode.el")
   :news "CHANGELOG.md")
 
+ ("recomplete"  :url "https://codeberg.org/ideasman42/emacs-recomplete"
+  :ignored-files ("LICENSE" ".elisp-autofmt"))
+
  ("request"		:url "https://github.com/tkf/emacs-request"
   :ignored-files ("tests" "doc" "COPYING"))
 
