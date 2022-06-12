@@ -274,6 +274,8 @@
   :readme "README.md"
   :ignored-files ("LICENSE"))
 
+ ("hl-block-mode"       :url "https://codeberg.org/ideasman42/emacs-hl-block-mode")
+
  ("htmlize"		:url "https://github.com/hniksic/emacs-htmlize"
   :ignored-files ("htmlize.el.html")
   :release-branch "stable")
