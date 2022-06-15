@@ -568,6 +568,9 @@
   :doc "swsw.texi"
   :news "NEWS")
 
+ ("symbol-overlay"      :url "https://github.com/wolray/symbol-overlay"
+  :ignored-files ("*.png"))
+
  ("textile-mode"	:url "https://github.com/juba/textile-mode")
 
  ("systemd"		:url "https://github.com/holomorph/systemd-mode"
