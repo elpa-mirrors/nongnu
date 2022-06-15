@@ -110,6 +110,8 @@
  ("drupal-mode"         :url "https://github.com/arnested/drupal-mode.git"
   :ignored-files (".travis.yml" "COPYING" "Cask"))
 
+ ("edit-indirect"       :url "https://github.com/Fanael/edit-indirect")
+
  ("editorconfig"	:url "https://github.com/editorconfig/editorconfig-emacs"
   :doc "doc/editorconfig.texi"
   :news "CHANGELOG.md"
