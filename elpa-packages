@@ -299,6 +299,8 @@
   :ignored-files ("test")
   :news "CHANGELOG.md")
 
+ ("inf-ruby"		:url "https://github.com/nonsequitur/inf-ruby")
+
  ("inkpot-theme"        :url "https://codeberg.org/ideasman42/emacs-theme-inkpot")
 
  ("j-mode"		:url "https://github.com/zellio/j-mode"
