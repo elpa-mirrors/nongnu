@@ -67,6 +67,8 @@
   :ignored-files ("COPYING")
   :version-map ((nil "4.7.1" "a9134009bd037a39cbda21806867d0534d340bca")))
 
+ ("cdlatex"     :url "https://github.com/cdominik/cdlatex")
+ 
  ("cider"	:url "https://github.com/clojure-emacs/cider"
   :ignored-files ("LICENSE" "doc" "logo" "refcard" "test")
   :news "CHANGELOG.md")
