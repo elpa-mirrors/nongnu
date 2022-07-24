@@ -49,9 +49,6 @@
   :readme "Readme.md"
   :ignored-files ("LICENSE"))
 
- ("buttercup"		:url "https://github.com/jorgenschaefer/emacs-buttercup"
-  :ignored-files ("LICENSE"))
-
  ("bind-map"            :url "https://github.com/justbur/emacs-bind-map.git"
   :ignored-files (".travis.yml" "Cask" "LICENSE"))
 
@@ -60,6 +57,9 @@
  ("boxquote"            :url "https://github.com/davep/boxquote.el.git"
   :readme "README.md"
   :ignored-files ("COPYING"))
+
+ ("buttercup"		:url "https://github.com/jorgenschaefer/emacs-buttercup"
+  :ignored-files ("LICENSE"))
 
  ("caml"		:url "https://github.com/ocaml/caml-mode"
   ;; The version 4.7.1 from Melpa-stable seems to correspond to
@@ -180,17 +180,6 @@
 
  ("free-keys"           :url "https://github.com/Fuco1/free-keys")
 
- ("git-commit"		:url "https://github.com/magit/magit"
-  :lisp-dir "lisp"
-  :ignored-files
-  ("LICENSE" ".github" ".mailsdopcmap"
-   "docs" "Makefile" "default.mk" "lisp/Makefile" "lisp/*-pkg.el" "test"
-   "README.md" "RelNotes.org"
-   "lisp/git-rebase.el" "lisp/magit-*.el" "lisp/magit.el"))
-
- ("git-modes"		:url "https://github.com/magit/git-modes"
-  :ignored-files ("LICENSE" ".mailmap"))
-
  ("geiser"		:url "https://gitlab.com/emacs-geiser/geiser.git"
   :lisp-dir "elisp"
   :readme "readme.org"
@@ -208,6 +197,17 @@
  ("geiser-mit"		:url "https://gitlab.com/emacs-geiser/mit.git")
  ("geiser-racket"	:url "https://gitlab.com/emacs-geiser/racket.git")
  ("geiser-stklos"	:url "https://gitlab.com/emacs-geiser/stklos.git")
+
+ ("git-commit"		:url "https://github.com/magit/magit"
+  :lisp-dir "lisp"
+  :ignored-files
+  ("LICENSE" ".github" ".mailsdopcmap"
+   "docs" "Makefile" "default.mk" "lisp/Makefile" "lisp/*-pkg.el" "test"
+   "README.md" "RelNotes.org"
+   "lisp/git-rebase.el" "lisp/magit-*.el" "lisp/magit.el"))
+
+ ("git-modes"		:url "https://github.com/magit/git-modes"
+  :ignored-files ("LICENSE" ".mailmap"))
 
  ("gnu-apl-mode"        :url "https://github.com/lokedhs/gnu-apl-mode"
   ;; :doc "texi/gnu-apl-mode.texi" ; the manual is currently empty
@@ -227,11 +227,11 @@
  ("goto-chg"		:url "https://github.com/emacs-evil/goto-chg"
   :ignored-files ("LICENSE"))
 
- ("gruvbox-theme"       :url "https://github.com/greduan/emacs-theme-gruvbox.git"
-  :ignored-files ("images" "palette"))
-
  ("graphql-mode"	:url "https://github.com/davazp/graphql-mode"
   :ignored-files ("test"))
+
+ ("gruvbox-theme"       :url "https://github.com/greduan/emacs-theme-gruvbox.git"
+  :ignored-files ("images" "palette"))
 
  ("guru-mode"		:url "https://github.com/bbatsov/guru-mode")
 
@@ -321,11 +321,14 @@
  ("keycast"		:url "https://github.com/tarsius/keycast"
   :ignored-files ("Makefile"))
 
+ ("kotlin-mode"		:url "https://github.com/Emacs-Kotlin-Mode-Maintainers/kotlin-mode"
+  :ignored-files ("doc" "test" "Cask" "Makefile"))
+
  ("lua-mode"		:url "https://github.com/immerrr/lua-mode/"
   :ignored-files ("COPYING" "test" "travis" "init-tryout.el"))
 
- ("kotlin-mode"		:url "https://github.com/Emacs-Kotlin-Mode-Maintainers/kotlin-mode"
-  :ignored-files ("doc" "test" "Cask" "Makefile"))
+ ("macrostep"		:url "https://github.com/joddie/macrostep"
+  :ignored-files ("lib" "macrostep-test.el"))
 
  ("magit"		:url "https://github.com/magit/magit"
   :lisp-dir "lisp"
@@ -361,9 +364,6 @@
    "lisp/magit-status.el" "lisp/magit-submodule.el" "lisp/magit-subtree.el"
    "lisp/magit-tag.el" "lisp/magit-transient.el" "lisp/magit-utils.el"
    "lisp/magit-wip.el" "lisp/magit-worktree.el"))
-
- ("macrostep"		:url "https://github.com/joddie/macrostep"
-  :ignored-files ("lib" "macrostep-test.el"))
 
  ("markdown-mode"	:url "https://github.com/jrblevin/markdown-mode"
   :readme "README.md"
@@ -409,6 +409,11 @@
   :readme "README.org"
   :ignored-files ("License.org"))
 
+ ("org-contrib"		:url "https://git.sr.ht/~bzg/org-contrib"
+  :lisp-dir "lisp"
+  :readme "README.org"
+  :ignored-files ("COPYING" "README.md"))
+
  ("org-drill"           :url "https://gitlab.com/phillord/org-drill.git"
   :ignored-files (".gitlab-ci.yml" "Cask"))
 
@@ -439,13 +444,13 @@
  ("paredit"		:url "https://mumble.net/~campbell/git/paredit.git"
   :ignored-files ("COPYING" "check.sh" "genhtml.sh" "test.el"))
 
+ ("parseclj"		:url "https://github.com/clojure-emacs/parseclj"
+  :ignored-files ("LICENSE" "test")
+  :news "CHANGELOG.md")
+
  ("parseedn"		:url "https://github.com/clojure-emacs/parseedn"
   :readme "README.md"
   :ignored-files ("test")
-  :news "CHANGELOG.md")
-
- ("parseclj"		:url "https://github.com/clojure-emacs/parseclj"
-  :ignored-files ("LICENSE" "test")
   :news "CHANGELOG.md")
 
  ("pcmpl-args"		:url "https://github.com/JonWaltman/pcmpl-args.el"
@@ -479,6 +484,10 @@
  ("prop-menu"		:url "https://github.com/david-christiansen/prop-menu-el"
   :ignored-files ("Makefile" "prop-menu-tests.el"))
 
+ ("rainbow-delimiters"  :url "https://github.com/Fanael/rainbow-delimiters.git"
+  :readme "README.md"
+  :ignored-files ("COPYING" ".github" "rainbow-delimiters-test.el" "run-tests.sh"))
+
  ("raku-mode"		:url "https://github.com/Raku/raku-mode"
   :ignored-files ("test" "Cask" "Makefile" "npq-mode.el")
   :news "CHANGELOG.md")
@@ -493,15 +502,6 @@
 
  ("rust-mode"		:url "https://github.com/rust-lang/rust-mode"
   :ignored-files ("test-*" "triagebot.toml" "*.sh"))
-
- ("org-contrib"		:url "https://git.sr.ht/~bzg/org-contrib"
-  :lisp-dir "lisp"
-  :readme "README.org"
-  :ignored-files ("COPYING" "README.md"))
-
- ("rainbow-delimiters"  :url "https://github.com/Fanael/rainbow-delimiters.git"
-  :readme "README.md"
-  :ignored-files ("COPYING" ".github" "rainbow-delimiters-test.el" "run-tests.sh"))
 
  ("sass-mode"		:url "https://github.com/nex3/sass-mode")
 
@@ -575,20 +575,20 @@
  ("symbol-overlay"      :url "https://github.com/wolray/symbol-overlay"
   :ignored-files ("*.png"))
 
- ("textile-mode"	:url "https://github.com/juba/textile-mode")
-
  ("systemd"		:url "https://github.com/holomorph/systemd-mode"
   :ignored-files ("LICENSE" "test" "Makefile"))
 
  ("tablist"		:url "https://github.com/politza/tablist"
   :ignored-files ("COPYING"))
 
+ ("tangotango-theme"    :url "https://github.com/juba/color-theme-tangotango.git"
+  :ignored-files ("color-theme-tangotango.el" "screenshots"))
+
  ("telephone-line"      :url "https://github.com/dbordak/telephone-line.git"
   :readme "readme.org"
   :ignored-files ("COPYING" "screenshots"))
 
- ("tangotango-theme"    :url "https://github.com/juba/color-theme-tangotango.git"
-  :ignored-files ("color-theme-tangotango.el" "screenshots"))
+ ("textile-mode"	:url "https://github.com/juba/textile-mode")
 
  ("toc-org"             :url "https://github.com/snosov1/toc-org.git"
   :ignored-files ("COPYING" ".travis.yml" "toc-org-test.el"))
@@ -628,15 +628,15 @@
  ("webpaste"		:url "https://github.com/etu/webpaste.el"
   :ignored-files ("LICENSE"))
 
+ ("wgrep"		:url "https://github.com/mhayashi1120/Emacs-wgrep"
+  :ignored-files "COPYING")
+
  ("with-editor"		:url "https://github.com/magit/with-editor"
   :ignored-files ("LICENSE" "htmlxref.cnf" ".travis.yml" ".mailmap" "Makefile")
   :lisp-dir "lisp"
   :doc "docs/with-editor.texi")
 
  ("with-simulated-input" :url "https://github.com/DarwinAwardWinner/with-simulated-input")
-
- ("wgrep"		:url "https://github.com/mhayashi1120/Emacs-wgrep"
-  :ignored-files "COPYING")
 
  ("ws-butler"           :url "https://github.com/lewang/ws-butler"
   :readme "README.md"
