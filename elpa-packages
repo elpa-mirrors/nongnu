@@ -43,7 +43,7 @@
   :ignored-files ("Cask"))
 
  ("autothemer"          :url "https://github.com/jasonm23/autothemer.git"
-  :readme "readme.md")
+  :readme "README.md")
 
  ("better-jumper"       :url "https://github.com/gilbertw1/better-jumper.git"
   :readme "Readme.md"
