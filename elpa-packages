@@ -175,6 +175,9 @@
 
  ("flymake-popon"       :url "https://codeberg.org/akib/emacs-flymake-popon")
 
+ ("focus"              :url "https://github.com/larstvei/Focus"
+  :ignored-files ("*.gif"))
+
  ("forth-mode"          :url "https://github.com/larsbrinkhoff/forth-mode"
   :ignored-files ("test" "Makefile" "compile.el"))
 
