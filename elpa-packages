@@ -596,6 +596,10 @@
  ("toc-org"             :url "https://github.com/snosov1/toc-org.git"
   :ignored-files ("COPYING" ".travis.yml" "toc-org-test.el"))
 
+ ("treeview"		:url "https://github.com/tilmanrassy/emacs-treeview"
+  :readme "README.md"
+  :ignored-files ("LICENSE"))
+
  ("tuareg"		:url "https://github.com/ocaml/tuareg.git"
   :ignored-files ("COPYING"))
 
