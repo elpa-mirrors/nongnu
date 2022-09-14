@@ -567,6 +567,14 @@
   :lisp-dir "subed"
   :ignored-files "LICENSES/GPL-3.0-or-later.txt")
 
+ ("sweeprolog"          :url "https://github.com/SWI-Prolog/packages-sweep"
+  :ignored-files ("LICENSE"
+                  "sweep.c"
+                  "sweep.pl"
+                  "sweeprolog-tests.el"
+                  "CMakeLists.txt")
+  :doc "README.org")
+
  ("swift-mode"		:url "https://github.com/swift-emacs/swift-mode"
   :ignored-files ("COPYING" "scripts" "test" "Eldev" "Makefile"))
 
