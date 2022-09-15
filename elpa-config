@@ -8,3 +8,7 @@
  ;;(specs-file		"elpa-packages")
  ;;(debug		nil)
  )
+
+;; Local Variables:
+;; indent-tabs-mode: nil
+;; End:
