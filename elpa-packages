@@ -661,7 +661,7 @@
 
  ("xml-rpc"             :url "https://github.com/xml-rpc-el/xml-rpc-el.git"
   :readme "README.org"
-  :ignored-files ("LICENSE" ".github" "Makefile" "xml-rpc-test.el"))
+  :ignored-files ("LICENSE" ".github"))
 
  ("yaml-mode"		:url "https://github.com/yoshiki/yaml-mode"
   :ignored-files ("LICENSE.txt" "test-files" "Makefile")
