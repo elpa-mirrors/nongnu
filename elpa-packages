@@ -569,7 +569,7 @@
  ("sweeprolog"          :url "https://github.com/SWI-Prolog/packages-sweep"
   :ignored-files ("LICENSE"
                   "sweep.c"
-                  "sweep.pl"
+                  "sweep.doc"
                   "sweeprolog-tests.el"
                   "CMakeLists.txt")
   :doc "README.org")
