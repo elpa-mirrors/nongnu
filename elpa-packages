@@ -500,6 +500,10 @@
  ("request"		:url "https://github.com/tkf/emacs-request"
   :ignored-files ("tests" "doc" "COPYING"))
 
+ ("rfc-mode"		:url "https://github.com/galdor/rfc-mode"
+  :readme "README.md"
+  :news "changelog.org")
+
  ("rubocop"		:url "https://github.com/rubocop/rubocop-emacs")
 
  ("rust-mode"		:url "https://github.com/rust-lang/rust-mode"
@@ -567,11 +571,7 @@
   :ignored-files "LICENSES/GPL-3.0-or-later.txt")
 
  ("sweeprolog"          :url "https://github.com/SWI-Prolog/packages-sweep"
-  :ignored-files ("LICENSE"
-                  "sweep.c"
-                  "sweep.doc"
-                  "sweeprolog-tests.el"
-                  "CMakeLists.txt")
+  :ignored-files ("LICENSE")
   :doc "README.org")
 
  ("swift-mode"		:url "https://github.com/swift-emacs/swift-mode"
