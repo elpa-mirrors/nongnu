@@ -380,9 +380,7 @@
   :readme "Readme.org"
   :news "changes.org")
 
- ("mentor"              :url "https://github.com/skangas/mentor.git"
-  :ignored-files ("COPYING" "Makefile" "test-rtorrent.py" "test"
-                  "doc/scgi-protocol.txt" "doc/screenshot.png"))
+ ("mentor"              :url "https://github.com/skangas/mentor.git")
 
  ("moe-theme"           :url "https://github.com/kuanyui/moe-theme.el.git"
   :ignored-files ("pics" "LICENSE"))
