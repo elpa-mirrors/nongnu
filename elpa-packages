@@ -458,6 +458,10 @@
  ("pcmpl-args"		:url "https://github.com/JonWaltman/pcmpl-args.el"
   :readme "README.org")
 
+ ("pcre2el"             :url "https://github.com/joddie/pcre2el"
+  :readme "README.org"
+  :ignored-files (".travis.yml" "pcre2el-tests.el"))
+
  ("pdf-tools"		:url "https://github.com/vedang/pdf-tools"
   :news "NEWS"
   :readme "README.org"
