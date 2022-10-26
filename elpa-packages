@@ -329,8 +329,8 @@
  ("lua-mode"		:url "https://github.com/immerrr/lua-mode/"
   :ignored-files ("COPYING" "test" "travis" "init-tryout.el"))
 
- ("macrostep"		:url "https://github.com/joddie/macrostep"
-  :ignored-files ("lib" "macrostep-test.el"))
+ ("macrostep"		:url "https://github.com/emacsorphanage/macrostep"
+  :ignored-files ("macrostep-test.el"))
 
  ("magit"		:url "https://github.com/magit/magit"
   :lisp-dir "lisp"
