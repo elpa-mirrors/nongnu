@@ -662,8 +662,7 @@
   :ignored-files ("*.png"))
 
  ("xml-rpc"             :url "https://github.com/xml-rpc-el/xml-rpc-el.git"
-  :readme "README.org"
-  :ignored-files ("LICENSE" ".github"))
+  :readme "README.org")
 
  ("yaml-mode"		:url "https://github.com/yoshiki/yaml-mode"
   :ignored-files ("LICENSE.txt" "test-files" "Makefile")
