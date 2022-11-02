@@ -61,10 +61,11 @@
   :ignored-files ("LICENSE"))
 
  ("caml"		:url "https://github.com/ocaml/caml-mode"
+  :ignored-files ("COPYING")
   ;; The version 4.7.1 from Melpa-stable seems to correspond to
   ;; revision a9134009.
-  :ignored-files ("COPYING")
-  :version-map ((nil "4.7.1" "a9134009bd037a39cbda21806867d0534d340bca")))
+  ;; :version-map ((nil "4.7.1" "a9134009bd037a39cbda21806867d0534d340bca"))
+  )
 
  ("cdlatex"     :url "https://github.com/cdominik/cdlatex")
  
@@ -247,17 +248,19 @@
  ("haskell-tng-mode"	:url "https://gitlab.com/tseenshe/haskell-tng.el"
   :ignored-files "COPYING")
 
- ;; haskell-mode has been removed until further notice from the
- ;; upstream maintainers:
+ ;; FIXME: haskell-mode was removed from here, following a request (see
  ;; https://github.com/haskell/haskell-mode/issues/1755#issuecomment-896127958
- ;;
- ;; ("haskell-mode"	:url "https://github.com/haskell/haskell-mode"
- ;;  :doc "doc/haskell-mode.texi"
- ;;  :ignored-files ("images" "test" "logo.svg")
- ;;  ;; Until a version tag is added, the commit of the latest tag is
- ;;  ;; used to determine the last stable release:
- ;;  ;; https://github.com/haskell/haskell-mode/releases/tag/17.2
- ;;  :version-map ((nil "17.2" "e72677668f5fc7cc148008e885a0f256e245dd43")))
+ ;; but it stayed in NonGNU ELPA because the `elpa-admin.el` scripts did
+ ;; not know how to remove packages.
+ ;; In the mean time, the `hcel` GNU ELPA package was added, which uses
+ ;; `haskell-mode`, so we re-instated the packege here.
+ ("haskell-mode"	:url "https://github.com/haskell/haskell-mode"
+  :doc "doc/haskell-mode.texi"
+  :ignored-files ("images" "test" "logo.svg")
+  ;; Until a version tag is added, the commit of the latest tag is
+  ;; used to determine the last stable release:
+  ;; https://github.com/haskell/haskell-mode/releases/tag/17.2
+  :version-map ((nil "17.2" "e72677668f5fc7cc148008e885a0f256e245dd43")))
 
  ("helm"		:url "https://github.com/emacs-helm/helm"
   :ignored-files ("images" "Cask" "Makefile" "emacs-helm.sh" "helm-core.el" "helm.el"
