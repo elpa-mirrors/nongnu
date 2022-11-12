@@ -127,6 +127,8 @@
   :doc "elpher.texi"
   :ignored-files ("Makefile" "ISSUES.org" "RELEASE" "config.mk"))
 
+ ;; ("emacsql"		:url "https://github.com/magit/emacsql")
+
  ("evil"		:url "https://github.com/emacs-evil/evil"
   :ignored-files ("COPYING" "lib" "scripts")
   :doc "doc/build/texinfo/evil.texi")
@@ -245,9 +247,6 @@
   ;; manually set the latest commit to a proper version number:
   :version-map (("0" "3.1.10" "bf5b6c11b1206759d2b28af48765e04882dd1fc4")))
 
- ("haskell-tng-mode"	:url "https://gitlab.com/tseenshe/haskell-tng.el"
-  :ignored-files "COPYING")
-
  ;; FIXME: haskell-mode was removed from here, following a request (see
  ;; https://github.com/haskell/haskell-mode/issues/1755#issuecomment-896127958
  ;; but it stayed in NonGNU ELPA because the `elpa-admin.el` scripts did
@@ -261,6 +260,9 @@
   ;; used to determine the last stable release:
   ;; https://github.com/haskell/haskell-mode/releases/tag/17.2
   :version-map ((nil "17.2" "e72677668f5fc7cc148008e885a0f256e245dd43")))
+
+ ("haskell-tng-mode"	:url "https://gitlab.com/tseenshe/haskell-tng.el"
+  :ignored-files "COPYING")
 
  ("helm"		:url "https://github.com/emacs-helm/helm"
   :ignored-files ("images" "Cask" "Makefile" "emacs-helm.sh" "helm-core.el" "helm.el"
@@ -515,6 +517,10 @@
   :ignored-files ("test-*" "triagebot.toml" "*.sh"))
 
  ("sass-mode"		:url "https://github.com/nex3/sass-mode")
+
+ ("scad-mode"		:url "https://github.com/openscad/emacs-scad-mode"
+  :ignored-files ("LICENSE")
+  :readme "README.org")
 
  ("scala-mode"		:url "https://github.com/hvesalai/emacs-scala-mode"
   :ignored-files ("LICENSE" "test" "Cask" "Makefile"))
