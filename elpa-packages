@@ -497,6 +497,10 @@
  ("prop-menu"		:url "https://github.com/david-christiansen/prop-menu-el"
   :ignored-files ("Makefile" "prop-menu-tests.el"))
 
+ ("racket-mode"         :url "https://github.com/greghendershott/racket-mode"
+  :doc "doc/racket-mode.texi"
+  :rolling-release "1")
+
  ("rainbow-delimiters"  :url "https://github.com/Fanael/rainbow-delimiters.git"
   :readme "README.md"
   :ignored-files ("COPYING" ".github" "rainbow-delimiters-test.el" "run-tests.sh"))
