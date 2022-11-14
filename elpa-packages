@@ -410,6 +410,10 @@
 
  ("oblivion-theme"      :url "https://codeberg.org/ideasman42/emacs-theme-oblivion")
 
+ ("opam-switch-mode"	:url "https://github.com/ProofGeneral/opam-switch-mode"
+  :ignored-files ("LICENSE")
+  :readme "README.md")
+
  ("org-auto-tangle" :url "https://github.com/yilkalargaw/org-auto-tangle"
   :readme "README.org"
   :ignored-files ("License.org"))
