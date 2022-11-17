@@ -551,7 +551,7 @@
   :doc "doc/slime.texi")
 
  ("sly"			:url "https://github.com/joaotavora/sly"
-  :texinfo "doc/sly.texi"
+  :doc "doc/sly.texi"
   ;; Not needed any more:
   ;; :version-map (("1.0.0-beta-3" "1.0.0beta3"))
   )
