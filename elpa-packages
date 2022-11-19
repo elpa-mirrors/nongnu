@@ -37,8 +37,7 @@
  ("apropospriate-theme"	:url "https://github.com/waymondo/apropospriate-theme"
   :ignored-files ("*.png"))
 
- ;; Arduino-mode is not on Github any more, but hasn't found a new home yet.
- ("arduino-mode" :url nil ;Was "https://github.com/stardiviner/arduino-mode"
+ ("arduino-mode" :url "https://repo.or.cz/arduino-mode.git"
   :ignored-files ("Cask"))
 
  ("autothemer"          :url "https://github.com/jasonm23/autothemer.git"
