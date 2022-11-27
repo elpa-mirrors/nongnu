@@ -190,6 +190,8 @@
 
  (free-keys		:url "https://github.com/Fuco1/free-keys")
 
+ (gc-buffers            :url "https://codeberg.org/akib/emacs-gc-buffers")
+
  (geiser		:url "https://gitlab.com/emacs-geiser/geiser.git"
   :lisp-dir "elisp"
   :readme "readme.org"
