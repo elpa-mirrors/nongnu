@@ -323,6 +323,8 @@
 
  (inkpot-theme		:url "https://codeberg.org/ideasman42/emacs-theme-inkpot")
 
+ (iwindow               :url "https://codeberg.org/akib/emacs-iwindow")
+
  (j-mode		:url "https://github.com/zellio/j-mode"
   :ignored-files ("LICENSE"))
 
