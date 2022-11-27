@@ -117,6 +117,9 @@
  (drupal-mode		:url "https://github.com/arnested/drupal-mode.git"
   :ignored-files (".travis.yml" "COPYING" "Cask"))
 
+ (eat                   :url "https://codeberg.org/akib/emacs-eat"
+  :doc "eat.texi")
+
  (edit-indirect		:url "https://github.com/Fanael/edit-indirect")
 
  (editorconfig		:url "https://github.com/editorconfig/editorconfig-emacs"
