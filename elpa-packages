@@ -52,6 +52,8 @@
 
  (bison-mode		:url "https://github.com/Wilfred/bison-mode")
 
+ (blow                  :url "https://codeberg.org/akib/emacs-blow")
+
  (boxquote		:url "https://github.com/davep/boxquote.el.git"
   :readme "README.md"
   :ignored-files ("COPYING"))
