@@ -400,6 +400,8 @@
 
  (mentor		:url "https://github.com/skangas/mentor.git")
 
+ (minibar               :url "https://codeberg.org/akib/emacs-minibar")
+
  (moe-theme		:url "https://github.com/kuanyui/moe-theme.el.git"
   :ignored-files ("pics" "LICENSE"))
 
