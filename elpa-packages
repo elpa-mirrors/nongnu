@@ -681,6 +681,8 @@
  (wgrep			:url "https://github.com/mhayashi1120/Emacs-wgrep"
   :ignored-files "COPYING")
 
+ (why-this              :url "https://codeberg.org/akib/emacs-why-this")
+
  (with-editor		:url "https://github.com/magit/with-editor"
   :ignored-files ("LICENSE" "htmlxref.cnf" ".travis.yml" ".mailmap" "Makefile")
   :lisp-dir "lisp"
