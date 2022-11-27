@@ -690,6 +690,9 @@
 
  (with-simulated-input	:url "https://github.com/DarwinAwardWinner/with-simulated-input")
 
+ (workroom              :url "https://codeberg.org/akib/emacs-workroom"
+  :doc "workroom.texi")
+
  (ws-butler		:url "https://github.com/lewang/ws-butler"
   :readme "README.md"
   :ignored-files ("COPYING" "tests" "Makefile" ".travis.yml"))
