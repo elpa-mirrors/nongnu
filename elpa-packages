@@ -61,6 +61,8 @@
  (buttercup		:url "https://github.com/jorgenschaefer/emacs-buttercup"
   :ignored-files ("LICENSE"))
 
+ (camera                :url "https://codeberg.org/akib/emacs-camera")
+
  (caml			:url "https://github.com/ocaml/caml-mode"
   :ignored-files ("COPYING")
   ;; The version 4.7.1 from Melpa-stable seems to correspond to
