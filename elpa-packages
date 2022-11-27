@@ -294,6 +294,8 @@
   :readme "README.md"
   :ignored-files ("LICENSE"))
 
+ (hl-column             :url "https://codeberg.org/akib/emacs-hl-column")
+
  (hl-block-mode		:url "https://codeberg.org/ideasman42/emacs-hl-block-mode")
 
  (htmlize		:url "https://github.com/hniksic/emacs-htmlize"
