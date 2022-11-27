@@ -632,6 +632,8 @@
   :readme "readme.org"
   :ignored-files ("COPYING" "screenshots"))
 
+ (testcover-mark-line   :url "https://codeberg.org/akib/emacs-testcover-mark-line")
+
  (textile-mode		:url "https://github.com/juba/textile-mode")
 
  (toc-org		:url "https://github.com/snosov1/toc-org.git"
