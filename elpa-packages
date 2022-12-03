@@ -43,6 +43,9 @@
  (autothemer		:url "https://github.com/jasonm23/autothemer.git"
   :readme "README.md")
 
+ (bash-completion	:url "https://github.com/szermatt/emacs-bash-completion"
+  :readme "README.md")
+
  (better-jumper		:url "https://github.com/gilbertw1/better-jumper.git"
   :readme "Readme.md"
   :ignored-files ("LICENSE"))
@@ -297,9 +300,9 @@
   :readme "README.md"
   :ignored-files ("LICENSE"))
 
- (hl-column             :url "https://codeberg.org/akib/emacs-hl-column")
-
  (hl-block-mode		:url "https://codeberg.org/ideasman42/emacs-hl-block-mode")
+
+ (hl-column             :url "https://codeberg.org/akib/emacs-hl-column")
 
  (htmlize		:url "https://github.com/hniksic/emacs-htmlize"
   :ignored-files ("htmlize.el.html")
