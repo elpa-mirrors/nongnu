@@ -350,6 +350,9 @@
  (kotlin-mode		:url "https://github.com/Emacs-Kotlin-Mode-Maintainers/kotlin-mode"
   :ignored-files ("doc" "test" "Cask" "Makefile"))
 
+ (lorem-ipsum           :url "https://github.com/jschaf/emacs-lorem-ipsum"
+  :readme "README.md")
+
  (lua-mode		:url "https://github.com/immerrr/lua-mode/"
   :ignored-files ("COPYING" "test" "travis" "init-tryout.el"))
 
