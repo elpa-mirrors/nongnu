@@ -703,6 +703,9 @@
 
  (with-simulated-input	:url "https://github.com/DarwinAwardWinner/with-simulated-input")
 
+ (writegood-mode	:url "https://github.com/bnbeckwith/writegood-mode"
+  :readme "README.org")
+
  (workroom              :url "https://codeberg.org/akib/emacs-workroom"
   :doc "workroom.texi")
 
