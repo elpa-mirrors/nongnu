@@ -167,6 +167,10 @@
  (evil-goggles		:url "https://github.com/edkolev/evil-goggles.git"
   :ignored-files (".travis.yml" "test" "Makefile"))
 
+ (evil-iedit-state	:url "https://github.com/syl20bnr/evil-iedit-state"
+  :readme "README.md"
+  :ignored-files ("LICENSE"))
+
  (evil-indent-plus	:url "https://github.com/TheBB/evil-indent-plus.git"
   :readme "README.md")
 
