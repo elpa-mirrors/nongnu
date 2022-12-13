@@ -721,6 +721,10 @@
  (xah-fly-keys		:url "https://github.com/xahlee/xah-fly-keys"
   :ignored-files ("*.png"))
 
+ (xkcd			:url "https://github.com/vibhavp/emacs-xkcd"
+  :readme "README.org"
+  :ignored-files ("LICENSE" ".travis.yml" "images"))
+
  (xml-rpc		:url "https://github.com/xml-rpc-el/xml-rpc-el.git"
   :readme "README.org")
 
