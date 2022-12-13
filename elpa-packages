@@ -261,6 +261,11 @@
   :ignored-files (".travis.yml" "LICENSE"
                   "flx-ido.el" "misc/flx-ido-demo.el" "misc/flx-test-list.el"))
 
+ (flx-ido		:url "https://github.com/lewang/flx"
+  :readme ignore
+  :ignored-files (".travis.yml" "Cask" "LICENSE" "tests" "Makefile"
+                  "flx.el" "misc/flx-helm-demo.el" "misc/flx-test-list.el"))
+
  (flymake-kondor	:url "https://github.com/turbo-cafe/flymake-kondor"
   :ignored-files ("COPYING.txt"))
 
