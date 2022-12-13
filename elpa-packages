@@ -320,8 +320,6 @@
 		  "logo-small.png" "idris-tests*.el")
   :news "CHANGES.markdown")
 
- ;; FIXME: Upstream has force-pushed, causing divergence, see
- ;; https://github.com/victorhge/iedit/issues/147
  (iedit			:url "https://github.com/victorhge/iedit.git"
   :ignored-files ("COPYING" "iedit-demo.gif" "release.sh"))
 
