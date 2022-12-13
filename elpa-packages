@@ -258,6 +258,9 @@
  (graphql-mode		:url "https://github.com/davazp/graphql-mode"
   :ignored-files ("test"))
 
+ (gruber-darker-theme	:url "https://github.com/rexim/gruber-darker-theme"
+  :readme "README.md")
+
  (gruvbox-theme		:url "https://github.com/greduan/emacs-theme-gruvbox.git"
   :ignored-files ("images" "palette"))
 
