@@ -9,5 +9,5 @@ manifest.scm: admin
 
 admin:
 	git remote add --no-tags -ft elpa-admin \
-	    gnu-elpa git://git.sv.gnu.org/emacs/elpa.git
+	    gnu-elpa https://git.savannah.gnu.org/git/emacs/elpa.git
 	git worktree add -b elpa-admin admin gnu-elpa/elpa-admin
