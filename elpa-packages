@@ -516,6 +516,25 @@
   :ignored-files (".github" "tests" "Cask" "*.nix" "*.lock")
   :news "CHANGELOG.md")
 
+ (notmuch               :url "https://git.notmuchmail.org/git/notmuch"
+  :lisp-dir "emacs"
+  :ignored-files
+  ("emacs/make-deps.el" "emacs/Makefile*" "emacs/*.tmpl" "emacs/rstdoc.*"
+   "emacs/notmuch-emacs-mua*" "bindings" "compat" "completion" "contrib"
+   "debian" "devel" "doc" "lib" "packaging" "parse-time-string" "COPYING"
+   "performance-test" "test" "util" "vim" "*.c" "*.h" "configure"
+   "INSTALL" "Makefile*" "README.rst" "notmuch-git.py" "version.txt"
+   ".travis.yml" "sh.config" "sphinx.config" ".mailmap" "COPYING-GPL-3")
+  :make ("emacs/notmuch-pkg.el" "emacs/notmuch-version.el")
+  ;; FIXME: notmuch-pkg.el is not committed to Git.
+  ;; Upstream are amenable to making changes in this area, but they have a
+  ;; number of build targets that involve generated snapshot version numbers,
+  ;; and we would need to confirm that committing notmuch-pkg.el doesn't
+  ;; interfere too much with any of those.
+  ;; Alternatively, could we have elpa-admin run 'make emacs/notmuch-pkg.el'
+  ;; before looking for a version?
+  :version-map ((nil "0.37" "0.37")))
+
  (oblivion-theme	:url "https://codeberg.org/ideasman42/emacs-theme-oblivion")
 
  (opam-switch-mode	:url "https://github.com/ProofGeneral/opam-switch-mode"
