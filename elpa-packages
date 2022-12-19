@@ -211,6 +211,10 @@
  ;; FIXME: Add this?  Depends on the `sqlite3' package, not in NonGNU ELPA.
  ;; (emacsql-sqlite-module		:url "https://github.com/magit/emacsql")
 
+ (engine-mode		:url "https://github.com/hrs/engine-mode"
+  :readme "README.md"
+  :ignored-files ("doc/demo.gif"))
+
  (evil			:url "https://github.com/emacs-evil/evil"
   :ignored-files ("COPYING" "lib" "scripts")
   :doc "doc/build/texinfo/evil.texi")
