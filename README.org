@@ -1,5 +1,5 @@
 #+TITLE: NonGNU ELPA README
-#+DATE: 2022-06-05
+#+DATE: 2023-01-07
 
 Copyright (C) 2020-2022 Free Software Foundation, Inc. \\
 See the end of the file for license conditions.
@@ -12,7 +12,7 @@ it in both locations.  This duplication will be removed eventually.
 #+END_COMMENT
 
 This repository contains the sources, deployment scripts, and auxiliary files
-for [[https://nongnu.elpa.org][NonGNU ELPA]] (=elpa.nongnu.org=).  NonGNU ELPA is a [[https://www.gnu.org/philosophy/free-sw.html][free software]] Emacs Lisp
+for [[https://elpa.nongnu.org][NonGNU ELPA]] (=elpa.nongnu.org=).  NonGNU ELPA is a [[https://www.gnu.org/philosophy/free-sw.html][free software]] Emacs Lisp
 Package Archive (ELPA) with extensions to [[https://www.gnu.org/software/emacs/][GNU Emacs]].
 
 This file explains the repository layout, how to add and edit
