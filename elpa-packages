@@ -1,6 +1,6 @@
 ;; -*- lisp-data -*-
 
-;; Copyright (C) 2020-2022 Free Software Foundation, Inc.
+;; Copyright (C) 2020-2023 Free Software Foundation, Inc.
 
 ;; List of packages.
 ;; The list is made of elements of the form (NAME . PLIST)
@@ -531,24 +531,28 @@
   :ignored-files (".github" "tests" "Cask" "*.nix" "*.lock")
   :news "CHANGELOG.md")
 
- (notmuch               :url "https://git.notmuchmail.org/git/notmuch"
-  :lisp-dir "emacs"
-  :ignored-files
-  ("emacs/make-deps.el" "emacs/Makefile*" "emacs/*.tmpl" "emacs/rstdoc.*"
-   "emacs/notmuch-emacs-mua*" "bindings" "compat" "completion" "contrib"
-   "debian" "devel" "doc" "lib" "packaging" "parse-time-string" "COPYING"
-   "performance-test" "test" "util" "vim" "*.c" "*.h" "configure"
-   "INSTALL" "Makefile*" "README.rst" "notmuch-git.py" "version.txt"
-   ".travis.yml" "sh.config" "sphinx.config" ".mailmap" "COPYING-GPL-3")
-  :make ("emacs/notmuch-pkg.el" "emacs/notmuch-version.el")
-  ;; FIXME: notmuch-pkg.el is not committed to Git.
-  ;; Upstream are amenable to making changes in this area, but they have a
-  ;; number of build targets that involve generated snapshot version numbers,
-  ;; and we would need to confirm that committing notmuch-pkg.el doesn't
-  ;; interfere too much with any of those.
-  ;; Alternatively, could we have elpa-admin run 'make emacs/notmuch-pkg.el'
-  ;; before looking for a version?
-  :version-map ((nil "0.37" "0.37")))
+ ;; FIXME: The Notmuch package is currently not suited to (Non)GNU ELPA for
+ ;; various reasons:
+ ;; - The main one is that the Emacs code needs to be in-sync with the non-Emacs
+ ;;   code, so installing this separately can be a problem.  For the same
+ ;;   reason the upstream recommends against installing from MELPA.  It's
+ ;;   a recurring source of problem.
+ ;; - The upstream Git branch includes the whole of Notmuch rather than just
+ ;;   the part we need for (Non)GNU ELPA, so it needlessly bloats nognu.git
+ ;;   and elpa.gnu.org.
+ ;; - Various more minor issues about the format and the requirements
+ ;;   to build the tarballs, which haven't been worked out yet.
+ ;; (notmuch               :url "https://git.notmuchmail.org/git/notmuch"
+ ;;  :lisp-dir "emacs"
+ ;;  :ignored-files
+ ;;  ("emacs/make-deps.el" "emacs/Makefile*" "emacs/*.tmpl" "emacs/rstdoc.*"
+ ;;   "emacs/notmuch-emacs-mua*" "bindings" "compat" "completion" "contrib"
+ ;;   "debian" "devel" "doc" "lib" "packaging" "parse-time-string" "COPYING"
+ ;;   "performance-test" "test" "util" "vim" "*.c" "*.h" "configure"
+ ;;   "INSTALL" "Makefile*" "README.rst" "notmuch-git.py" "version.txt"
+ ;;   ".travis.yml" "sh.config" "sphinx.config" ".mailmap" "COPYING-GPL-3")
+ ;;  :make ("emacs/notmuch-pkg.el" "emacs/notmuch-version.el")
+ ;;  :version-map ((nil "0.37" "????")))
 
  (oblivion-theme	:url "https://codeberg.org/ideasman42/emacs-theme-oblivion")
 
