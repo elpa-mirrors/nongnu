@@ -696,6 +696,8 @@
  ;; FIXME: Upstream has accidentally diverged, see
  ;; https://github.com/slime/slime/pull/648
  (slime			:url "https://github.com/slime/slime"
+  ;; According to `git log -- NEWS`, seems to be the closest to "maintainer".
+  :maintainer "Stas Boukarev <stassats@gmail.com>"
   :doc "doc/slime.texi")
 
  (sly			:url "https://github.com/joaotavora/sly"
