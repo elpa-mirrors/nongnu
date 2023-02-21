@@ -148,70 +148,7 @@
 
  (emacsql		:url "https://github.com/magit/emacsql"
   :readme "README.md"
-  :ignored-files ("Makefile" "tests" "sqlite"
-                  ;; "emacsql-compiler.el"
-                  "emacsql-mysql.el"
-                  "emacsql-pg.el"
-                  "emacsql-psql.el"
-                  "emacsql-sqlite-builtin.el"
-                  "emacsql-sqlite-module.el"
-                  "emacsql-sqlite.el"
-                  ;; "emacsql.el"
-                  ))
-
- (emacsql-mysql		:url "https://github.com/magit/emacsql"
-  :readme ignore
-  :ignored-files ("Makefile" "tests" "sqlite"
-                  "emacsql-compiler.el"
-                  ;; "emacsql-mysql.el"
-                  "emacsql-pg.el"
-                  "emacsql-psql.el"
-                  "emacsql-sqlite-builtin.el"
-                  "emacsql-sqlite-module.el"
-                  "emacsql-sqlite.el"
-                  "emacsql.el"))
-
- ;; FIXME: Add this?  Depends on the `pg' package, not in NonGNU ELPA.
- ;; (emacsql-pg		:url "https://github.com/magit/emacsql")
-
- (emacsql-psql		:url "https://github.com/magit/emacsql"
-  :readme ignore
-  :ignored-files ("Makefile" "tests" "sqlite"
-                  "emacsql-compiler.el"
-                  "emacsql-mysql.el"
-                  "emacsql-pg.el"
-                  ;; "emacsql-psql.el"
-                  "emacsql-sqlite-builtin.el"
-                  "emacsql-sqlite-module.el"
-                  "emacsql-sqlite.el"
-                  "emacsql.el"))
-
- (emacsql-sqlite	:url "https://github.com/magit/emacsql"
-  :readme ignore
-  :ignored-files ("Makefile" "tests" ;; "sqlite"
-                  "emacsql-compiler.el"
-                  "emacsql-mysql.el"
-                  "emacsql-pg.el"
-                  "emacsql-psql.el"
-                  "emacsql-sqlite-builtin.el"
-                  "emacsql-sqlite-module.el"
-                  ;; "emacsql-sqlite.el"
-                  "emacsql.el"))
-
- (emacsql-sqlite-builtin	:url "https://github.com/magit/emacsql"
-  :readme ignore
-  :ignored-files ("Makefile" "tests" "sqlite"
-                  "emacsql-compiler.el"
-                  "emacsql-mysql.el"
-                  "emacsql-pg.el"
-                  "emacsql-psql.el"
-                  ;; "emacsql-sqlite-builtin.el"
-                  "emacsql-sqlite-module.el"
-                  "emacsql-sqlite.el"
-                  "emacsql.el"))
-
- ;; FIXME: Add this?  Depends on the `sqlite3' package, not in NonGNU ELPA.
- ;; (emacsql-sqlite-module		:url "https://github.com/magit/emacsql")
+  :ignored-files (".github" "Makefile" "tests"))
 
  (engine-mode		:url "https://github.com/hrs/engine-mode"
   :readme "README.md"
