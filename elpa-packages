@@ -666,7 +666,7 @@
   :news "changelog.rst")
 
  (sqlite3               :url "https://github.com/pekingduck/emacs-sqlite3-api"
-  :ignore-files ("LICENSE" "tests" "tools"))
+  :ignored-files ("LICENSE" "tests" "tools"))
 
  (stylus-mode		:url "https://github.com/brianc/jade-mode"
   :ignored-files ("test" "Cask" "Makefile" "example.jade" "example.json"
