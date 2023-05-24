@@ -114,7 +114,8 @@
 
  (devil                 :url "https://github.com/susam/devil"
   :readme "README.org"
-  :news "CHANGES.org")
+  :news "CHANGES.org"
+  :doc "MANUAL.org")
 
  (diff-ansi		:url "https://codeberg.org/ideasman42/emacs-diff-ansi"
   :ignored-files ("LICENSE"))
