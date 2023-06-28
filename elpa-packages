@@ -691,10 +691,11 @@
  (swift-mode		:url "https://github.com/swift-emacs/swift-mode"
   :ignored-files ("COPYING" "scripts" "test" "Eldev" "Makefile"))
 
- (swsw			:url "https://git.sr.ht/~dsemy/swsw"
-  :readme ignore
-  :doc "swsw.texi"
-  :news "NEWS")
+ ;; Renamed to `window-commander` and moved to GNU ELPA.
+ ;;(swsw			:url "https://git.sr.ht/~dsemy/swsw"
+ ;; :readme ignore
+ ;; :doc "swsw.texi"
+ ;; :news "NEWS")
 
  (symbol-overlay	:url "https://github.com/wolray/symbol-overlay"
   :ignored-files ("*.png"))
