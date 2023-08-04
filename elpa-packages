@@ -306,12 +306,8 @@
  ;; `haskell-mode`, so we re-instated the packege here.
  (haskell-mode		:url "https://github.com/haskell/haskell-mode"
   :doc "doc/haskell-mode.texi"
-  :ignored-files ("images" "test" "logo.svg")
-  ;; Until a version tag is added, the commit of the latest tag is
-  ;; used to determine the last stable release:
-  ;; https://github.com/haskell/haskell-mode/releases/tag/17.2
-  :version-map ((nil "17.2" "e72677668f5fc7cc148008e885a0f256e245dd43")))
-
+  :ignored-files ("images" "test" "logo.svg"))
+ 
  (haskell-tng-mode	:url "https://gitlab.com/tseenshe/haskell-tng.el"
   :ignored-files "COPYING")
 
