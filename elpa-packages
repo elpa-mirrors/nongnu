@@ -758,6 +758,8 @@
  (wgrep			:url "https://github.com/mhayashi1120/Emacs-wgrep"
   :ignored-files "COPYING")
 
+ (wfnames               :url "https://github.com/thierryvolpiatto/wfnames")
+
  (why-this              :url "https://codeberg.org/akib/emacs-why-this")
 
  (with-editor		:url "https://github.com/magit/with-editor"
