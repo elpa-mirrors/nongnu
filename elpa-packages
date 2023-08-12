@@ -87,6 +87,10 @@
   :ignored-files ("clojure-mode-extra-font-locking.el" "doc" "test" "test.clj")
   :news "CHANGELOG.md")
 
+ (clojure-ts-mode   :url "https://github.com/clojure-emacs/clojure-ts-mode"
+  :readme "README.md"
+  :news "CHANGELOG.md")
+
  (coffee-mode		:url "https://github.com/defunkt/coffee-mode")
 
  (corfu-terminal	:url "https://codeberg.org/akib/emacs-corfu-terminal")
