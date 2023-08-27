@@ -662,7 +662,7 @@
 		  "Cask" "Makefile"))
 
  (spacemacs-theme	:url "https://github.com/nashamri/spacemacs-theme.git"
-  :main-file "spacemacs-common.el"
+  ;; :main-file "spacemacs-common.el"
   :readme "README.md"
   :ignored-files ("LICENSE" "img"))
 
