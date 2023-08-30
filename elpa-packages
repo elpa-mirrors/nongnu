@@ -145,7 +145,7 @@
   :news "CHANGELOG.md"
   :ignored-files ("LICENSE" "bin" "ert-tests"))
 
- ;; (el-mock		:url "https://github.com/rejeep/el-mock.el")
+ (el-mock		:url "https://github.com/rejeep/el-mock.el")
 
  (elixir-mode		:url "https://github.com/elixir-editors/emacs-elixir"
   :ignored-files ("tests" "Eldev")
@@ -436,8 +436,12 @@
   ;; :dont-release "-dev\\'"
   :news "CHANGES.md")
 
- ;; (mastodon		:url "https://codeberg.org/martianh/mastodon.el"
- ;;  :lisp-dir "lisp")
+ (mastodon		:url "https://codeberg.org/martianh/mastodon.el"
+  :branch "develop"
+  :release-branch "main"
+  :lisp-dir "lisp"
+  :doc "mastodon.texi"
+  :readme "README.org")
 
  (material-theme	:url "https://github.com/cpaulik/emacs-material-theme"
   :ignored-files ("*.png")
@@ -573,7 +577,7 @@
  (popup			:url "https://github.com/auto-complete/popup-el"
   :ignored-files ("LICENSE"))
 
- ;; (prescient		:url "https://github.com/radian-software/prescient.el")
+ (prescient		:url "https://github.com/radian-software/prescient.el")
 
  (projectile		:url "https://github.com/bbatsov/projectile"
   :ignored-files ("LICENSE" "doc" "test")
