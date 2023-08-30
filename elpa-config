@@ -3,11 +3,10 @@
 ((name			"NonGNU")
  (gitrepo		"emacs/nongnu.git")
  (url			"https://elpa.nongnu.org/nongnu/")
- ;;(dependencies-archive-contents ("archive-devel/archive-contents"))
  ;;(branch-prefix		"elpa/")
  ;;(release-branch-prefix	"elpa-release/")
  ;;(specs-file		"elpa-packages")
- ;; (debug		t)
+ ;;(debug		nil)
  )
 
 ;; Local Variables:
