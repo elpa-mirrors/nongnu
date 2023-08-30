@@ -437,8 +437,9 @@
   :news "CHANGES.md")
 
  (mastodon		:url "https://codeberg.org/martianh/mastodon.el"
-  :branch "develop"
-  :release-branch "main"
+  :branch ;; "develop"
+  ;; :release-branch
+  "main"
   :lisp-dir "lisp"
   :doc "mastodon.texi"
   :readme "README.org")
