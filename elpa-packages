@@ -690,7 +690,7 @@
 
  (sweeprolog		:url "https://github.com/SWI-Prolog/packages-sweep"
   :ignored-files ("LICENSE")
-  :doc "README.org")
+  :doc "sweep.texi")
 
  (swift-mode		:url "https://github.com/swift-emacs/swift-mode"
   :ignored-files ("COPYING" "scripts" "test" "Eldev" "Makefile"))
