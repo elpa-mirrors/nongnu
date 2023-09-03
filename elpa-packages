@@ -344,6 +344,10 @@
   :ignored-files ("htmlize.el.html")
   :release-branch "stable")
 
+ (hyperdrive		:url "https://git.sr.ht/~ushin/hyperdrive.el"
+  :readme "README.md"
+  :doc "doc/hyperdrive-manual.org")
+
  (idle-highlight-mode	:url "https://codeberg.org/ideasman42/emacs-idle-highlight-mode"
   :ignored-files (".elisp-autofmt"))
 
