@@ -11,6 +11,8 @@
 ;; that can be used in PLIST.
 
 (
+ (adoc-mode             :url "https://github.com/bbatsov/adoc-mode")
+
  (afternoon-theme	:url "https://github.com/osener/emacs-afternoon-theme"
   :ignored-files ("*.png"))
 
