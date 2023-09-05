@@ -557,6 +557,9 @@
   :ignored-files ("it-cases" "sprites/src" "test-data" "test" "tools"
 		  ".travis.yml" "Cask"))
 
+ (page-break-lines      :url "https://github.com/purcell/page-break-lines"
+  :ignored-files (".github" "Makefile" "*.png"))
+
  (paredit		:url "https://mumble.net/~campbell/git/paredit.git"
   :ignored-files ("COPYING" "check.sh" "genhtml.sh" "test.el"))
 
