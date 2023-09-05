@@ -624,6 +624,9 @@
  (recomplete		:url "https://codeberg.org/ideasman42/emacs-recomplete"
   :ignored-files ("LICENSE" ".elisp-autofmt"))
 
+ (reformatter           :url "https://github.com/purcell/emacs-reformatter"
+  :ignored-files (".github" "Makefile" "*-tests.el"))
+
  (request		:url "https://github.com/tkf/emacs-request"
   :ignored-files ("tests" "doc" "COPYING"))
 
