@@ -153,7 +153,7 @@
   :ignored-files ("tests" "Eldev")
   :news "CHANGELOG.md")
 
- (elpher		:url "git://thelambdalab.xyz/elpher.git"
+ (elpher		:url "https://thelambdalab.xyz/git/elpher.git"
   :doc "elpher.texi"
   :ignored-files ("Makefile" "ISSUES.org" "RELEASE" "config.mk"))
 
