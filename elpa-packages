@@ -284,6 +284,10 @@
  (go-mode		:url "https://github.com/dominikh/go-mode.el"
   :ignored-files ("generate_authors.sh"))
 
+ (golden-ratio		:url "https://github.com/roman/golden-ratio.el.git"
+  :readme "README.md"
+  :ignored-files ("LICENSE"))
+
  (gotham-theme		:url "https://depp.brause.cc/gotham-theme.git"
   :readme "README.md"
   :ignored-files ("img" "LICENSE"))
