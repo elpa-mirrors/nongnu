@@ -313,12 +313,6 @@
   ;; manually set the latest commit to a proper version number:
   :version-map (("0" "3.1.10" "bf5b6c11b1206759d2b28af48765e04882dd1fc4")))
 
- ;; FIXME: haskell-mode was removed from here, following a request (see
- ;; https://github.com/haskell/haskell-mode/issues/1755#issuecomment-896127958
- ;; but it stayed in NonGNU ELPA because the `elpa-admin.el` scripts did
- ;; not know how to remove packages.
- ;; In the mean time, the `hcel` GNU ELPA package was added, which uses
- ;; `haskell-mode`, so we re-instated the packege here.
  (haskell-mode		:url "https://github.com/haskell/haskell-mode"
   :doc "doc/haskell-mode.texi"
   :ignored-files ("images" "test" "logo.svg"))
