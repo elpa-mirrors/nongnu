@@ -63,6 +63,10 @@
 
  (blow                  :url "https://codeberg.org/akib/emacs-blow")
 
+ (blueprint-ts-mode     :url "https://github.com/huanie/blueprint-ts-mode.git"
+                        :readme "README.org"
+                        :ignored-files ("LICENSE"))
+
  (boxquote		:url "https://github.com/davep/boxquote.el.git"
   :readme "README.md"
   :ignored-files ("COPYING"))
@@ -80,7 +84,7 @@
   )
 
  (cdlatex		:url "https://github.com/cdominik/cdlatex")
- 
+
  (cider			:url "https://github.com/clojure-emacs/cider"
   :ignored-files ("LICENSE" "doc" "logo" "refcard" "test")
   :news "CHANGELOG.md")
@@ -130,7 +134,7 @@
   :news "changelog.rst")
 
  (dockerfile-mode	:url "https://github.com/spotify/dockerfile-mode")
- 
+
  (dracula-theme		:url "https://github.com/dracula/emacs"
   :ignored-files ("INSTALL.md" "screenshot.png" "start_emacs_test.sh" "test-profile.el"))
 
@@ -316,7 +320,7 @@
  (haskell-mode		:url "https://github.com/haskell/haskell-mode"
   :doc "doc/haskell-mode.texi"
   :ignored-files ("images" "test" "logo.svg"))
- 
+
  (haskell-tng-mode	:url "https://gitlab.com/tseenshe/haskell-tng.el"
   :ignored-files "COPYING")
 
