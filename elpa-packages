@@ -166,7 +166,6 @@
   :ignored-files (".github" "Makefile" "tests"))
 
  (engine-mode		:url "https://github.com/hrs/engine-mode"
-  :readme "README.md"
   :ignored-files ("doc/demo.gif"))
 
  (evil			:url "https://github.com/emacs-evil/evil"
