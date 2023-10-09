@@ -212,6 +212,10 @@
   :news "CHANGELOG.org"
   :ignored-files ("COPYING"))
 
+ (evil-surround		:url "https://github.com/emacs-evil/evil-surround.git"
+  :readme "readme.org"
+  :ignored-files ("license.md" "test"))
+
  (evil-visualstar	:url "https://github.com/bling/evil-visualstar.git"
   :readme ("README.md"))
 
