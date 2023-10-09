@@ -216,6 +216,10 @@
   :readme "readme.org"
   :ignored-files ("license.md" "test"))
 
+ (evil-visual-mark-mode	:url "https://github.com/roman/evil-visual-mark-mode.git"
+  :readme "README.md"
+  :ignored-files ("LICENSE"))
+
  (evil-visualstar	:url "https://github.com/bling/evil-visualstar.git"
   :readme ("README.md"))
 
