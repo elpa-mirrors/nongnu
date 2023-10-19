@@ -362,7 +362,7 @@
 
  (hyperdrive		:url "https://git.sr.ht/~ushin/hyperdrive.el"
   :readme "README.md"
-  :doc "doc/hyperdrive-manual.org")
+  :doc "doc/hyperdrive.org")
 
  (idle-highlight-mode	:url "https://codeberg.org/ideasman42/emacs-idle-highlight-mode"
   :ignored-files (".elisp-autofmt"))
