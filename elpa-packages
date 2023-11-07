@@ -362,6 +362,7 @@
 
  (hyperdrive		:url "https://git.sr.ht/~ushin/hyperdrive.el"
   :readme "README.md"
+  :news "CHANGELOG.org"
   :doc "doc/hyperdrive.org")
 
  (idle-highlight-mode	:url "https://codeberg.org/ideasman42/emacs-idle-highlight-mode"
