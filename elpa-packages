@@ -560,6 +560,8 @@
 
  (orgit			:url "https://github.com/magit/orgit.git")
 
+ (p4-16-mode            :url "https://github.com/SohamG/p4_16-mode.el")
+
  (package-lint          :url "https://github.com/purcell/package-lint"
   :ignored-files (".github" "batch-tests" "tools" "package-lint-test.el" "run-tests.sh"))
 
