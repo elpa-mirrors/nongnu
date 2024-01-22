@@ -306,6 +306,9 @@
  (git-modes		:url "https://github.com/magit/git-modes"
   :ignored-files ("LICENSE" ".mailmap"))
 
+ (gnosis                :url "https://git.thanosapollo.org/gnosis"
+  :doc "doc/gnosis.texi")
+
  (gnu-apl-mode		:url "https://github.com/lokedhs/gnu-apl-mode"
   ;; :doc "texi/gnu-apl-mode.texi" ; the manual is currently empty
   :ignored-files ("Makefile"))
