@@ -1,6 +1,6 @@
 ;; -*- lisp-data -*-
 
-;; Copyright (C) 2020-2023 Free Software Foundation, Inc.
+;; Copyright (C) 2020-2024 Free Software Foundation, Inc.
 
 ;; List of packages.
 ;; The list is made of elements of the form (NAME . PLIST)
@@ -236,10 +236,10 @@
   :ignored-files (".travis.yml" "Cask" "LICENSE" "tests" "Makefile"
                   "flx.el" "misc/flx-helm-demo.el" "misc/flx-test-list.el"))
 
+ (flymake-guile		:url "https://framagit.org/flymake-backends/flymake-guile.git")
+
  (flymake-kondor	:url "https://github.com/turbo-cafe/flymake-kondor"
   :ignored-files ("COPYING.txt"))
-
- (flymake-guile		:url "https://framagit.org/flymake-backends/flymake-guile.git")
 
  (flymake-popon		:url "https://codeberg.org/akib/emacs-flymake-popon")
 
@@ -792,6 +792,9 @@
   :ignored-files ("Cask" "LICENSE" "adaptive-wrap.png" "after.png" "before.png"
 		  "centered.png" "no-adaptive-wrap.png" "test" ))
 
+ ;; (vm			:url "bzr::http://bazaar.launchpad.net/~vm/vm/trunk"
+ ;;  :lisp-dir "lisp")
+
  (web-mode		:url "https://github.com/fxbois/web-mode"
   :readme "README.md"
   :ignored-files ("LICENSE" "issues" "tests" "run.sh"))
@@ -799,10 +802,10 @@
  (webpaste		:url "https://github.com/etu/webpaste.el"
   :ignored-files ("LICENSE"))
 
+ (wfnames               :url "https://github.com/thierryvolpiatto/wfnames")
+
  (wgrep			:url "https://github.com/mhayashi1120/Emacs-wgrep"
   :ignored-files "COPYING")
-
- (wfnames               :url "https://github.com/thierryvolpiatto/wfnames")
 
  (why-this              :url "https://codeberg.org/akib/emacs-why-this")
 
