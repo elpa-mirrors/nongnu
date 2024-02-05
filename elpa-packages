@@ -49,6 +49,10 @@
  (autothemer		:url "https://github.com/jasonm23/autothemer.git"
   :readme "README.md")
 
+ (base32		:url "https://gitlab.com/fledermaus/totp.el"
+  :ignored-files ("totp-auth*.el" "Makefile" "*.md" "*.html" "tests" "README")
+  :version-map   (("0.2" "1.0" "v1.0")))
+
  (bash-completion	:url "https://github.com/szermatt/emacs-bash-completion"
   :readme "README.md")
 
@@ -759,6 +763,10 @@
 
  (toc-org		:url "https://github.com/snosov1/toc-org.git"
   :ignored-files ("COPYING" ".travis.yml" "toc-org-test.el"))
+
+ (totp-auth		:url "https://gitlab.com/fledermaus/totp.el"
+  :ignored-files ("base32.el" "Makefile" "*.md" "*.html" "tests")
+  :version-map   (("0.4" "1.0" "v1.0")))
 
  (treeview		:url "https://github.com/tilmanrassy/emacs-treeview"
   :readme "README.md"
