@@ -679,7 +679,6 @@
   :maintainer "Stas Boukarev <stassats@gmail.com>"
   ;; FIXME: Apparently upstream is not cooperative enough :-(
   ;; https://github.com/slime/slime/pull/648
-  :merge t
   :doc "doc/slime.texi")
 
  (sly			:url "https://github.com/joaotavora/sly"
