@@ -240,6 +240,9 @@
   :ignored-files (".travis.yml" "Cask" "LICENSE" "tests" "Makefile"
                   "flx.el" "misc/flx-helm-demo.el" "misc/flx-test-list.el"))
 
+ (flycheck              :url "https://github.com/flycheck/flycheck"
+  :ignored-files (".github" "maint" "test" "Makefile" "doc"))
+
  (flymake-guile		:url "https://framagit.org/flymake-backends/flymake-guile.git")
 
  (flymake-kondor	:url "https://github.com/turbo-cafe/flymake-kondor"
