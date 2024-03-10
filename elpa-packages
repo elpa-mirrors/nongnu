@@ -103,6 +103,8 @@
 
  (coffee-mode		:url "https://github.com/defunkt/coffee-mode")
 
+ (consult-flycheck	:url "https://github.com/minad/consult-flycheck")
+
  (corfu-terminal	:url "https://codeberg.org/akib/emacs-corfu-terminal")
 
  (crux			:url "https://github.com/bbatsov/crux"
@@ -133,6 +135,8 @@
 
  (diff-ansi		:url "https://codeberg.org/ideasman42/emacs-diff-ansi"
   :ignored-files ("LICENSE"))
+
+ ;; (dirvish		:url "https://github.com/alexluigit/dirvish")
 
  (doc-show-inline	:url "https://codeberg.org/ideasman42/emacs-doc-show-inline"
   :news "changelog.rst")
@@ -242,6 +246,11 @@
 
  (flycheck              :url "https://github.com/flycheck/flycheck"
   :ignored-files (".github" "maint" "test" "Makefile" "doc"))
+
+ ;; (flymake-collection	:url "https://github.com/mohkale/flymake-collection"
+ ;;  ;; :shell-command "emacs --batch -l package --eval '(package-generate-autoloads `flymake-collection-checkers \"src/checkers/\")'"
+ ;;  :make "checkers-autoloads"
+ ;;  :lisp-dir "src")
 
  (flymake-guile		:url "https://framagit.org/flymake-backends/flymake-guile.git")
 
