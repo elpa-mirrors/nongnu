@@ -51,6 +51,7 @@
 
  (base32		:url "https://gitlab.com/fledermaus/totp.el"
   :ignored-files ("totp-auth*.el" "Makefile" "*.md" "*.html" "tests" "README")
+  :readme ignore
   :version-map   (("0.2" "1.0" "v1.0")))
 
  (bash-completion	:url "https://github.com/szermatt/emacs-bash-completion"
