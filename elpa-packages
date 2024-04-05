@@ -230,7 +230,7 @@
   :ignored-files ("LICENSE"))
 
  (evil-visualstar	:url "https://github.com/bling/evil-visualstar.git"
-  :readme ("README.md"))
+  :readme "README.md")
 
  (exec-path-from-shell  :url "https://github.com/purcell/exec-path-from-shell.git"
                         :ignored-files (".github" "Makefile"))
