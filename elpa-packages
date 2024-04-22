@@ -51,7 +51,7 @@
 
  (base32		:url "https://gitlab.com/fledermaus/totp.el"
   :ignored-files ("totp-auth*.el" "Makefile" "*.md" "*.html" "tests" "README")
-  :readme ignore
+  :readme ignore ;; The README is for `totp-auth'.
   :version-map   (("0.2" "1.0" "v1.0")))
 
  (bash-completion	:url "https://github.com/szermatt/emacs-bash-completion"
@@ -116,6 +116,7 @@
   :ignored-files ("cyberpunk-theme.png" "example-org-file.org"))
 
  (cycle-at-point	:url "https://codeberg.org/ideasman42/emacs-cycle-at-point"
+  :readme "readme.rst"
   :ignored-files (".elisp-autofmt" "LICENSE" "tests"))
 
  (d-mode		:url "https://github.com/Emacs-D-Mode-Maintainers/Emacs-D-Mode"
