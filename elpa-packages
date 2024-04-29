@@ -13,6 +13,9 @@
 (
  (adoc-mode             :url "https://github.com/bbatsov/adoc-mode")
 
+ (beancount		:url "https://github.com/beancount/beancount-mode"
+  :readme "README.org")
+
  (afternoon-theme	:url "https://github.com/osener/emacs-afternoon-theme"
   :ignored-files ("*.png"))
 
