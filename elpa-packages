@@ -385,7 +385,7 @@
   :release-branch "stable")
 
  (hyperdrive		:url "https://git.sr.ht/~ushin/hyperdrive.el"
-  :readme "README.md"
+  :readme "README.org"
   :news "CHANGELOG.org"
   :doc "doc/hyperdrive.org")
 
