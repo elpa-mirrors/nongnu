@@ -373,6 +373,8 @@
 		  "helm-pkg.el" "helm-regexp.el" "helm-ring.el" "helm-semantic.el" "helm-shell.el"
 		  "helm-sys.el" "helm-tags.el" "helm-types.el" "helm-utils.el" "helm-x-files.el"))
 
+ (hideshowvis           :url "https://github.com/sheijk/hideshowvis")
+
  (highlight-parentheses	:url "https://git.sr.ht/~tsdh/highlight-parentheses.el"
   :branch "main"
   :readme "README.md"
