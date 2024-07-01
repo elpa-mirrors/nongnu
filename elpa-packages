@@ -13,9 +13,6 @@
 (
  (adoc-mode             :url "https://github.com/bbatsov/adoc-mode")
 
- (beancount		:url "https://github.com/beancount/beancount-mode"
-  :readme "README.org")
-
  (afternoon-theme	:url "https://github.com/osener/emacs-afternoon-theme"
   :ignored-files ("*.png"))
 
@@ -59,6 +56,9 @@
 
  (bash-completion	:url "https://github.com/szermatt/emacs-bash-completion"
   :readme "README.md")
+
+ (beancount		:url "https://github.com/beancount/beancount-mode"
+  :readme "README.org")
 
  (better-jumper		:url "https://github.com/gilbertw1/better-jumper.git"
   :readme "Readme.md"
@@ -794,6 +794,10 @@
  (totp-auth		:url "https://gitlab.com/fledermaus/totp.el"
   :ignored-files ("base32.el" "Makefile" "*.md" "*.html" "tests")
   :version-map   (("0.4" "1.0" "v1.0")))
+
+ (treesit-fold		:url "https://github.com/emacs-tree-sitter/treesit-fold"
+  :readme "README.md"
+  :news "CHANGELOG.md")
 
  (treeview		:url "https://github.com/tilmanrassy/emacs-treeview"
   :readme "README.md"
