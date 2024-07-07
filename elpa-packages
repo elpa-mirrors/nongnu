@@ -156,6 +156,8 @@
  (drupal-mode		:url "https://github.com/arnested/drupal-mode.git"
   :ignored-files (".travis.yml" "COPYING" "Cask"))
 
+ (dslide                :url "https://github.com/positron-solutions/dslide")
+
  (eat                   :url "https://codeberg.org/akib/emacs-eat"
   :doc "eat.texi")
 
