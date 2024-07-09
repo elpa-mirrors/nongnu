@@ -835,10 +835,8 @@
 
  (vm			:url "https://gitlab.com/emacs-vm/vm"
   :doc "info/vm.texinfo"
+  :news "CHANGES"
   :lisp-dir "lisp")
-
- ;; (vm			:url "bzr::http://bazaar.launchpad.net/~vm/vm/trunk"
- ;;  :lisp-dir "lisp")
 
  (web-mode		:url "https://github.com/fxbois/web-mode"
   :readme "README.md"
