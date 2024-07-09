@@ -833,6 +833,10 @@
   :ignored-files ("Cask" "LICENSE" "adaptive-wrap.png" "after.png" "before.png"
 		  "centered.png" "no-adaptive-wrap.png" "test" ))
 
+ (vm			:url "https://gitlab.com/emacs-vm/vm"
+  :doc "info/vm.texinfo"
+  :lisp-dir "lisp")
+
  ;; (vm			:url "bzr::http://bazaar.launchpad.net/~vm/vm/trunk"
  ;;  :lisp-dir "lisp")
 
