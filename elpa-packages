@@ -836,6 +836,7 @@
  (vm			:url "https://gitlab.com/emacs-vm/vm"
   :shell-command "sed -ne 's/^;;* *Version: */@set VERSION /p' lisp/vm.el >info/version.texinfo"
   :doc "info/vm.texinfo"
+  :readme "README.md"
   :news "CHANGES"
   :lisp-dir "lisp")
 
