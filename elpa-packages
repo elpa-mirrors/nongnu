@@ -124,8 +124,7 @@
   :readme "readme.rst"
   :ignored-files (".elisp-autofmt" "LICENSE" "tests"))
 
- (d-mode		:url "https://github.com/Emacs-D-Mode-Maintainers/Emacs-D-Mode"
-  :ignored-files ("COPYING" "coverage" "tests-todo" "tests" "Cask" "Makefile" "d-mode-tests.el"))
+ (d-mode		:url "https://github.com/Emacs-D-Mode-Maintainers/Emacs-D-Mode")
 
  (dart-mode		:url "https://github.com/bradyt/dart-mode"
   :ignored-files ("LICENSE" "test" "Cask" "Makefile")
