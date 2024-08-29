@@ -178,6 +178,11 @@
   :ignored-files ("Makefile" "ISSUES.org" "RELEASE" "config.mk"))
 
  (emacsql		:url "https://github.com/magit/emacsql"
+  ;; The author of this package views its branch in the NonGNU ELPA
+  ;; repository as nothing but a distribution mechanism, and requests
+  ;; that you make no changes whatsoever to that branch, and instead
+  ;; open a pull-request in the above upstream repository, even for
+  ;; the most trivial of changes.
   :readme "README.md"
   :ignored-files (".github" "Makefile" "tests"))
 
@@ -296,6 +301,11 @@
  (geiser-stklos		:url "https://gitlab.com/emacs-geiser/stklos.git")
 
  (git-commit		:url "https://github.com/magit/magit"
+  ;; The author of this package views its branch in the NonGNU ELPA
+  ;; repository as nothing but a distribution mechanism, and requests
+  ;; that you make no changes whatsoever to that branch, and instead
+  ;; open a pull-request in the above upstream repository, even for
+  ;; the most trivial of changes.
   :lisp-dir "lisp"
   :ignored-files
   ("docs" "test" ".github"
@@ -304,6 +314,11 @@
    "lisp/git-rebase.el" "lisp/magit-*.el" "lisp/magit.el"))
 
  (git-modes		:url "https://github.com/magit/git-modes"
+  ;; The author of this package views its branch in the NonGNU ELPA
+  ;; repository as nothing but a distribution mechanism, and requests
+  ;; that you make no changes whatsoever to that branch, and instead
+  ;; open a pull-request in the above upstream repository, even for
+  ;; the most trivial of changes.
   :ignored-files ("LICENSE" ".mailmap"))
 
  (gnosis                :url "https://git.thanosapollo.org/gnosis"
@@ -448,6 +463,11 @@
   :ignored-files ("macrostep-test.el"))
 
  (magit			:url "https://github.com/magit/magit"
+  ;; The author of this package views its branch in the NonGNU ELPA
+  ;; repository as nothing but a distribution mechanism, and requests
+  ;; that you make no changes whatsoever to that branch, and instead
+  ;; open a pull-request in the above upstream repository, even for
+  ;; the most trivial of changes.
   :lisp-dir "lisp"
   :doc "docs/magit.org"
   :renames (("docs/" ""))
@@ -458,6 +478,11 @@
    "lisp/git-commit.el" "lisp/magit-section.el"))
 
  (magit-section		:url "https://github.com/magit/magit"
+  ;; The author of this package views its branch in the NonGNU ELPA
+  ;; repository as nothing but a distribution mechanism, and requests
+  ;; that you make no changes whatsoever to that branch, and instead
+  ;; open a pull-request in the above upstream repository, even for
+  ;; the most trivial of changes.
   :lisp-dir "lisp"
   :doc "docs/magit-section.org"
   :renames (("docs/" ""))
@@ -593,6 +618,11 @@
   :ignored-files ("LICENSE" ".github"))
 
  (orgit			:url "https://github.com/magit/orgit.git")
+ ;; The author of this package views its branch in the NonGNU ELPA
+ ;; repository as nothing but a distribution mechanism, and requests
+ ;; that you make no changes whatsoever to that branch, and instead
+ ;; open a pull-request in the above upstream repository, even for
+ ;; the most trivial of changes.
 
  (p4-16-mode            :url "https://github.com/SohamG/p4_16-mode.el")
 
@@ -855,6 +885,11 @@
  (why-this              :url "https://codeberg.org/akib/emacs-why-this")
 
  (with-editor		:url "https://github.com/magit/with-editor"
+  ;; The author of this package views its branch in the NonGNU ELPA
+  ;; repository as nothing but a distribution mechanism, and requests
+  ;; that you make no changes whatsoever to that branch, and instead
+  ;; open a pull-request in the above upstream repository, even for
+  ;; the most trivial of changes.
   :ignored-files ("LICENSE" "htmlxref.cnf" ".travis.yml" ".mailmap" "Makefile")
   :lisp-dir "lisp"
   :doc "docs/with-editor.texi")
