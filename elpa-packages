@@ -300,20 +300,6 @@
  (geiser-racket		:url "https://gitlab.com/emacs-geiser/racket.git")
  (geiser-stklos		:url "https://gitlab.com/emacs-geiser/stklos.git")
 
- (git-commit		:url "https://github.com/magit/magit"
-  ;; The author of this package views its branch in the NonGNU ELPA
-  ;; repository as nothing but a distribution mechanism, and requests
-  ;; that you make no changes whatsoever to that branch, and instead
-  ;; open a pull-request in the above upstream repository, even for
-  ;; the most trivial of changes.
-  :manual-sync t ;Author prefers manual control.
-  :lisp-dir "lisp"
-  :ignored-files
-  ("docs" "test" ".github"
-   ".mailmap" "LICENSE" "README.md" "CHANGELOG"
-   "default.mk" "Makefile" "lisp/Makefile"
-   "lisp/git-rebase.el" "lisp/magit-*.el" "lisp/magit.el"))
-
  (git-modes		:url "https://github.com/magit/git-modes"
   ;; The author of this package views its branch in the NonGNU ELPA
   ;; repository as nothing but a distribution mechanism, and requests
@@ -477,7 +463,7 @@
   ("docs" "test" ".github"
    ".mailmap" "LICENSE"
    "default.mk" "Makefile" "lisp/Makefile"
-   "lisp/git-commit.el" "lisp/magit-section.el"))
+   "lisp/magit-section.el"))
 
  (magit-section		:url "https://github.com/magit/magit"
   ;; The author of this package views its branch in the NonGNU ELPA
