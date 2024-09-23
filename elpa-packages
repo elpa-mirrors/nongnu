@@ -402,6 +402,9 @@
   :release-branch "stable"
   :doc "doc/hyperdrive.org")
 
+ (hyperdrive-org-transclusion :url "https://git.sr.ht/~ushin/hyperdrive-org-transclusion"
+  :news "CHANGELOG.org")
+
  (idle-highlight-mode	:url "https://codeberg.org/ideasman42/emacs-idle-highlight-mode"
   :ignored-files (".elisp-autofmt"))
 
