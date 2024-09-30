@@ -464,6 +464,7 @@
   :lisp-dir "lisp"
   :doc "docs/magit.org"
   :renames (("docs/" ""))
+  :news "CHANGELOG"
   :ignored-files
   ("docs" "test" ".github"
    ".mailmap" "LICENSE"
@@ -886,7 +887,8 @@
   ;; the most trivial of changes.
   :ignored-files ("LICENSE" "htmlxref.cnf" ".travis.yml" ".mailmap" "Makefile")
   :lisp-dir "lisp"
-  :doc "docs/with-editor.texi")
+  :doc "docs/with-editor.texi"
+  :news "CHANGELOG")
 
  (with-simulated-input	:url "https://github.com/DarwinAwardWinner/with-simulated-input")
 
