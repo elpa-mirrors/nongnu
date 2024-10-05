@@ -358,7 +358,7 @@
 
  (haskell-mode		:url "https://github.com/haskell/haskell-mode"
   :doc "doc/haskell-mode.texi"
-  :ignored-files ("images" "test" "logo.svg"))
+  :ignored-files ("images" "tests" "logo.svg"))
 
  (haskell-tng-mode	:url "https://gitlab.com/tseenshe/haskell-tng.el"
   :ignored-files "COPYING")
