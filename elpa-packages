@@ -42,6 +42,8 @@
  (arduino-mode		:url "https://repo.or.cz/arduino-mode.git"
   :ignored-files ("Cask"))
 
+ ;; (async-await		:url "https://github.com/chuntaro/emacs-async-await")
+
  (auto-dim-other-buffers :url "https://github.com/mina86/auto-dim-other-buffers.el"
   :readme "README.md"
   :ignored-files ("LICENSE" "screenshot.gif"))
@@ -159,6 +161,8 @@
 
  (eat                   :url "https://codeberg.org/akib/emacs-eat"
   :doc "eat.texi")
+
+ ;; (ed-mode		:url "https://github.com/ryanprior/ed-mode")
 
  (edit-indirect		:url "https://github.com/Fanael/edit-indirect")
 
@@ -634,6 +638,9 @@
  (paredit		:url "https://mumble.net/~campbell/git/paredit.git"
   :ignored-files ("COPYING" "check.sh" "genhtml.sh" "test.el"))
 
+ ;; (parinfer-rust-mode	:url "https://github.com/justinbarclay/parinfer-rust-mode"
+ ;;  )
+
  (parseclj		:url "https://github.com/clojure-emacs/parseclj"
   :ignored-files ("LICENSE" "test")
   :news "CHANGELOG.md")
@@ -672,6 +679,8 @@
   :ignored-files ("LICENSE" "doc" "test")
   :news "CHANGELOG.md")
 
+ ;; (promise		:url "https://github.com/chuntaro/emacs-promise")
+
  (proof-general		:url "https://github.com/ProofGeneral/PG"
   :ignored-files ("COPYING" "ci")
   :news "CHANGES"
@@ -704,6 +713,8 @@
  (rfc-mode		:url "https://github.com/galdor/rfc-mode"
   :readme "README.md"
   :news "changelog.org")
+
+ ;; (rocket-chat		:url "https://github.com/4hiziri/rocket-chat")
 
  (rubocop		:url "https://github.com/rubocop/rubocop-emacs")
 
@@ -821,6 +832,10 @@
  (totp-auth		:url "https://gitlab.com/fledermaus/totp.el"
   :ignored-files ("base32.el" "Makefile" "*.md" "*.html" "tests")
   :version-map   (("0.4" "1.0" "v1.0")))
+
+ (tp			:url "https://codeberg.org/martianh/tp.el"
+  :ignored-files ("LICENSE")
+  :readme "readme.org")
 
  (treesit-fold		:url "https://github.com/emacs-tree-sitter/treesit-fold"
   :readme "README.md"
