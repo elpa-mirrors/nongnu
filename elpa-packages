@@ -144,7 +144,10 @@
  (diff-ansi		:url "https://codeberg.org/ideasman42/emacs-diff-ansi"
   :ignored-files ("LICENSE"))
 
- ;; (dirvish		:url "https://github.com/alexluigit/dirvish")
+ ;; FIXME: Should we follow https://github.com/hlissner/dirvish instead?
+ (dirvish		:url "https://github.com/alexluigit/dirvish"
+  :readme "README.org"
+  :news "docs/CHANGELOG.org")
 
  (doc-show-inline	:url "https://codeberg.org/ideasman42/emacs-doc-show-inline"
   :news "changelog.rst")
