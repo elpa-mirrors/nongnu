@@ -517,11 +517,12 @@
   :news "CHANGES.md")
 
  (mastodon		:url "https://codeberg.org/martianh/mastodon.el"
+  ;; Don't track `develop` for fear of force-pushes.
   :branch ;; "develop"
   ;; :release-branch
   "main"
   :lisp-dir "lisp"
-  :doc "mastodon.texi"
+  :doc "README.org"
   :readme "README.org")
 
  (material-theme	:url "https://github.com/cpaulik/emacs-material-theme"
