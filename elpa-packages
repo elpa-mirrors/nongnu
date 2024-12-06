@@ -177,6 +177,8 @@
 
  ;; (el-mock		:url "https://github.com/rejeep/el-mock.el")
 
+ (eglot-inactive-regions :url "https://github.com/fargiolas/eglot-inactive-regions")
+ 
  (elixir-mode		:url "https://github.com/elixir-editors/emacs-elixir"
   :ignored-files ("tests" "Eldev")
   :news "CHANGELOG.md")
