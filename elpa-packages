@@ -178,10 +178,14 @@
  ;; (el-mock		:url "https://github.com/rejeep/el-mock.el")
 
  (eglot-inactive-regions :url "https://github.com/fargiolas/eglot-inactive-regions")
- 
+
  (elixir-mode		:url "https://github.com/elixir-editors/emacs-elixir"
   :ignored-files ("tests" "Eldev")
   :news "CHANGELOG.md")
+
+ (eldoc-diffstat        :url "https://github.com/kljohann/eldoc-diffstat.git"
+  :readme "README.md"
+  :ignored-files (".gitignore" "screenshot.webp"))
 
  (elpher		:url "https://thelambdalab.xyz/git/elpher.git"
   :doc "elpher.texi"
