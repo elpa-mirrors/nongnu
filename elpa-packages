@@ -184,8 +184,7 @@
   :news "CHANGELOG.md")
 
  (eldoc-diffstat        :url "https://github.com/kljohann/eldoc-diffstat.git"
-  :readme "README.md"
-  :ignored-files (".gitignore" "screenshot.webp"))
+  :readme "README.md")
 
  (elpher		:url "https://thelambdalab.xyz/git/elpher.git"
   :doc "elpher.texi"
