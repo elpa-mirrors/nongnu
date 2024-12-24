@@ -377,7 +377,7 @@
  (haskell-tng-mode	:url "https://gitlab.com/tseenshe/haskell-tng.el"
   :ignored-files "COPYING")
 
- (haskell-ts-mode :url "hg:https://hg.bauherren.ovh/haskell-ts-mode/")
+ (haskell-ts-mode :url "https://codeberg.org/pranshu/haskell-ts-mode")
 
  (helm			:url "https://github.com/emacs-helm/helm"
   :ignored-files ("images" "Cask" "Makefile" "emacs-helm.sh" "helm-core.el" "helm.el"
