@@ -1,6 +1,6 @@
 ;; -*- lisp-data -*-
 
-;; Copyright (C) 2020-2024 Free Software Foundation, Inc.
+;; Copyright (C) 2020-2025 Free Software Foundation, Inc.
 
 ;; List of packages.
 ;; The list is made of elements of the form (NAME . PLIST)
@@ -175,6 +175,8 @@
   :news "CHANGELOG.md"
   :ignored-files ("LICENSE" "bin" "ert-tests"))
 
+ ;; (edraw			:url "https://github.com/misohena/el-easydraw/")
+
  ;; (el-mock		:url "https://github.com/rejeep/el-mock.el")
 
  (eglot-inactive-regions :url "https://github.com/fargiolas/eglot-inactive-regions")
@@ -274,10 +276,9 @@
  (flycheck              :url "https://github.com/flycheck/flycheck"
   :ignored-files (".github" "maint" "test" "Makefile" "doc"))
 
- ;; (flymake-collection	:url "https://github.com/mohkale/flymake-collection"
- ;;  ;; :shell-command "emacs --batch -l package --eval '(package-generate-autoloads `flymake-collection-checkers \"src/checkers/\")'"
- ;;  :make "checkers-autoloads"
- ;;  :lisp-dir "src")
+ (flymake-collection	:url "https://github.com/mohkale/flymake-collection"
+  :make "checkers-autoloads"
+  :lisp-dir "src")
 
  (flymake-guile		:url "https://framagit.org/flymake-backends/flymake-guile.git")
 
@@ -614,6 +615,10 @@
  (org-mime		:url "https://github.com/org-mime/org-mime.git"
   :ignored-files (".travis.yml" "Makefile" "screenshot.png" "test"))
 
+ ;; (org-node		:url "https://github.com/meedstrom/org-node"
+ ;;  :ignored-files ("LICENSE.txt")
+ ;;  :doc "org-node.texi")
+
  (org-present		:url "https://github.com/rlister/org-present.git"
   :readme "README.md")
 
@@ -847,6 +852,9 @@
  (tp			:url "https://codeberg.org/martianh/tp.el"
   :ignored-files ("LICENSE")
   :readme "readme.org")
+
+ ;; (treepy		:url "https://github.com/volrath/treepy.el"
+ ;;  :ignored-files "LICENSE")
 
  (treesit-fold		:url "https://github.com/emacs-tree-sitter/treesit-fold"
   :readme "README.md"
