@@ -467,6 +467,15 @@
 
  (logview		:url "https://github.com/doublep/logview.git")
 
+ (loopy                 :url "https://github.com/okamsn/loopy"
+  :readme "README.org"
+  :news "CHANGELOG.md"
+  :lisp-dir "lisp"
+  :doc "doc/loopy.texi")
+
+ (loopy-dash            :url "https://github.com/okamsn/loopy-dash"
+  :readme "README.org")
+
  (lorem-ipsum           :url "https://github.com/jschaf/emacs-lorem-ipsum"
   :readme "README.md")
 
