@@ -465,6 +465,10 @@
  (kotlin-mode		:url "https://github.com/Emacs-Kotlin-Mode-Maintainers/kotlin-mode"
   :ignored-files ("doc" "test" "Cask" "Makefile"))
 
+ (llama			:url "https://github.com/tarsius/llama"
+  :readme "README.org"
+  :ignored-files (".github" "LICENSE"))
+
  (logview		:url "https://github.com/doublep/logview.git")
 
  (loopy                 :url "https://github.com/okamsn/loopy"
