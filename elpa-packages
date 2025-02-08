@@ -389,7 +389,7 @@
   :ignored-files ("images" "Cask" "Makefile" "emacs-helm.sh" "helm-core.el" "helm.el"
 		  "helm-lib.el" "helm-source.el" "helm-multi-match.el"))
 
- (helm-core		:url "https://github.com/emacs-helm/helm"
+ (helm-core		:url helm
   :ignored-files ("images" "Cask" "Makefile" "emacs-helm.sh" "helm-adaptive.el"
 		  "helm-bookmark.el" "helm-buffers.el" "helm-color.el" "helm-comint.el"
 		  "helm-command.el" "helm-config.el" "helm-dabbrev.el" "helm-easymenu.el"
