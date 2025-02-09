@@ -51,7 +51,7 @@
  (autothemer		:url "https://github.com/jasonm23/autothemer.git"
   :readme "README.md")
 
- (base32		:url "https://gitlab.com/fledermaus/totp.el"
+ (base32		:url totp-auth
   :ignored-files ("totp-auth*.el" "Makefile" "*.md" "*.html" "tests" "README")
   :readme ignore ;; The README is for `totp-auth'.
   :version-map   (("0.2" "1.0" "v1.0")))
@@ -273,7 +273,7 @@
   :ignored-files (".travis.yml" "LICENSE"
                   "flx-ido.el" "misc/flx-ido-demo.el" "misc/flx-test-list.el"))
 
- (flx-ido		:url "https://github.com/lewang/flx"
+ (flx-ido		:url flx
   :readme ignore
   :ignored-files (".travis.yml" "Cask" "LICENSE" "tests" "Makefile"
                   "flx.el" "misc/flx-helm-demo.el" "misc/flx-test-list.el"))
@@ -506,7 +506,7 @@
    "default.mk" "Makefile" "lisp/Makefile"
    "lisp/magit-section.el"))
 
- (magit-section		:url "https://github.com/magit/magit"
+ (magit-section		:url magit
   ;; The author of this package views its branch in the NonGNU ELPA
   ;; repository as nothing but a distribution mechanism, and requests
   ;; that you make no changes whatsoever to that branch, and instead
@@ -824,7 +824,7 @@
  (sqlite3               :url "https://github.com/pekingduck/emacs-sqlite3-api"
   :ignored-files ("LICENSE" "tests" "tools"))
 
- (stylus-mode		:url "https://github.com/brianc/jade-mode"
+ (stylus-mode		:url jade-mode
   :ignored-files ("test" "Cask" "Makefile" "example.jade" "example.json"
 		  "jade-mode.el"))
 
