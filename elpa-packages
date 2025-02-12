@@ -735,6 +735,9 @@
   :doc "doc/racket-mode.texi"
   :rolling-release "1")
 
+ (radio			:url "https://github.com/jroimartin/radio"
+  :ignored-files ("COPYING"))
+
  (rainbow-delimiters	:url "https://github.com/Fanael/rainbow-delimiters.git"
   :readme "README.md"
   :ignored-files ("COPYING" ".github" "rainbow-delimiters-test.el" "run-tests.sh"))
@@ -859,6 +862,9 @@
 
  (tangotango-theme	:url "https://github.com/juba/color-theme-tangotango.git"
   :ignored-files ("color-theme-tangotango.el" "screenshots"))
+
+ (teco			:url "https://github.com/mtk/teco"
+  :readme "README.md")
 
  (telephone-line	:url "https://github.com/dbordak/telephone-line.git"
   :readme "readme.org"
