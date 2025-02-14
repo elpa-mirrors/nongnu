@@ -902,6 +902,9 @@
  (typescript-mode	:url "https://github.com/emacs-typescript/typescript.el"
   :ignored-files (".github" "Cask" "Dockerfile" "Makefile" "*test*"))
 
+ (typst-ts-mode :url "https://codeberg.org/meow_king/typst-ts-mode"
+  :readme "README.md")
+
  (ujelly-theme		:url "https://github.com/marktran/color-theme-ujelly")
 
  (undo-fu		:url "https://codeberg.org/ideasman42/emacs-undo-fu"
