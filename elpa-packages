@@ -969,7 +969,7 @@
 
  (ws-butler		:url nil
   ;; As discussed on emacs-devel: This package was in need of some work and I
-  ;; requested to take over maintainance from the original author, who is
+  ;; requested to take over maintaining from the original author, who is
   ;; largely inactive.  He never responded to repeated enquiries, so I opted
   ;; to take it over without his blessing.  The package is now maintained out
   ;; of the elpa/ws-butler branch of this repository.  --spwhitton
