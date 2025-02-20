@@ -13,7 +13,7 @@
 (
  (adoc-mode             :url "https://github.com/bbatsov/adoc-mode")
 
- (afternoon-theme	:url "https://github.com/osener/emacs-afternoon-theme"
+ (afternoon-theme	:url "https://github.com/ozanmakes/emacs-afternoon-theme"
   :ignored-files ("*.png"))
 
  (alect-themes		:url "https://github.com/alezost/alect-themes"
@@ -128,7 +128,7 @@
 
  (d-mode		:url "https://github.com/Emacs-D-Mode-Maintainers/Emacs-D-Mode")
 
- (dart-mode		:url "https://github.com/bradyt/dart-mode"
+ (dart-mode		:url "https://github.com/emacsorphanage/dart-mode"
   :ignored-files ("LICENSE" "test" "Cask" "Makefile")
   :news "CHANGELOG.md")
 
