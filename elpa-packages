@@ -16,6 +16,9 @@
  (afternoon-theme	:url "https://github.com/ozanmakes/emacs-afternoon-theme"
   :ignored-files ("*.png"))
 
+ (aidermacs		:url "https://github.com/MatthewZMD/aidermacs"
+  :readme "README.md")
+
  (alect-themes		:url "https://github.com/alezost/alect-themes"
   :ignored-files ("LICENSE" "tests" "Makefile" "colors"))
 
