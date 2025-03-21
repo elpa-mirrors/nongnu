@@ -186,6 +186,8 @@
 
  (eglot-inactive-regions :url "https://github.com/fargiolas/eglot-inactive-regions")
 
+ (el-job		:url "https://github.com/meedstrom/el-job")
+
  (eldoc-diffstat        :url "https://github.com/kljohann/eldoc-diffstat.git"
   :readme "README.md"
   :news "NEWS.md")
