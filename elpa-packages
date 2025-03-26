@@ -762,6 +762,8 @@
   :readme "README.md"
   :news "changelog.org")
 
+ (rpm-spec-mode		:url "https://github.com/Thaodan/rpm-spec-mode")
+
  ;; (rocket-chat		:url "https://github.com/4hiziri/rocket-chat")
 
  (rubocop		:url "https://github.com/rubocop/rubocop-emacs")
