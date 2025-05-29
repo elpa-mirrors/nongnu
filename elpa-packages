@@ -341,7 +341,7 @@
  (gnu-indent  	        :url "https://codeberg.org/akib/emacs-gnu-indent")
 
  (gnuplot		:url "https://github.com/emacs-gnuplot/gnuplot"
-  :ignored-files ("LICENSE" "Makefile" "gpelcard.tex")
+  :doc "gnuplot.texi"
   :news "CHANGELOG.org")
 
  (go-mode		:url "https://github.com/dominikh/go-mode.el"
