@@ -415,9 +415,8 @@
 
  (hl-column             :url "https://codeberg.org/akib/emacs-hl-column")
 
- (htmlize		:url "https://github.com/hniksic/emacs-htmlize"
-  :ignored-files ("htmlize.el.html")
-  :release-branch "stable")
+ (htmlize		:url "https://github.com/emacsorphanage/htmlize"
+  :ignored-files ("htmlize.el.html"))
 
  (hyperdrive		:url "https://git.sr.ht/~ushin/hyperdrive.el"
   :readme "README.org"
