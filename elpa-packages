@@ -297,6 +297,8 @@
 
  (flymake-popon		:url "https://codeberg.org/akib/emacs-flymake-popon")
 
+ (flymake-pyrefly	:url "https://github.com/inpefess/flymake-pyrefly")
+
  (focus			:url "https://github.com/larstvei/Focus"
   :ignored-files ("*.gif"))
 
