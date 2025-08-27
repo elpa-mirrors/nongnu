@@ -112,6 +112,10 @@
 
  (coffee-mode		:url "https://github.com/defunkt/coffee-mode")
 
+ (cond-let		:url "https://github.com/tarsius/cond-let"
+  :readme "README.org"
+  :ignored-files (".github" "LICENSE"))
+
  (consult-flycheck	:url "https://github.com/minad/consult-flycheck")
 
  (corfu-terminal	:url "https://codeberg.org/akib/emacs-corfu-terminal")
