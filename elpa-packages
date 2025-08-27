@@ -669,7 +669,7 @@
   :news "ChangeLog"
   :ignored-files ("LICENSE" ".github"))
 
- (orgit			:url "https://github.com/magit/orgit.git")
+ (orgit			:url "https://github.com/magit/orgit")
  ;; The author of this package views its branch in the NonGNU ELPA
  ;; repository as nothing but a distribution mechanism, and requests
  ;; that you make no changes whatsoever to that branch, and instead
