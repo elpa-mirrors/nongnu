@@ -112,8 +112,7 @@
 
  (coffee-mode		:url "https://github.com/defunkt/coffee-mode")
 
- (cond-let		:url "https://github.com/tarsius/cond-let"
-  :ignored-files (".github" "LICENSE"))
+ (cond-let		:url "https://github.com/tarsius/cond-let")
 
  (consult-flycheck	:url "https://github.com/minad/consult-flycheck")
 
@@ -203,13 +202,12 @@
   :doc "elpher.texi"
   :ignored-files ("Makefile" "ISSUES.org" "RELEASE" "config.mk"))
 
- (emacsql		:url "https://github.com/magit/emacsql"
-  ;; The author of this package views its branch in the NonGNU ELPA
-  ;; repository as nothing but a distribution mechanism, and requests
-  ;; that you make no changes whatsoever to that branch, and instead
-  ;; open a pull-request in the above upstream repository, even for
-  ;; the most trivial of changes.
-  :ignored-files (".github" "Makefile" "tests"))
+ ;; The author of this package views its branch in the NonGNU ELPA
+ ;; repository as nothing but a distribution mechanism, and requests
+ ;; that you make no changes whatsoever to that branch, and instead
+ ;; open a pull-request in the above upstream repository, even for
+ ;; the most trivial of changes.
+ (emacsql		:url "https://github.com/magit/emacsql")
 
  (engine-mode		:url "https://github.com/hrs/engine-mode"
   :ignored-files ("doc/demo.gif"))
@@ -329,13 +327,12 @@
  (geiser-racket		:url "https://gitlab.com/emacs-geiser/racket.git")
  (geiser-stklos		:url "https://gitlab.com/emacs-geiser/stklos.git")
 
- (git-modes		:url "https://github.com/magit/git-modes"
-  ;; The author of this package views its branch in the NonGNU ELPA
-  ;; repository as nothing but a distribution mechanism, and requests
-  ;; that you make no changes whatsoever to that branch, and instead
-  ;; open a pull-request in the above upstream repository, even for
-  ;; the most trivial of changes.
-  :ignored-files ("LICENSE" ".mailmap"))
+ ;; The author of this package views its branch in the NonGNU ELPA
+ ;; repository as nothing but a distribution mechanism, and requests
+ ;; that you make no changes whatsoever to that branch, and instead
+ ;; open a pull-request in the above upstream repository, even for
+ ;; the most trivial of changes.
+ (git-modes		:url "https://github.com/magit/git-modes")
 
  (gnosis                :url "https://git.thanosapollo.org/gnosis"
   :doc "doc/gnosis.texi")
@@ -467,14 +464,12 @@
   :ignored-files ("julia-mode-tests.el" "logo.png")
   :news "CHANGELOG.md")
 
- (keycast		:url "https://github.com/tarsius/keycast"
-  :ignored-files ("Makefile"))
+ (keycast		:url "https://github.com/tarsius/keycast")
 
  (kotlin-mode		:url "https://github.com/Emacs-Kotlin-Mode-Maintainers/kotlin-mode"
   :ignored-files ("doc" "test" "Cask" "Makefile"))
 
- (llama			:url "https://github.com/tarsius/llama"
-  :ignored-files (".github" "LICENSE"))
+ (llama			:url "https://github.com/tarsius/llama")
 
  (logview		:url "https://github.com/doublep/logview.git")
 
@@ -970,7 +965,6 @@
   ;; that you make no changes whatsoever to that branch, and instead
   ;; open a pull-request in the above upstream repository, even for
   ;; the most trivial of changes.
-  :ignored-files ("LICENSE" "htmlxref.cnf" ".travis.yml" ".mailmap" "Makefile")
   :lisp-dir "lisp"
   :renames (("docs/" ""))
   :news "CHANGELOG"
