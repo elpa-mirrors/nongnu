@@ -972,8 +972,9 @@
   ;; the most trivial of changes.
   :ignored-files ("LICENSE" "htmlxref.cnf" ".travis.yml" ".mailmap" "Makefile")
   :lisp-dir "lisp"
-  :doc "docs/with-editor.texi"
-  :news "CHANGELOG")
+  :renames (("docs/" ""))
+  :news "CHANGELOG"
+  :doc "docs/with-editor.org")
 
  (with-simulated-input	:url "https://github.com/DarwinAwardWinner/with-simulated-input")
 
