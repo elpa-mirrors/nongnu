@@ -209,7 +209,6 @@
   ;; that you make no changes whatsoever to that branch, and instead
   ;; open a pull-request in the above upstream repository, even for
   ;; the most trivial of changes.
-  :readme "README.md"
   :ignored-files (".github" "Makefile" "tests"))
 
  (engine-mode		:url "https://github.com/hrs/engine-mode"
