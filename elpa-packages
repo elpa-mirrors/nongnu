@@ -502,9 +502,10 @@
   :doc "docs/magit.org"
   :renames (("docs/" ""))
   :news "CHANGELOG"
+  ;; Cannot use .elpaignore because there are two packages in this repo.
   :ignored-files
   ("docs" "test" ".github"
-   ".mailmap" "LICENSE"
+   ".dir-locals.el" ".mailmap" "LICENSE"
    "default.mk" "Makefile" "lisp/Makefile"
    "lisp/magit-section.el"))
 
@@ -518,11 +519,13 @@
   :lisp-dir "lisp"
   :doc "docs/magit-section.org"
   :renames (("docs/" ""))
+  ;; Cannot use .elpaignore because there are two packages in this repo.
   :ignored-files
   ("docs" "test" ".github"
-   ".mailmap" "LICENSE" "README.md" "CHANGELOG"
+   ".dir-locals.el" ".mailmap" "LICENSE" "README.md" "CHANGELOG"
    "default.mk" "Makefile" "lisp/Makefile"
-   "lisp/git-commit.el" "lisp/git-rebase.el" "lisp/magit-apply.el"
+   "lisp/git-commit.el" "lisp/git-rebase.el"
+   "lisp/magit-apply.el" "lisp/magit-autorevert.el"
    "lisp/magit-base.el" "lisp/magit-bisect.el" "lisp/magit-blame.el"
    "lisp/magit-bookmark.el" "lisp/magit-branch.el" "lisp/magit-bundle.el"
    "lisp/magit-clone.el" "lisp/magit-commit.el" "lisp/magit-core.el"
