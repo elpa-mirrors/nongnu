@@ -835,6 +835,8 @@
  (sqlite3               :url "https://github.com/pekingduck/emacs-sqlite3-api"
   :ignored-files ("LICENSE" "tests" "tools"))
 
+ (standard-keys-mode    :url "https://github.com/DevelopmentCool2449/standard-keys-mode")
+
  (stylus-mode		:url jade-mode
   :ignored-files ("test" "Cask" "Makefile" "example.jade" "example.json"
 		  "jade-mode.el"))
