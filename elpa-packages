@@ -502,12 +502,8 @@
   :doc "docs/magit.org"
   :renames (("docs/" ""))
   :news "CHANGELOG"
-  ;; Cannot use .elpaignore because there are two packages in this repo.
-  :ignored-files
-  ("docs" "test" ".github"
-   ".dir-locals.el" ".mailmap" "LICENSE"
-   "default.mk" "Makefile" "lisp/Makefile"
-   "lisp/magit-section.el"))
+  ;; This is in addition to the shared value from ".elpaignore".
+  :ignored-files ("lisp/magit-section.el"))
 
  (magit-section		:url magit
   ;; The author of this package views its branch in the NonGNU ELPA
@@ -519,11 +515,9 @@
   :lisp-dir "lisp"
   :doc "docs/magit-section.org"
   :renames (("docs/" ""))
-  ;; Cannot use .elpaignore because there are two packages in this repo.
+  ;; This is in addition to the shared value from ".elpaignore".
   :ignored-files
-  ("docs" "test" ".github"
-   ".dir-locals.el" ".mailmap" "LICENSE" "README.md" "CHANGELOG"
-   "default.mk" "Makefile" "lisp/Makefile"
+  ("README.md" "CHANGELOG"
    "lisp/git-commit.el" "lisp/git-rebase.el"
    "lisp/magit-apply.el" "lisp/magit-autorevert.el"
    "lisp/magit-base.el" "lisp/magit-bisect.el" "lisp/magit-blame.el"
