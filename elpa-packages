@@ -449,6 +449,9 @@
 
  (inkpot-theme		:url "https://codeberg.org/ideasman42/emacs-theme-inkpot")
 
+ (isl			:url "https://github.com/thierryvolpiatto/isearch-light"
+  )
+
  (iwindow               :url "https://codeberg.org/akib/emacs-iwindow")
 
  (j-mode		:url "https://github.com/zellio/j-mode"
