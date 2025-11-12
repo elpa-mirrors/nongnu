@@ -273,6 +273,14 @@
  (extmap		:url "https://github.com/doublep/extmap.git"
   :ignored-files ("LICENSE"))
 
+ (fedi			:url "https://codeberg.org/martianh/fedi.el"
+  :readme "readme.org"
+  )
+
+ (fj			:url "https://codeberg.org/martianh/fj.el"
+  :readme "readme.org"
+  )
+
  (flx			:url "https://github.com/lewang/flx"
   :readme "README.md"
   :ignored-files (".travis.yml" "LICENSE"
@@ -471,6 +479,10 @@
 
  (kotlin-mode		:url "https://github.com/Emacs-Kotlin-Mode-Maintainers/kotlin-mode"
   :ignored-files ("doc" "test" "Cask" "Makefile"))
+
+ (lem			:url "https://codeberg.org/martianh/lem.el"
+  :readme "readme.org"
+  :lisp-dir "lisp")
 
  (llama			:url "https://github.com/tarsius/llama")
 
@@ -722,6 +734,9 @@
 
  (popup			:url "https://github.com/auto-complete/popup-el"
   :ignored-files ("LICENSE"))
+
+ (powershell		:url "https://github.com/jschaf/powershell.el"
+  :readme "README.md")
 
  ;; (prescient		:url "https://github.com/radian-software/prescient.el")
 
