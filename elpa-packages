@@ -1024,7 +1024,7 @@
   :news "CHANGELOG.md"
   :ignored-files ("LICENSE" "screenshots"))
 
- (zig-mode		:url "https://github.com/ziglang/zig-mode"
+ (zig-mode		:url "https://codeberg.org/ziglang/zig-mode"
   :ignored-files ("LICENSE" "appveyor.yml" "run_tests.sh" "tests.el"))
 
  )
