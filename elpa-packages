@@ -194,6 +194,8 @@
   :readme "README.md"
   :news "NEWS.md")
 
+ (eldoc-mouse           :url "https://github.com/huangfeiyu/eldoc-mouse")
+
  (elixir-mode		:url "https://github.com/elixir-editors/emacs-elixir"
   :ignored-files ("tests" "Eldev")
   :news "CHANGELOG.md")
