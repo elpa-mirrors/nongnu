@@ -16,6 +16,8 @@
  (afternoon-theme	:url "https://github.com/ozanmakes/emacs-afternoon-theme"
   :ignored-files ("*.png"))
 
+ (age			:url "https://github.com/anticomputer/age.el")
+
  (aidermacs		:url "https://github.com/MatthewZMD/aidermacs"
   :readme "README.md")
 
@@ -184,11 +186,11 @@
 
  ;; (edraw			:url "https://github.com/misohena/el-easydraw/")
 
- ;; (el-mock		:url "https://github.com/rejeep/el-mock.el")
-
  (eglot-inactive-regions :url "https://github.com/fargiolas/eglot-inactive-regions")
 
  ;; (eieio-akater-extras	:url "https://framagit.org/akater/elisp-eieio-akater-extras")
+
+ ;; (el-mock		:url "https://github.com/rejeep/el-mock.el")
 
  (eldoc-diffstat        :url "https://github.com/kljohann/eldoc-diffstat.git"
   :readme "README.md"
@@ -755,6 +757,8 @@
 
  (prop-menu		:url "https://github.com/david-christiansen/prop-menu-el"
   :ignored-files ("Makefile" "prop-menu-tests.el"))
+
+ ;; (python-mode		:url "https://gitlab.com/python-mode-devs/python-mode")
 
  (racket-mode		:url "https://github.com/greghendershott/racket-mode"
   :doc "doc/racket-mode.texi"
