@@ -1,6 +1,6 @@
 ;; -*- lisp-data -*-
 
-;; Copyright (C) 2020-2025 Free Software Foundation, Inc.
+;; Copyright (C) 2020-2026 Free Software Foundation, Inc.
 
 ;; List of packages.
 ;; The list is made of elements of the form (NAME . PLIST)
@@ -215,6 +215,8 @@
 
  (engine-mode		:url "https://github.com/hrs/engine-mode"
   :ignored-files ("doc/demo.gif"))
+
+ (esxml			:url "https://github.com/tali713/esxml")
 
  (evil			:url "https://github.com/emacs-evil/evil"
   :ignored-files ("COPYING" "lib" "scripts")
@@ -611,6 +613,9 @@
  (nix-mode		:url "https://github.com/NixOS/nix-mode"
   :ignored-files (".github" "tests" "Cask" "*.nix" "*.lock")
   :news "CHANGELOG.md")
+
+ (nov			:url "https://depp.brause.cc/nov.el.git"
+  :readme "README.md")
 
  ;; FIXME: The Notmuch package is currently not suited to (Non)GNU ELPA for
  ;; various reasons:
