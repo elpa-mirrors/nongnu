@@ -483,6 +483,8 @@
   :ignored-files ("test" "Cask" "Makefile" "example.jade" "example.json"
 		  "stylus-mode.el"))
 
+ (javelin               :url "https://github.com/damianb-bitflipper/javelin.el")
+
  (jinja2-mode		:url "https://github.com/paradoxxxzero/jinja2-mode.git")
 
  (julia-mode		:url "https://github.com/JuliaEditorSupport/julia-emacs"
