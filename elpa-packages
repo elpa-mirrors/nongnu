@@ -101,7 +101,8 @@
  (cdlatex		:url "https://github.com/cdominik/cdlatex")
 
  (cider			:url "https://github.com/clojure-emacs/cider"
-  :ignored-files ("LICENSE" "doc" "logo" "refcard" "test")
+  :ignored-files ("doc" "logo" "refcard" "test")
+  :lisp-dir "lisp"
   :news "CHANGELOG.md")
 
  (clojure-mode		:url "https://github.com/clojure-emacs/clojure-mode"
