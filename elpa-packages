@@ -237,6 +237,8 @@
  (evil-args		:url "https://github.com/wcsmith/evil-args.git"
   :readme "README.md")
 
+ (evil-emacs-cursor-model-mode :url "https://github.com/maxfriis/evil-emacs-cursor-model-mode")
+ 
  (evil-escape		:url "https://github.com/emacsorphanage/evil-escape.git"
   :readme "README.md"
   :ignored-files ("LICENSE"))
