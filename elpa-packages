@@ -98,8 +98,11 @@
   ;; :version-map ((nil "4.7.1" "a9134009bd037a39cbda21806867d0534d340bca"))
   )
 
- (casual                :url "https://github.com/kickingvegas/casual"
-  :doc "docs/casual.info"
+ (casual		:url "https://github.com/kickingvegas/casual"
+  ;; The docs are in Org but require additional ELisp settings.
+  :make "docs/casual.texi"
+  :doc "docs/casual.texi"
+  :ignored-files ("docs/images")
   :lisp-dir "lisp")
 
  (cdlatex		:url "https://github.com/cdominik/cdlatex")
