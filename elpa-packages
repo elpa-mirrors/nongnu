@@ -102,7 +102,7 @@
   ;; The docs are in Org but require additional ELisp settings.
   :make "docs/casual.texi"
   :doc "docs/casual.texi"
-  :ignored-files ("docs/images")
+  ;; :ignored-files ("docs/images")
   :lisp-dir "lisp")
 
  (cdlatex		:url "https://github.com/cdominik/cdlatex")
