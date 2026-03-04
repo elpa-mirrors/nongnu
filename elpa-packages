@@ -108,7 +108,7 @@
  (cdlatex		:url "https://github.com/cdominik/cdlatex")
 
  (cider			:url "https://github.com/clojure-emacs/cider"
-  :ignored-files ("doc" "logo" "refcard" "test")
+  :ignored-files ("doc" "logo" "test")
   :lisp-dir "lisp"
   :news "CHANGELOG.md")
 
@@ -366,8 +366,8 @@
   ;; the most trivial of changes.
   :manual-sync t) ;Author prefers manual control.
 
- (gnosis                :url "https://git.thanosapollo.org/gnosis"
-  :doc "doc/gnosis.texi")
+ ;; (gnosis                :url "https://git.thanosapollo.org/gnosis"
+ ;;  :doc "doc/gnosis.texi")
 
  (gnu-apl-mode		:url "https://github.com/lokedhs/gnu-apl-mode"
   ;; :doc "texi/gnu-apl-mode.texi" ; the manual is currently empty
