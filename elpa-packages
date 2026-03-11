@@ -956,8 +956,9 @@
   :ignored-files ("LICENSE")
   :readme "readme.org")
 
- ;; (treepy		:url "https://github.com/volrath/treepy.el"
- ;;  :ignored-files "LICENSE")
+ (treepy		:url "https://github.com/volrath/treepy.el"
+  :ignored-files ("LICENSE" "treepy.png")
+  :readme "README.md")
 
  (treesit-fold		:url "https://github.com/emacs-tree-sitter/treesit-fold"
   :readme "README.md"
