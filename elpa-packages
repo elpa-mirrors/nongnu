@@ -13,7 +13,7 @@
 (
  (adoc-mode             :url "https://github.com/bbatsov/adoc-mode")
 
- (afternoon-theme	:url "https://github.com/ozanmakes/emacs-afternoon-theme"
+ (afternoon-theme	:url "https://github.com/ozanvos/emacs-afternoon-theme"
   :ignored-files ("*.png"))
 
  (age			:url "https://github.com/anticomputer/age.el")
