@@ -906,7 +906,7 @@
   :ignored-files ("test" "Cask" "Makefile" "example.jade" "example.json"
 		  "jade-mode.el"))
 
- (subatomic-theme	:url "https://github.com/cryon/subatomic-theme"
+ (subatomic-theme	:url "https://codeberg.org/cryon/subatomic-theme"
   :ignored-files ("readme-files"))
 
  (subed			:url "https://github.com/sachac/subed"
