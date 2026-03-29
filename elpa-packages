@@ -852,6 +852,8 @@
  (scroll-on-jump	:url "https://codeberg.org/ideasman42/emacs-scroll-on-jump"
   :ignored-files ("LICENSE" ".elisp-autofmt"))
 
+ (selected-window-contrast	:url "https://github.com/Anoncheg1/selected-window-contrast")
+
  (sesman		:url "https://github.com/vspinu/sesman"
   :ignored-files ("targets"))
 
