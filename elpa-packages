@@ -212,6 +212,8 @@
 
  (eldoc-mouse           :url "https://github.com/huangfeiyu/eldoc-mouse")
 
+ (eldoc-mouse-nov	:url "https://github.com/huangfeiyu/eldoc-mouse-nov")
+
  (elixir-mode		:url "https://github.com/elixir-editors/emacs-elixir"
   :ignored-files ("tests" "Eldev")
   :news "CHANGELOG.md")
