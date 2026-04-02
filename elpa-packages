@@ -491,6 +491,12 @@
  (j-mode		:url "https://github.com/zellio/j-mode"
   :ignored-files ("LICENSE"))
 
+ (jabber		:url "https://git.thanosapollo.org/emacs-jabber"
+  ;; Was "https://codeberg.org/emacs-jabber/emacs-jabber"
+  ;; :doc "jabber.texi"
+  :news "CHANGELOG.org"
+  :lisp-dir "lisp")
+
  (jade-mode		:url "https://github.com/brianc/jade-mode"
   :ignored-files ("test" "Cask" "Makefile" "example.jade" "example.json"
 		  "stylus-mode.el"))
