@@ -866,6 +866,8 @@
  (shellcop		:url "https://github.com/redguardtoo/shellcop.git"
   :ignored-files ("LICENSE" "demo.png"))
 
+ (simple-httpd          :url "https://github.com/skeeto/emacs-web-server")
+
  ;; FIXME: Upstream has accidentally diverged, see
  ;; https://github.com/slime/slime/pull/648
  (slime			:url "https://github.com/slime/slime"
