@@ -214,6 +214,10 @@
 
  (eldoc-mouse-nov	:url "https://github.com/huangfeiyu/eldoc-mouse-nov")
 
+ (elfeed                :url "https://github.com/emacs-elfeed/elfeed")
+
+ (elfeed-web            :url "https://github.com/emacs-elfeed/elfeed-web")
+
  (elixir-mode		:url "https://github.com/elixir-editors/emacs-elixir"
   :ignored-files ("tests" "Eldev")
   :news "CHANGELOG.md")
