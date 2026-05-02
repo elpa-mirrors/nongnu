@@ -237,6 +237,8 @@
  (engine-mode		:url "https://github.com/hrs/engine-mode"
   :ignored-files ("doc/demo.gif"))
 
+ (eprolog               :url "https://github.com/tani/eprolog")
+
  (esxml			:url "https://github.com/tali713/esxml")
 
  (evil			:url "https://github.com/emacs-evil/evil"
