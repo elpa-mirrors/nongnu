@@ -214,7 +214,8 @@
 
  (eldoc-mouse-nov	:url "https://github.com/huangfeiyu/eldoc-mouse-nov")
 
- (elfeed                :url "https://github.com/emacs-elfeed/elfeed")
+ (elfeed                :url "https://github.com/emacs-elfeed/elfeed"
+  :doc "README.org")
 
  (elfeed-web            :url "https://github.com/emacs-elfeed/elfeed-web")
 
