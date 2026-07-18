@@ -202,7 +202,8 @@
 
  (eglot-inactive-regions :url "https://github.com/fargiolas/eglot-inactive-regions")
 
- ;; (eieio-akater-extras	:url "https://framagit.org/akater/elisp-eieio-akater-extras")
+ ;;(eieio-akater-extras	:url "https://framagit.org/akater/elisp-eieio-akater-extras"
+ ;; :branch "elpa-release")
 
  ;; (el-mock		:url "https://github.com/rejeep/el-mock.el")
 
@@ -253,6 +254,8 @@
 
  (evil-args		:url "https://github.com/wcsmith/evil-args.git"
   :readme "README.md")
+
+ (evil-collection	:url "https://github.com/emacs-evil/evil-collection")
 
  (evil-emacs-cursor-model-mode :url "https://github.com/maxfriis/evil-emacs-cursor-model-mode")
 
