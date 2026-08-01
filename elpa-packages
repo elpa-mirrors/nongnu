@@ -956,6 +956,8 @@
  (tablist		:url "https://github.com/politza/tablist"
   :ignored-files ("COPYING"))
 
+ (tabspaces             :url "https://codeberg.org/mclear-tools/tabspaces")
+
  (tangotango-theme	:url "https://github.com/juba/color-theme-tangotango.git"
   :ignored-files ("color-theme-tangotango.el" "screenshots"))
 
