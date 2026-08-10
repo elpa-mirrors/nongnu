@@ -793,6 +793,9 @@
   :news "CHANGELOG.md"
   :ignored-files ("LICENSE"))
 
+ (pinyin-isearch	:url "https://codeberg.org/Anoncheg/pinyin-isearch"
+  :readme "README.md")
+
  (popon			:url "https://codeberg.org/akib/emacs-popon")
 
  (popup			:url "https://github.com/auto-complete/popup-el"
