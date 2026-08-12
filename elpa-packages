@@ -711,6 +711,8 @@
  (org-drill		:url "https://gitlab.com/phillord/org-drill.git"
   :ignored-files (".gitlab-ci.yml" "Cask"))
 
+ (org-history		:url "https://codeberg.org/Anoncheg/emacs-org-history")
+
  (org-journal		:url "https://github.com/bastibe/org-journal.git"
   :news "CHANGELOG"
   :ignored-files (".github" ".travis.yml" "Makefile" "org-journal.svg" "tests"))
