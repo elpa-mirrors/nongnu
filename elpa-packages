@@ -120,6 +120,9 @@
   :readme "README.md"
   :news "CHANGELOG.md")
 
+ (codex-ide		:url "https://git.thanosapollo.org/emacs-codex-ide"
+  :lisp-dir "lisp")
+
  (coffee-mode		:url "https://github.com/defunkt/coffee-mode")
 
  (cond-let		:url "https://github.com/tarsius/cond-let"
@@ -453,6 +456,9 @@
 		  "helm-man.el" "helm-misc.el" "helm-mode.el" "helm-net.el" "helm-occur.el"
 		  "helm-pkg.el" "helm-regexp.el" "helm-ring.el" "helm-semantic.el" "helm-shell.el"
 		  "helm-sys.el" "helm-tags.el" "helm-types.el" "helm-utils.el" "helm-x-files.el"))
+
+ (hermes		:url "https://git.thanosapollo.org/emacs-hermes"
+  :lisp-dir "lisp")
 
  (hideshowvis           :url "https://github.com/sheijk/hideshowvis")
 
