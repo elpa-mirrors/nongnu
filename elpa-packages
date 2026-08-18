@@ -180,6 +180,8 @@
 
  (dockerfile-mode	:url "https://github.com/spotify/dockerfile-mode")
 
+ (doom-game		:url "https://github.com/minad/doom-on-emacs")
+
  (dracula-theme		:url "https://github.com/dracula/emacs"
   :ignored-files ("INSTALL.md" "screenshot.png" "start_emacs_test.sh" "test-profile.el"))
 
