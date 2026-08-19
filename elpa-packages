@@ -871,6 +871,8 @@
  (rust-mode		:url "https://github.com/rust-lang/rust-mode"
   :ignored-files ("test-*" "triagebot.toml" "*.sh"))
 
+ (sapling               :url "https://github.com/swithinchan/sapling.git")
+
  (sass-mode		:url "https://github.com/nex3/sass-mode")
 
  (scad-mode		:url "https://github.com/openscad/emacs-scad-mode"
@@ -1030,6 +1032,8 @@
   :news "changelog.rst")
 
  (vc-fossil		:url "https://github.com/venks1/emacs-fossil")
+
+ (vc-sapling            :url "https://github.com/swithinchan/vc-sapling.git")
 
  (vcomplete		:url "https://git.sr.ht/~dsemy/vcomplete"
   :readme ignore
