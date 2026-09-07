@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en" xml:lang="en">
+<head>
+<title>About NonGNU ELPA</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="shortcut icon" type="image/png" href="favicon.png" />
+<link rel="stylesheet" type="text/css" href="layout.css" />
+<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,width=device-width" />
+</head>
+
+<body>
+<header>
+<h1>
+<img src="images/logo.svg" alt="NonGNU ELPA Logo" width="60" height="64" />
+About NonGNU ELPA
+</h1>
+
+<nav>
+<ul>
+<li><a href="./packages">Index</a></li>
+<li><a href="./about.html">About</a></li>
+<li><a href="https://elpa.gnu.org/contributing.html">Contribute!</a></li>
+<li class="other"><a href="https://elpa.gnu.org/">GNU ELPA</a></li>
+<li class="other"><a href="../nongnu-devel/">NonGNU-devel ELPA</a></li>
+</ul>
+</nav>
+</header>
+
+<main>
+<p>
+<a href="https://elpa.nongnu.org/">NonGNU ELPA</a> is one of the two
+default package archives of <a href="https://gnu.org/s/emacs">GNU
+Emacs</a>.  The other default package archive
+is <a href="/gnu-elpa/">GNU ELPA</a>.  Package archives
+host <a href="https://www.gnu.org/software/emacs/manual/html_node/emacs/Packages.html">Emacs
+Lisp packages</a> that you can easily install and update within Emacs.
+You
+can browse the list of packages you can install to extend Emacs on
+this site or via
+the <kbd>M-x <a href="https://www.gnu.org/software/emacs/manual/html_node/emacs/Package-Menu.html#index-list_002dpackages">list-packages</a></kbd>
+command.
+</p>
+
+<details>
+<summary>How to use NonGNU ELPA for Emacs&lt;28 users</summary>
+
+NonGNU ELPA is not enabled by default for users of Emacs prior to the
+release of Emacs 28.1.  To enable NonGNU ELPA on these older systems,
+add the following snippet to
+your <a href="https://www.gnu.org/software/emacs/manual/html_node/emacs/Init-File.html">Init
+file</a>:
+
+<pre><code>(with-eval-after-load 'package
+  (add-to-list 'package-archives '("nongnu" . "https://elpa.nongnu.org/nongnu/")))</code></pre>
+</details>
+
+<h2 id="diff-nongnu-gnu">Difference between NonGNU and GNU ELPA</h2>
+
+<p>
+Both GNU ELPA and NonGNU ELPA are the official package archives for
+GNU Emacs.  The only difference between packages in the former is that
+their <a href="https://www.gnu.org/licenses/why-assign.html">copyright
+is assigned to the FSF</a>, just like Emacs itself.
+</p>
+
+<p>
+This means that packages added to GNU ELPA can more easily be added to
+Emacs itself, meaning that some packages could end up becoming
+built-in at some point in the future.  For packages on NonGNU ELPA
+this is more difficult.
+</p>
+
+<p>
+For end-users, this difference is negligible.  There is no advantage
+or disadvantage in using a package from either of the two archives.
+Just keep in mind to enable both, since packages from NonGNU ELPA
+may depend on packages from GNU ELPA and <em>vice versa</em>.
+</p>
+
+<h2 id="further-info">Further Information</h2>
+
+<p>
+The GNU
+ELPA&apos;s <q><a href="https://elpa.gnu.org/about.html">About</a></q>
+has some additional information that we elide here, but that applies
+to NonGNU ELPA as well.
+</p>
+
+</main>
+
+<footer>
+<p>Copyright 2016-2026 <a href="https://fsf.org">Free Software Foundation</a>, Inc.
+This website is licensed under the
+<a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
+International License.
+</footer>
+</body>
+</html>
+
+<!-- Local Variables: -->
+<!-- sgml-xml-mode: t -->
+<!-- sgml-basic-offset: 0 -->
+<!-- End: -->
