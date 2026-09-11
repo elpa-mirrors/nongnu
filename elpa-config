@@ -1,7 +1,7 @@
 ;; -*- lisp-data -*-
 
 ((name			"NonGNU")
- (gitrepo		"emacs/nongnu.git")
+ (gitrepo		"elpa/nongnu.git")
  (url			"https://elpa.nongnu.org/nongnu/")
  ;;(branch-prefix		"elpa/")
  ;;(release-branch-prefix	"elpa-release/")
