@@ -616,7 +616,8 @@
    "lisp/magit-sequence.el" "lisp/magit-sparse-checkout.el"
    "lisp/magit-stash.el" "lisp/magit-status.el" "lisp/magit-submodule.el"
    "lisp/magit-subtree.el" "lisp/magit-tag.el" "lisp/magit-transient.el"
-   "lisp/magit-wip.el" "lisp/magit-worktree.el" "lisp/magit.el"))
+   "lisp/magit-wip.el" "lisp/magit-worktree.el" "lisp/magit.el")
+  :readme ignore)
 
  (markdown-mode		:url "https://github.com/jrblevin/markdown-mode"
   :readme "README.md"
