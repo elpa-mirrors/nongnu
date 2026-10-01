@@ -194,7 +194,8 @@
  (eat                   :url "https://codeberg.org/akib/emacs-eat"
   :doc "eat.texi")
 
- (ebuild-mode		:url "https://anongit.gentoo.org/git/proj/ebuild-mode.git")
+ (ebuild-mode		:url "https://anongit.gentoo.org/git/proj/ebuild-mode.git"
+  :doc "ebuild-mode.texi")
 
  ;; (ed-mode		:url "https://github.com/ryanprior/ed-mode")
 
