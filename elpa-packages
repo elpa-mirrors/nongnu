@@ -675,6 +675,8 @@
 
  (nginx-mode		:url "https://github.com/ajc/nginx-mode")
 
+ (nightpanel-theme      :url "https://github.com/gregfelice/nightpanel-theme")
+
  (nix-mode		:url "https://github.com/NixOS/nix-mode"
   :ignored-files (".github" "tests" "Cask" "*.nix" "*.lock")
   :news "CHANGELOG.md")
