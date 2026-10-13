@@ -630,6 +630,8 @@
   ;; :dont-release "-dev\\'"
   :news "CHANGES.md")
 
+ (markdown-ts-appear	:url "https://github.com/Thysrael/markdown-ts-appear")
+ 
  (mastodon		:url "https://codeberg.org/martianh/mastodon.el"
   ;; Don't track `develop` for fear of force-pushes.
   :branch ;; "develop"
