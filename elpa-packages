@@ -329,13 +329,13 @@
 
  (flx			:url "https://github.com/lewang/flx"
   :readme "README.md"
-  :ignored-files (".travis.yml" "LICENSE"
-                  "flx-ido.el" "misc/flx-ido-demo.el" "misc/flx-test-list.el"))
+  ;; This is in addition to the shared value from ".elpaignore".
+  :ignored-files ("flx-ido.el"))
 
  (flx-ido		:url flx
   :readme ignore
-  :ignored-files (".travis.yml" "Cask" "LICENSE" "tests" "Makefile"
-                  "flx.el" "misc/flx-helm-demo.el" "misc/flx-test-list.el"))
+  ;; This is in addition to the shared value from ".elpaignore".
+  :ignored-files ("flx.el"))
 
  (flycheck              :url "https://github.com/flycheck/flycheck"
   :ignored-files (".github" "maint" "test" "Makefile" "doc"))
